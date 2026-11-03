@@ -110,10 +110,17 @@ def sha256(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def download(url):
+# What each kind of file starts with: a page from a bot check is not the file.
+MAGIC = {".pdf": b"%PDF", ".dotx": b"PK", ".zip": b"PK", ".gz": b"\x1f\x8b"}
+
+
+def download(url, kind):
     req = urllib.request.Request(url, headers={"User-Agent": AGENT})
     with urllib.request.urlopen(req, timeout=120) as r:
-        return r.read()
+        data = r.read()
+    if not data.startswith(MAGIC[kind]):
+        raise ValueError("the server sent something other than the file (%d bytes, HTTP %d)" % (len(data), r.status))
+    return data
 
 
 def write(rel, data):
@@ -133,7 +140,9 @@ def text_copy(rel):
         print("  no pdftotext (poppler-utils): skipped the text copy of", rel)
         return False
     os.makedirs(os.path.dirname(txt), exist_ok=True)
-    subprocess.run(["pdftotext", "-layout", pdf, txt], check=True)
+    if subprocess.run(["pdftotext", "-q", "-layout", pdf, txt]).returncode:
+        print("  pdftotext failed: no text copy of", rel)
+        return False
     print("  text copy", os.path.relpath(txt, ROOT))
     return True
 
@@ -150,7 +159,7 @@ def fetch_files(force, check):
             print("missing  ", rel)
         else:
             try:
-                data = download(url)
+                data = download(url, os.path.splitext(rel)[1].lower())
             except Exception as e:  # noqa: BLE001 - report and carry on
                 print("FAILED   %s (%s)\n  download it in a browser: %s" % (rel, e, url))
                 failed.append(rel)
@@ -183,7 +192,7 @@ def fetch_archives(force, check):
                 print("missing  ", p)
             continue
         try:
-            arc = download(url)
+            arc = download(url, os.path.splitext(url)[1])
         except Exception as e:  # noqa: BLE001
             print("FAILED   %s (%s)" % (url, e))
             failed.append(url)
