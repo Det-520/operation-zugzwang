@@ -1,6 +1,6 @@
 # Strait of Great Fortune: wargame theater map (handoff package)
 
-A fictional trade-strait theater modeled on the Strait of Malacca. This package has the finished map, structured data about it, and the Python that generates it. The map is **v10**. v10 is v9 with Camas Island and everything on it moved about 140 mi southwest, so the Camas air base sits inside PrSM range (~310 mi) of B-10 in Omak Interior (Z12): about 290 mi. The bypass route and the dividers were redrawn to fit. The v9 map is kept for comparison in `archive/map-v9/strait_map_v9.svg`.
+A fictional trade-strait theater modeled on the Strait of Malacca. This package has the finished map, structured data about it, and the Python that generates it. The map is **v10**. v10 is v9 with Camas Island and everything on it moved about 140 mi southwest, so the Camas air base sits inside PrSM range (~310 mi) of B-10 in Omak Interior (Z12): about 290 mi. The bypass route and the dividers were redrawn to fit.
 
 ## 1. Premise
 

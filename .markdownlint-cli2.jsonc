@@ -9,7 +9,6 @@
   },
   "globs": ["**/*.md"],
   "ignores": [
-    "archive/**",
     "whitecell-site/**",
     "references/**",
     "node_modules/**",

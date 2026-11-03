@@ -41,7 +41,7 @@ Game dates are relative: **D-Day** is the kickoff inject.
 
 ### 3.1 Map [CANON]
 
-The game map is **`map/maps/strait_map_v10_full.pdf`** (printable in pieces as `strait_map_v10_tiles_letter.pdf` in the same folder). `map/README.md` describes it and how to regenerate it. It replaces the designer's earlier v9 map in `FINALIZED/Common Scenario - 1WK RELEASE/`, which put Camas out of PrSM range. The **Strait of Great Fortune** runs between the Tekoa Coast (north) and the Omak Coast (south), and is **25–75 miles wide** **[CANON]**. Latah and Camas Island are drawn red (pro-Cosmopolis), Tekoa green (neutral), and Omak blue. Asotin (~1,200 mi W) and Cosmopolis (~8,000 mi NE) are off the map.
+The game map is **`map/maps/strait_map_v10_full.pdf`** (printable in pieces as `strait_map_v10_tiles_letter.pdf` in the same folder). `map/README.md` describes it and how to regenerate it. It replaces the designer's earlier v9 map, which put Camas out of PrSM range. The **Strait of Great Fortune** runs between the Tekoa Coast (north) and the Omak Coast (south), and is **25–75 miles wide** **[CANON]**. Latah and Camas Island are drawn red (pro-Cosmopolis), Tekoa green (neutral), and Omak blue. Asotin (~1,200 mi W) and Cosmopolis (~8,000 mi NE) are off the map.
 
 The map labels all thirteen zones, including the four sea zones: Z7 West Approach at the Latah end, Z8 the Narrows in the middle (the narrowest point), Z9 East Approach toward Camas, and Z13 Open Ocean beyond Camas. It also shows bypass routes, a 100-mile grid, and spot heights. The distances in §3.3 are measured from it.
 

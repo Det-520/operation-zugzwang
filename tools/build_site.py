@@ -7,7 +7,7 @@
 Each handout becomes a page. Each intelligence product (RI-xx, BI-xx) gets its
 own page under its side, and the White Cell Intelligence and Injects document
 is split into one page per section. RULES.md and LLAB-SETUP.md go under
-Design reference. FINALIZED/ and handouts/word/ are copied into downloads/.
+Design reference. build/ and handouts/word/ are copied into downloads/.
 The markdown is rendered with the same code as the PDFs (build_handouts.py),
 so the pages hold HTML and Jekyll only wraps them in the theme.
 """

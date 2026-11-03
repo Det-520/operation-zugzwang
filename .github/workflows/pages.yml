@@ -1,0 +1,64 @@
+# Build the white cell site (tools/build_all.sh) and publish it to GitHub Pages.
+# WHITE CELL ONLY: the site shows both sides' secrets, and a Pages site is public.
+# WordCraft doesn't run here, so the Tongue and Quill documents come from the
+# copies committed in handouts/word/: rebuild them locally (tools/tq/build_tq.py)
+# and commit them when their markdown changes.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python packages and Chromium
+        run: |
+          pip install markdown-it-py mdit-py-plugins pypdf playwright numpy "shapely>=2" pillow
+          python3 -m playwright install --with-deps chromium
+          sudo apt-get install -y poppler-utils
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Install Jekyll
+        run: gem install jekyll -v 4.4.1 && gem install jekyll-seo-tag
+
+      # The Air Force reference PDFs often refuse scripted downloads, and the
+      # build doesn't need them; build_all.sh stops if the fonts or theme are missing.
+      - name: Fetch fonts and site theme
+        run: python3 -I tools/fetch_third_party.py || true
+
+      - name: Build map, handouts, and site
+        run: SKIP_TQ=1 tools/build_all.sh
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: whitecell-site/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

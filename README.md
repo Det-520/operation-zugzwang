@@ -16,7 +16,6 @@ A matrix wargame over the Strait of Great Fortune, run as a group leadership pro
 | `tools/` | Build scripts, the counters generator, the Tongue and Quill builder, and the white cell clock |
 | `whitecell-site/` | The white cell reference site's own files (Jekyll) |
 | `references/` | Training objective, writing and doctrine references |
-| `archive/` | The designer's original hand-made PDFs and the v9 map |
 
 `AGENTS.md` is the full file map and the rules for editing (also read by AI agents through `CLAUDE.md`). `handouts/PDF-BUILD-NOTES.md` lists the open design decisions.
 
@@ -26,16 +25,19 @@ The release PDFs, the map, and the site are built from the sources and aren't in
 
 ```bash
 python3 tools/fetch_third_party.py   # once after cloning
-tools/build_all.sh                   # map, counters, Tongue and Quill documents, FINALIZED/, site
+tools/build_all.sh                   # map, counters, Tongue and Quill documents, build/, site
 npx markdownlint-cli2                # after editing markdown: keep it at 0 issues
 ```
 
 | Step | Script | Output |
 | --- | --- | --- |
 | Map | `tools/build_map.sh` | `map/maps/`, `map/data/`, `handouts/assets/game-map.png` |
-| Release PDFs | `tools/build_handouts.sh` (`--only NAME` for one) | `FINALIZED/`, by release folder |
+| Release PDFs | `tools/build_handouts.sh` (`--only NAME` for one) | `build/`, by release folder |
 | White cell site | `tools/build_site.sh` (`serve` to preview) | `whitecell-site/_site/` |
+| Publish | `.github/workflows/pages.yml`, on every push to `main` | GitHub Pages |
 
 Needs Python 3, Chromium 131 or later, poppler-utils (`pdftotext`, `pdftoppm`), Jekyll, and `wordcraft-cli` for the Tongue and Quill documents. On NixOS the scripts pull the Python packages with `nix-shell`. Elsewhere, install `markdown-it-py`, `mdit-py-plugins`, `pypdf`, `playwright`, `numpy`, `shapely`, and `pillow`.
+
+The GitHub Action can't run WordCraft, so it uses the Tongue and Quill files committed in `handouts/word/`. After changing one of those documents, run `python3 tools/tq/build_tq.py` and commit the results. Before the first run, set **Settings → Pages → Source** to **GitHub Actions**. The Pages site is public.
 
 Air Force sites often refuse scripted downloads. When one does, `fetch_third_party.py` prints the URL: open it in a browser, save the file to the path shown, and run the script again to check it and make its text copy.

@@ -2,7 +2,7 @@
 # Generate and build the white cell site (whitecell-site/, see tools/build_site.py).
 #   tools/build_site.sh          # pages + jekyll build  -> whitecell-site/_site/
 #   tools/build_site.sh serve    # pages + jekyll serve  -> http://127.0.0.1:4000
-# Run tools/build_handouts.sh first if the PDFs changed: the site copies FINALIZED/.
+# Run tools/build_handouts.sh first if the PDFs changed: the site copies build/.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 PY='python3.withPackages (ps: with ps; [markdown-it-py mdit-py-plugins])'

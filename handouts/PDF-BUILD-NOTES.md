@@ -4,7 +4,7 @@
 
 ## 1. How the PDFs are made now
 
-Since 3 Nov 2026 the files in `FINALIZED/` are **built from the handout markdown**, so the markdown and the PDFs no longer drift apart. The earlier list of differences between them is closed: every fix in it is in the rebuilt PDFs. The designer's hand-made Word PDFs are kept in `archive/FINALIZED-2026-11-03/`.
+Since 3 Nov 2026 the files in `build/` are **built from the handout markdown**, so the markdown and the PDFs no longer drift apart. The earlier list of differences between them is closed: every fix in it is in the rebuilt PDFs. The designer's hand-made Word PDFs are in git history (commit `f7c9263`, `archive/FINALIZED-2026-11-03/`).
 
 | Step | Command | Output |
 | --- | --- | --- |
@@ -12,7 +12,7 @@ Since 3 Nov 2026 the files in `FINALIZED/` are **built from the handout markdown
 | Map | `tools/build_map.sh` | `map/maps/`, `map/data/`, `handouts/assets/game-map.png` |
 | Counters | `python3 tools/make_counters.py` | `handouts/*/counters.pdf` |
 | Tongue and Quill documents (both commander's letters, RI-13, BI-05, BI-10, BI-11) | `python3 tools/tq/build_tq.py` | `handouts/word/*.docx` and `.pdf` |
-| Everything in `FINALIZED/` (runs the counters and Tongue and Quill steps first) | `tools/build_handouts.sh` | `FINALIZED/**` |
+| Everything in `build/` (runs the counters and Tongue and Quill steps first) | `tools/build_handouts.sh` | `build/**` |
 | White cell site | `tools/build_site.sh` (or `tools/build_site.sh serve`) | `whitecell-site/_site/` |
 | All of the above, in order (the map only if it's missing, or with `--map`) | `tools/build_all.sh` | all of the above |
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the release PDFs in FINALIZED/ from the handout markdown.
+"""Build the release PDFs in build/ from the handout markdown.
 
     tools/build_handouts.sh            # the usual way (sets up Python and Chromium on NixOS)
     python3 tools/build_handouts.py [--only NAME ...] [--html-only]
@@ -24,8 +24,6 @@ What it does:
 - Assembles the white cell's Print Packet (PACKET): everything one table
   prints to run the game, with the right number of copies, behind a cover
   sheet that lists it.
-- Keeps the designer's original PDFs: before the first build overwrites
-  FINALIZED/, it is copied to archive/FINALIZED-<date>/.
 
 The markdown is the source. Audience lines and FORMAT NOTE blocks stay out of
 the PDFs (the running header carries the audience). `render_markdown()` is
@@ -45,7 +43,6 @@ markdownlint (no inline HTML):
 - `<!-- pagebreak -->` starts a new page.
 """
 import argparse
-import datetime
 import glob
 import html
 import os
@@ -56,7 +53,7 @@ import tempfile
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 H = os.path.join(ROOT, "handouts")
-FIN = os.path.join(ROOT, "FINALIZED")
+FIN = os.path.join(ROOT, "build")
 FONTS = os.path.join(ROOT, "tools", "fonts")
 
 ASAP, WEEK = "Common Matrix - ASAP RELEASE", "Common Scenario - 1WK RELEASE"
@@ -638,15 +635,6 @@ def build_packet(browser, header, dst, work):
     return dst
 
 
-def archive_once():
-    """Keep the designer's hand-made PDFs before the first generated build replaces them."""
-    if glob.glob(os.path.join(ROOT, "archive", "FINALIZED-*")):
-        return
-    dst = os.path.join(ROOT, "archive", "FINALIZED-" + datetime.date.today().isoformat())
-    shutil.copytree(FIN, dst)
-    print("archived the original FINALIZED/ to", os.path.relpath(dst, ROOT))
-
-
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--only", nargs="*", default=[], help="build only files whose name contains one of these")
@@ -664,7 +652,6 @@ def main():
                 open(p, "w", encoding="utf-8").write(page_html(md, header, os.path.splitext(name)[0]))
                 print(p)
         return
-    archive_once()
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         browser = pw.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH") or None)

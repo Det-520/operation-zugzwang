@@ -2,7 +2,7 @@
 
 A Jekyll site (theme: [just-the-docs](https://github.com/just-the-docs/just-the-docs) v0.12.0) with every handout, each intelligence product on its own page, the design references, and downloads of the release PDFs. **White cell only:** it shows both sides' secrets.
 
-- Build: `tools/build_site.sh` from the project root. It regenerates the pages from `handouts/`, `RULES.md`, and `LLAB-SETUP.md`, copies `FINALIZED/` into `downloads/`, and runs `jekyll build` into `_site/`.
+- Build: `tools/build_site.sh` from the project root. It regenerates the pages from `handouts/`, `RULES.md`, and `LLAB-SETUP.md`, copies `build/` into `downloads/`, and runs `jekyll build` into `_site/`.
 - Preview: `tools/build_site.sh serve`, then open http://127.0.0.1:4000.
 - Generated (don't edit): `index.html`, `common/`, `redfor/`, `bluefor/`, `whitecell/`, `reference/`, `downloads/`, `tools/`, `assets/img/`.
 - Hand-written: `_config.yml`, `_includes/header_custom.html`, `_includes/head_custom.html` (no favicon: the theme's `favicon.ico` is removed), `_sass/custom/setup.scss` (fonts), `_sass/color_schemes/zugzwang.scss` (colours), and `_sass/custom/custom.scss` (everything else). The look follows the "Repo" theme at markdown.style (GitHub's markdown style), with the same accent per audience as the PDFs: green common, red REDFOR, blue BLUEFOR, purple white cell.

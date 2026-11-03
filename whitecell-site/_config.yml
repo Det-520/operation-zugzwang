@@ -2,7 +2,7 @@
 # The pages are generated: run tools/build_site.sh from the project root. Don't edit them here.
 title: "Zugzwang White Cell"
 description: "Every Operation Zugzwang document in one place, for the lead adjudicators and loggers. WHITE CELL ONLY."
-baseurl: ""
+baseurl: "/operation-zugzwang"
 url: ""
 permalink: pretty
 lang: en-US
@@ -24,7 +24,7 @@ nav_enabled: true
 nav_sort: case_insensitive
 nav_external_links: []
 aux_links:
-  "Timer and dice": "/tools/whitecell-clock.html"
+  "Timer and dice": "/operation-zugzwang/tools/whitecell-clock.html"
 aux_links_new_tab: true
 footer_content: "Operation Zugzwang · AFROTC LLAB 12 · 12 November 2026 · <strong>WHITE CELL ONLY</strong>: this site shows both sides' secrets. Fictional training scenario."
 last_edit_timestamp: false

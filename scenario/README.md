@@ -36,7 +36,7 @@ Settled in `update-notes.txt` and recent reviews (now CANON): owner, the Sapphir
 | --- | --- | --- |
 | S1 | Final wording of the six secret objectives (packets §3) | As drafted |
 | S2 | How far Asotin will escalate (the B-42 and B-43 conditions) | As in `bluefor-packet.md` §1.4 |
-| S4 | Map distances and zone layout (`00-overview.md` §3). **Resolved:** the map is v10 (`map/maps/strait_map_v10_full.pdf`) at 100 mi per grid square, with Camas moved southwest into PrSM range. The distance table in `00-overview.md` §3.3 was re-measured from it. | None. Replace the v9 PDFs in `FINALIZED/` when convenient. |
+| S4 | Map distances and zone layout (`00-overview.md` §3). **Resolved:** the map is v10 (`map/maps/strait_map_v10_full.pdf`) at 100 mi per grid square, with Camas moved southwest into PrSM range. The distance table in `00-overview.md` §3.3 was re-measured from it. | None. `tools/build_handouts.sh` copies the v10 PDFs into `build/`. |
 | S6 | Kickoff inject wording, and who "fires first" | `whitecell-injects.md` §1 |
 | S7 | Balance check: 15 REDFOR counters in theater plus 7 at home vs. 21 BLUEFOR counters plus advantages S-B3 to S-B5 | Needs a POC run-through |
 | S8 | The intelligence products (RI-01 to RI-15, BI-01 to BI-15) and their key: whether the hints at hidden assets and objectives are too strong or too weak | As drafted in `handouts/` |

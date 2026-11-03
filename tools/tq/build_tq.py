@@ -8,7 +8,7 @@ Each document is written from its markdown in handouts/ into the Zugzwang
 memo or letter template (tools/tq/templates/zz-*.dotx, made from the official
 Air Force templates by make_templates.py), through the WordCraft MCP server
 (`wordcraft-cli mcp`). Output goes to handouts/word/. tools/build_handouts.py
-puts the PDFs into FINALIZED/.
+puts the PDFs into build/.
 
 The markdown is the source. The script reads the date, MEMORANDUM FOR, FROM,
 SUBJECT, numbered paragraphs (1\\. and a.), salutation, close, signature block

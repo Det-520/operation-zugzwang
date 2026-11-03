@@ -1,6 +1,5 @@
 # ---- Built from the sources: tools/build_all.sh -------------------------
-/FINALIZED/
-/handouts/word/
+/build/
 /handouts/*/counters.pdf
 /map/maps/
 # The white cell site's generated pages (tools/build_site.py) and Jekyll output
