@@ -24,7 +24,7 @@ short: "Player Rules Handbook"
 
 1. **What this is.** A *matrix wargame*: there is no rulebook of unit stats. You win via arguments. Each turn your team proposes **one course of action (COA)** and gives **up to three reasons it will work**. The other team gives **up to three reasons it won't**. The **white cell** weighs the reasons, sets the odds, rolls the dice (with a computer program), and narrates what happens.
 2. **Your side.** You are either **REDFOR** or **BLUEFOR**. Your team's documents give you your forces, your intel, and **three secret objectives**. Don't show the other team your objectives.
-3. **One COA per turn.** A COA is *one* main action with a *measurable effect*, e.g. "[REDACTED]s and an [REDACTED] strike the [REDACTED] site near [REDACTED] **so that** [REDACTED] is destroyed and our ISR aircraft can operate over [REDACTED]." You can use several assets in one COA (a strike package counts as one action), but you can't do two unrelated things. Everything else your forces do is background activity.
+3. **One COA per turn.** A COA is *one* main action with a *measurable effect*, e.g. "[FIGHTER JET]s and an [EW AIRCRAFT] strike the [AIR DEFENSE] site near [CHOKEPOINT] **so that** [AIR DEFENSE UNIT] is destroyed and our ISR aircraft can operate over [STRAIT AREA]." You can use several assets in one COA (a strike package counts as one action), but you can't do two unrelated things. Everything else your forces do is background activity.
 4. **Format of your COA (2 minutes):**
 
    > "Our COA: **[action]** in order to **[measurable effect]**. It will work because: **(1)** … **(2)** … **(3)** …"
@@ -62,21 +62,21 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 
 ### 1.3 Example turn
 
-*Heavily redacted. Unredacted version will be given with scenario information at a later time.*
+*Scenario details are replaced with bracketed placeholders such as [FIGHTER JET]. The full version will be given with scenario information at a later time.*
 
-**BLUEFOR COA (2:00):** "[REDACTED] [REDACTED] boats and the [REDACTED] maritime militia, covered by our [REDACTED], establish an armed maritime exclusion and inspection zone across [REDACTED], **in order to** move [REDACTED] from Restricted to **Closed**. It works because: (1) [REDACTED] are only ~[REDACTED] miles wide and sit inside our ~[REDACTED]-mile [REDACTED] umbrella, so REDFOR surface ships can't escort freighters through safely; (2) the militia's [REDACTED] boats blend in with coastal traffic and swarm any ship that tries to run [REDACTED], which gives us *surprise* and *mass*; (3) closing [REDACTED] pressures [REDACTED]'s economy and its [REDACTED] without us firing first on [REDACTED] warships."
+**BLUEFOR COA (2:00):** "[NAVY] [PATROL BOAT]s and the [MILITIA GROUP] maritime militia, covered by our [COASTAL MISSILE BATTERY], establish an armed maritime exclusion and inspection zone across [CHOKEPOINT], **in order to** move [SHIPPING TRACK] from Restricted to **Closed**. It works because: (1) [CHOKEPOINT] is only ~[XX] miles wide and sits inside our ~[XX]-mile [ANTI-SHIP MISSILE] umbrella, so REDFOR surface ships can't escort freighters through safely; (2) the militia's [NUMBER] armed boats blend in with coastal traffic and swarm any ship that tries to run [CHOKEPOINT], which gives us *surprise* and *mass*; (3) closing [CHOKEPOINT] pressures [REDFOR NATION]'s economy and its [MORALE TRACK] without us firing first on [REDFOR NATION] warships."
 
-**REDFOR COA (2:00):** "A strike package of [REDACTED]s and an [REDACTED], refueled by [REDACTED]s, strikes [REDACTED] covering [REDACTED], **in order to** destroy [REDACTED] and open the air over [REDACTED] for our ISR. It works because: (1) the [REDACTED] is a stealth aircraft built to penetrate integrated air defenses; (2) [REDACTED] jamming cuts [REDACTED] off from its early-warning radar network, which is *synergistic effects*; (3) the war just started, which gives us *surprise*, because [REDACTED] hasn't had time to relocate."
+**REDFOR COA (2:00):** "A strike package of [FIGHTER JET]s and an [EW AIRCRAFT], refueled by [TANKER]s, strikes [AIR DEFENSE UNIT] covering [CHOKEPOINT], **in order to** destroy [AIR DEFENSE UNIT] and open the air over [STRAIT AREA] for our ISR. It works because: (1) the [FIGHTER JET] is a stealth aircraft built to penetrate integrated air defenses; (2) [EW AIRCRAFT] jamming cuts [AIR DEFENSE UNIT] off from its early-warning radar network, which is *synergistic effects*; (3) the war just started, which gives us *surprise*, because [AIR DEFENSE UNIT] hasn't had time to relocate."
 
-**REDFOR Cons on BLUEFOR (1:00):** "(1) [REDACTED], [REDACTED], and [REDACTED]s have been watching [REDACTED] since Phase I and will track patrol boat formations and holds. (2) Shutting down [REDACTED] by threatening merchant shipping will turn [REDACTED] against [REDACTED]."
+**REDFOR Cons on BLUEFOR (1:00):** "(1) Our [SIGINT AIRCRAFT], [MARITIME PATROL AIRCRAFT], and [RECON DRONE]s have been watching [CHOKEPOINT] since Phase I and will track patrol boat formations and holds. (2) Shutting down [CHOKEPOINT] by threatening merchant shipping will turn [OPINION TRACK] against [BLUEFOR NATION]."
 
-**BLUEFOR Cons on REDFOR (1:00):** "(1) [REDACTED] is a mobile system, and our Phase I brief said we'd relocate [REDACTED] at the outbreak of war. (2) [REDACTED]-based fighters have to fly ~[REDACTED] miles each way, so they depend on tankers."
+**BLUEFOR Cons on REDFOR (1:00):** "(1) [AIR DEFENSE SYSTEM] is a mobile system, and our Phase I brief said we'd relocate [AIR DEFENSE UNIT] at the outbreak of war. (2) [REDFOR AIR BASE]-based fighters have to fly ~[XXX] miles each way, so they depend on tankers."
 
 **White cell resolution (2:00):**
 
-- **BLUEFOR [REDACTED].** Pros 1 and 2 are strong (+2). Pro 3 is about the *effect*, not about success, so it counts 0 here. REDFOR Con 1 is strong (−1), because the maritime ISR presence is an established fact. REDFOR Con 2 is about *consequences*, so it doesn't change the odds but will shape the outcome. Closing [REDACTED] with patrol boats and coastal missiles was a planned COA in BLUEFOR's Phase I brief and is still valid (+1). The COA needs NDF and [REDACTED] forces to work together, so [REDACTED] applies (−1). **Net +1.** The program rolls 6, and 6 + 1 = **7, a Partial success.** The exclusion zone is declared and shipping halts, moving Strait Traffic to **Closed**, but REDFOR [REDACTED]s and SIGINT tracked the patrol boats' patrol sectors and radar handoffs (now an established fact). [REDACTED] moves 1 toward [REDACTED].
-- **REDFOR strike.** Pros 1 and 2 are strong (+2). BLUEFOR Con 1 is strong (−1), because the relocation was briefed before the war, and it cancels REDFOR Pro 3 (surprise counts 0). BLUEFOR Con 2 is true, but the [REDACTED]s are part of the package, so it counts 0. **Net +1.** The program rolls 9, and 9 + 1 = **10, a Success.** PAT-1 is caught relocating and is **Destroyed**.
-- **Ongoing effect** announced: "Exclusion zone in [REDACTED]": −1 to any COA moving shipping through [REDACTED] until the coastal threat and patrol boats are suppressed.
+- **BLUEFOR exclusion zone.** Pros 1 and 2 are strong (+2). Pro 3 is about the *effect*, not about success, so it counts 0 here. REDFOR Con 1 is strong (−1), because the maritime ISR presence is an established fact. REDFOR Con 2 is about *consequences*, so it doesn't change the odds but will shape the outcome. Closing [CHOKEPOINT] with patrol boats and coastal missiles was a planned COA in BLUEFOR's Phase I brief and is still valid (+1). The COA needs NDF and [MILITIA GROUP] forces to work together, so starting condition [DISUNITY CONDITION] applies (−1). **Net +1.** The program rolls 6, and 6 + 1 = **7, a Partial success.** The exclusion zone is declared and shipping halts, moving [SHIPPING TRACK] to **Closed**, but REDFOR [MARITIME PATROL AIRCRAFT]s and SIGINT tracked the patrol boats' patrol sectors and radar handoffs (now an established fact). [OPINION TRACK] moves 1 toward [REDFOR NATION].
+- **REDFOR strike.** Pros 1 and 2 are strong (+2). BLUEFOR Con 1 is strong (−1), because the relocation was briefed before the war, and it cancels REDFOR Pro 3 (surprise counts 0). BLUEFOR Con 2 is true, but the [TANKER]s are part of the package, so it counts 0. **Net +1.** The program rolls 9, and 9 + 1 = **10, a Success.** [AIR DEFENSE UNIT] is caught relocating and is **Destroyed**.
+- **Ongoing effect** announced: "Exclusion zone in [CHOKEPOINT]": −1 to any COA moving shipping through [STRAIT AREA] until the coastal threat and patrol boats are suppressed.
 
 **What to take from it:** specific Pros win, the best Cons attack the reasons rather than the goal, a good Phase I plan pays off, and Cons about *consequences* still matter even when they don't change the roll.
 
@@ -95,9 +95,9 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 **A COA has two parts.**
 
 1. **Action:** who does what, where, and with which assets.
-2. **Measurable effect:** what will be true on the map or tracks if it succeeds. Examples: "PAT-1 destroyed," "[REDACTED] Traffic moves to Open," "[REDACTED] grants combat basing," "[REDACTED] Regime Stability −1."
+2. **Measurable effect:** what will be true on the map or tracks if it succeeds. Examples: "[AIR DEFENSE UNIT] destroyed," "[SHIPPING TRACK] moves to Open," "[REGIONAL ALLY] grants combat basing," "[BLUEFOR NATION] Regime Stability −1."
 
-**One action per turn.** The action can be big ("mobilize the militia brigades") or a multi-asset package ("[REDACTED fighter] + [REDACTED tanker] + [REDACTED EW] strike package"), but it must serve **one** effect. Two unrelated things are two COAs. Pick one. Choosing priorities is the point.
+**One action per turn.** The action can be big ("mobilize the militia brigades") or a multi-asset package ("[FIGHTER JET] + [TANKER] + [EW AIRCRAFT] strike package"), but it must serve **one** effect. Two unrelated things are two COAs. Pick one. Choosing priorities is the point.
 
 **Think beyond kinetic.** Diplomatic, information, cyber, space, economic, logistics, and deception COAs are all valid and are often stronger. Use **DIME** (Diplomatic, Informational, Military, Economic) and **PMESII** (Political, Military, Economic, Social, Information, Infrastructure) as checklists.
 
@@ -205,7 +205,7 @@ The white cell makes the final decision. It works through each COA like this:
 - **Hidden** counters stay on your team sheet. The enemy doesn't know about them until they are found by a successful ISR COA, revealed by their own use, or disclosed by an inject. Mentioning a hidden asset in a COA or in a Pro or Con counts as using it, whether or not the COA succeeds. Once a hidden counter is used, it goes on the map.
 - **RFI answers** reflect what your intelligence would plausibly know. They may be incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. RFIs never reveal the enemy's secret objectives or secret COAs.
 - **Injects** are events the white cell introduces, such as weather, civilian events, leaks, and third-party moves. There is at most one per turn. Injects may also set new national directives.
-- **Ongoing effects** announced by the white cell ("burning port," "exclusion zone in [REDACTED]") persist and can give ±1 to related COAs until a successful COA removes them.
+- **Ongoing effects** announced by the white cell ("burning port," "exclusion zone in [CHOKEPOINT]") persist and can give ±1 to related COAs until a successful COA removes them.
 
 ### 2.9 Requests: RFIs and RFFs
 
@@ -217,7 +217,7 @@ The white cell makes the final decision. It works through each COA like this:
 | Answer | A short written answer at the start of the next Prepare | Approved, partly approved, or denied, with the **arrival turn** |
 
 - Forces that arrive by RFF **do nothing on the turn they arrive** unless the timing table says otherwise.
-- A big RFF (a carrier strike group, a ground brigade, permission to strike [REDACTED], the enemy capital) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
+- A big RFF (a carrier strike group, a ground brigade, permission to strike [ENEMY CAPITAL]) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ### 2.10 Roles
 
