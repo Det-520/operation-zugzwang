@@ -1,0 +1,52 @@
+# White cell reference site for Operation Zugzwang (just-the-docs v0.12.0, vendored).
+# The pages are generated: run tools/build_site.sh from the project root. Don't edit them here.
+title: "Zugzwang White Cell"
+description: "Every Operation Zugzwang document in one place, for the lead adjudicators and loggers. WHITE CELL ONLY."
+baseurl: ""
+url: ""
+permalink: pretty
+lang: en-US
+
+color_scheme: zugzwang
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 2
+  preview_words_before: 4
+  preview_words_after: 8
+  rel_url: true
+  focus_shortcut_key: "k"
+heading_anchors: true
+enable_copy_code_button: false
+back_to_top: true
+back_to_top_text: "Back to top"
+nav_enabled: true
+nav_sort: case_insensitive
+nav_external_links: []
+aux_links:
+  "Timer and dice": "/tools/whitecell-clock.html"
+aux_links_new_tab: true
+footer_content: "Operation Zugzwang · AFROTC LLAB 12 · 12 November 2026 · <strong>WHITE CELL ONLY</strong>: this site shows both sides' secrets. Fictional training scenario."
+last_edit_timestamp: false
+ga_tracking: false
+
+# The theme's files (_layouts, _includes, _sass, assets) are copied in, so no theme gem is needed.
+# jekyll-include-cache is vendored in _plugins; jekyll-seo-tag ships with Jekyll on most installs.
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+exclude:
+  - README.md
+  - THEME-LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .jekyll-cache/
+
+sass:
+  quiet_deps: true
+  silence_deprecations: [import, global-builtin, color-functions, slash-div]

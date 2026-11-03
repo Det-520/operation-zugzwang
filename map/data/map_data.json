@@ -1,0 +1,624 @@
+{
+ "map": {
+  "name": "Strait of Great Fortune",
+  "map_px": [
+   1536,
+   1024
+  ],
+  "svg_px": [
+   1580,
+   1140
+  ],
+  "map_origin_in_svg_px": [
+   22,
+   22
+  ],
+  "grid_cell_px": 105,
+  "grid_cols": "A-O (x)",
+  "grid_rows": "1-10 (y)",
+  "px_per_mile": 1.05,
+  "miles_per_grid_cell": 100,
+  "map_extent_mi": [
+   1463,
+   975
+  ],
+  "north": "up"
+ },
+ "lore": {
+  "narrows_width_mi": 24.7,
+  "direct_strait_route_mi": 1363,
+  "southern_bypass_mi": 1993,
+  "southern_bypass_extra_mi": 650,
+  "southern_bypass_extra_pct": 45,
+  "southern_bypass_extra_days_at_15kt": 2,
+  "northern_bypass_extra_mi": 4600,
+  "northern_bypass_extra_days": 11,
+  "speed_assumed_kt": 15
+ },
+ "zones": {
+  "Z1": {
+   "name": "Cosmopolis",
+   "type": "off-map box",
+   "note": "REDFOR patron, ~8,000 mi away: bombers, airlift, space, cyber",
+   "box_px": [
+    1318,
+    0,
+    1536,
+    142
+   ],
+   "grid": "N1-O2"
+  },
+  "Z2": {
+   "name": "Asotin",
+   "type": "off-map box",
+   "note": "Supports BLUEFOR, ~1,200 mi away",
+   "box_px": [
+    0,
+    418,
+    164,
+    522
+   ],
+   "grid": "A5"
+  },
+  "Z3": {
+   "name": "Latah",
+   "side": "REDFOR",
+   "type": "land",
+   "centroid_px": [
+    253,
+    229
+   ],
+   "centroid_grid": "C3",
+   "bbox_px": [
+    0,
+    0,
+    525,
+    550
+   ],
+   "visible_area_sq_mi": 187110,
+   "grid_cells": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6"
+   ],
+   "label_px": [
+    191,
+    247
+   ],
+   "label_grid": "B3"
+  },
+  "Z4": {
+   "name": "Tekoa Highlands",
+   "side": "Neutral",
+   "type": "land",
+   "centroid_px": [
+    793,
+    186
+   ],
+   "centroid_grid": "H2",
+   "bbox_px": [
+    443,
+    0,
+    1202,
+    465
+   ],
+   "visible_area_sq_mi": 230931,
+   "grid_cells": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "H1",
+    "H2",
+    "H3",
+    "I1",
+    "I2",
+    "I3",
+    "J1",
+    "J2",
+    "J3",
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "L2",
+    "L3",
+    "L4"
+   ],
+   "label_px": [
+    870,
+    146
+   ],
+   "label_grid": "I2"
+  },
+  "Z5": {
+   "name": "Tekoa Coast",
+   "side": "Neutral",
+   "type": "land (strait north shore)",
+   "centroid_px": [
+    765,
+    427
+   ],
+   "centroid_grid": "H5",
+   "bbox_px": [
+    478,
+    289,
+    1118,
+    585
+   ],
+   "visible_area_sq_mi": 66907,
+   "grid_cells": [
+    "E5",
+    "F5",
+    "F6",
+    "G4",
+    "G5",
+    "G6",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "I3",
+    "I4",
+    "J3",
+    "J4",
+    "K4"
+   ],
+   "label_px": [
+    591,
+    510
+   ],
+   "label_grid": "F5"
+  },
+  "Z6": {
+   "name": "Camas Island",
+   "side": "REDFOR",
+   "type": "island",
+   "centroid_px": [
+    1265,
+    420
+   ],
+   "centroid_grid": "M5",
+   "bbox_px": [
+    1175,
+    363,
+    1346,
+    474
+   ],
+   "visible_area_sq_mi": 12252,
+   "grid_cells": [
+    "L4",
+    "L5",
+    "M4",
+    "M5"
+   ],
+   "label_px": [
+    1280,
+    439
+   ],
+   "label_grid": "M5"
+  },
+  "Z7": {
+   "name": "West Approach",
+   "type": "sea",
+   "label_px": [
+    248,
+    510
+   ],
+   "label_grid": "C5"
+  },
+  "Z8": {
+   "name": "The Narrows",
+   "type": "sea chokepoint",
+   "width_mi": 24.7,
+   "narrows_px": [
+    [
+     578,
+     579
+    ],
+    [
+     568,
+     603
+    ]
+   ],
+   "grid": "F6",
+   "label_px": [
+    856,
+    543
+   ],
+   "label_grid": "I6"
+  },
+  "Z9": {
+   "name": "East Approach",
+   "type": "sea",
+   "label_px": [
+    1020,
+    612
+   ],
+   "label_grid": "J6"
+  },
+  "Z10": {
+   "name": "Omak Coast (Fortune Harbor)",
+   "side": "BLUEFOR",
+   "type": "land (strait south shore)",
+   "centroid_px": [
+    513,
+    625
+   ],
+   "centroid_grid": "E6",
+   "bbox_px": [
+    63,
+    532,
+    931,
+    733
+   ],
+   "visible_area_sq_mi": 53947,
+   "grid_cells": [
+    "A6",
+    "B6",
+    "C6",
+    "D6",
+    "E6",
+    "E7",
+    "F6",
+    "F7",
+    "G7",
+    "H7",
+    "I6",
+    "I7"
+   ],
+   "label_px": [
+    384,
+    576
+   ],
+   "label_grid": "D6"
+  },
+  "Z11": {
+   "name": "Omak City (capital)",
+   "side": "BLUEFOR",
+   "type": "land",
+   "centroid_px": [
+    1064,
+    799
+   ],
+   "centroid_grid": "K8",
+   "bbox_px": [
+    919,
+    702,
+    1211,
+    886
+   ],
+   "visible_area_sq_mi": 34362,
+   "grid_cells": [
+    "I8",
+    "J7",
+    "J8",
+    "J9",
+    "K8",
+    "K9",
+    "L8",
+    "L9"
+   ],
+   "label_px": [
+    1131,
+    791
+   ],
+   "label_grid": "K8"
+  },
+  "Z12": {
+   "name": "Omak Interior",
+   "side": "BLUEFOR",
+   "type": "land",
+   "centroid_px": [
+    637,
+    726
+   ],
+   "centroid_grid": "G7",
+   "bbox_px": [
+    116,
+    604,
+    1017,
+    857
+   ],
+   "visible_area_sq_mi": 74765,
+   "grid_cells": [
+    "B6",
+    "C6",
+    "C7",
+    "D6",
+    "D7",
+    "E7",
+    "E8",
+    "F7",
+    "F8",
+    "G7",
+    "G8",
+    "H7",
+    "H8",
+    "H9",
+    "I7",
+    "I8",
+    "I9",
+    "J7"
+   ],
+   "label_px": [
+    636,
+    755
+   ],
+   "label_grid": "G8"
+  },
+  "Z13": {
+   "name": "Open Ocean",
+   "type": "sea",
+   "label_px": [
+    1410,
+    300
+   ],
+   "label_grid": "N3"
+  }
+ },
+ "key_places": {
+  "Latah city": {
+   "px": [
+    210,
+    321
+   ],
+   "grid": "C4"
+  },
+  "Latah air base": {
+   "px": [
+    250,
+    316
+   ],
+   "grid": "C4"
+  },
+  "Tekoa port (naval)": {
+   "px": [
+    724,
+    549
+   ],
+   "grid": "G6"
+  },
+  "Camas port (naval)": {
+   "px": [
+    1285,
+    460
+   ],
+   "grid": "M5"
+  },
+  "Camas air base": {
+   "px": [
+    1211,
+    441
+   ],
+   "grid": "L5"
+  },
+  "Fortune Harbor (naval)": {
+   "px": [
+    629,
+    679
+   ],
+   "grid": "F7"
+  },
+  "Omak City (capital)": {
+   "px": [
+    1032,
+    785
+   ],
+   "grid": "J8"
+  },
+  "Capital air base": {
+   "px": [
+    1073,
+    809
+   ],
+   "grid": "K8"
+  }
+ },
+ "omak_island": {
+  "length_mi": 1322,
+  "max_width_mi": 182,
+  "area_sq_mi": 188660
+ },
+ "bypass_route_px": [
+  [
+   46,
+   534
+  ],
+  [
+   25,
+   580
+  ],
+  [
+   29,
+   630
+  ],
+  [
+   70,
+   658
+  ],
+  [
+   118,
+   682
+  ],
+  [
+   161,
+   706
+  ],
+  [
+   208,
+   725
+  ],
+  [
+   256,
+   742
+  ],
+  [
+   304,
+   758
+  ],
+  [
+   352,
+   775
+  ],
+  [
+   400,
+   792
+  ],
+  [
+   448,
+   808
+  ],
+  [
+   496,
+   824
+  ],
+  [
+   544,
+   840
+  ],
+  [
+   592,
+   854
+  ],
+  [
+   641,
+   868
+  ],
+  [
+   691,
+   878
+  ],
+  [
+   742,
+   885
+  ],
+  [
+   792,
+   889
+  ],
+  [
+   843,
+   893
+  ],
+  [
+   894,
+   898
+  ],
+  [
+   944,
+   909
+  ],
+  [
+   992,
+   923
+  ],
+  [
+   1040,
+   941
+  ],
+  [
+   1087,
+   959
+  ],
+  [
+   1135,
+   974
+  ],
+  [
+   1185,
+   985
+  ],
+  [
+   1235,
+   993
+  ],
+  [
+   1286,
+   998
+  ],
+  [
+   1335,
+   1001
+  ],
+  [
+   1385,
+   999
+  ],
+  [
+   1435,
+   983
+  ],
+  [
+   1480,
+   960
+  ],
+  [
+   1505,
+   917
+  ],
+  [
+   1512,
+   869
+  ],
+  [
+   1512,
+   817
+  ],
+  [
+   1507,
+   766
+  ],
+  [
+   1499,
+   716
+  ],
+  [
+   1486,
+   666
+  ],
+  [
+   1470,
+   617
+  ],
+  [
+   1451,
+   572
+  ],
+  [
+   1423,
+   525
+  ]
+ ]
+}

@@ -1,0 +1,19 @@
+// markdownlint settings for Operation Zugzwang.
+// Check:  npx markdownlint-cli2
+// Fix what can be fixed automatically:  npx markdownlint-cli2 --fix
+{
+  "config": {
+    "default": true,
+    // One paragraph per line is the house style, so line length isn't checked.
+    "MD013": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": [
+    "archive/**",
+    "whitecell-site/**",
+    "references/**",
+    "node_modules/**",
+    // CLAUDE.md is a one-line import of AGENTS.md.
+    "CLAUDE.md"
+  ]
+}

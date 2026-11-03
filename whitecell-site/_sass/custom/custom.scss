@@ -1,0 +1,111 @@
+// Operation Zugzwang additions, in the style of the "Repo" theme at markdown.style
+// (GitHub's markdown look), with the same accent per audience as the PDFs.
+
+@font-face { font-family: "JetBrains Mono"; src: url("../fonts/JetBrainsMono-Regular.ttf"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("../fonts/JetBrainsMono-Bold.ttf"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("../fonts/JetBrainsMono-Italic.ttf"); font-style: italic; font-display: swap; }
+
+$zz-fg: #1f2328;
+$zz-muted: #59636e;
+$zz-line: #d1d9e0;
+$zz-soft: #f6f8fa;
+
+.zz-page { --accent: #8250df; --tint: #fbefff; }
+.zz-aud-public { --accent: #1a7f37; --tint: #dafbe1; }
+.zz-aud-red { --accent: #cf222e; --tint: #ffebe9; }
+.zz-aud-blue { --accent: #0969da; --tint: #ddf4ff; }
+
+// Headings: rules under the top two levels, normal case for h4 (the theme uppercases it).
+.main-content {
+  h1, h2, h3, h4, h5, h6 { font-weight: 600; color: $zz-fg; }
+  h1 { font-size: 2rem; padding-bottom: 0.3em; border-bottom: 1px solid $zz-line; margin-top: 0.5rem; }
+  h2 { font-size: 1.5rem; padding-bottom: 0.3em; border-bottom: 1px solid $zz-line; margin-top: 2rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1rem; text-transform: none; letter-spacing: normal; }
+  a:not(.btn) { text-decoration: none; &:hover { text-decoration: underline; } }
+  img { max-width: 100%; height: auto; }
+  pre { white-space: pre-wrap; }
+  code { font-size: 0.85em; padding: 0.2em 0.4em; border-radius: 6px; border: 0; background: $zz-soft; }
+  pre code { padding: 0; }
+  hr { height: 0.25em; border: 0; background: $zz-line; }
+  blockquote {
+    margin: 0 0 1rem; padding: 0.25rem 1rem; color: $zz-muted;
+    border-left: 0.25em solid var(--accent, #{$zz-line}); background: var(--tint, #{$zz-soft}); border-radius: 0 6px 6px 0;
+    strong { color: $zz-fg; }
+  }
+}
+
+// The first heading on a page, with the kicker and subtitle from the front matter.
+.zz-kicker { margin: 0 0 -0.25rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.main-content .zz-page > h1:first-of-type { border-bottom: 3px solid var(--accent); }
+.zz-doc-subtitle { color: $zz-muted; font-size: 1.05rem; margin-top: -0.25rem; }
+.zz-downloads {
+  font-size: 0.85rem; padding: 0.5rem 0.75rem; background: $zz-soft; border: 1px solid $zz-line; border-radius: 6px;
+  span { font-weight: 600; color: $zz-muted; margin-right: 0.4rem; }
+}
+.pagebreak { display: none; }
+
+// Tables: zebra stripes, a tinted header with an accent rule.
+.main-content {
+  .table-wrapper { box-shadow: none; border: 1px solid $zz-line; border-radius: 6px; }
+  table { font-size: 0.85rem; }
+  th, td { vertical-align: top; border-bottom: 1px solid $zz-line; border-left: 1px solid $zz-line; padding: 0.45rem 0.7rem; }
+  th:first-child, td:first-child { border-left: 0; }
+  thead th { background: var(--tint, #{$zz-soft}); border-bottom: 2px solid var(--accent, #{$zz-line}); color: $zz-fg; }
+  tbody tr:nth-child(2n) td { background: $zz-soft; }
+  tbody tr:last-child td { border-bottom: 0; }
+  table.zz-kv td:first-child { font-weight: 600; background: $zz-soft; width: 30%; }
+}
+
+// Checkboxes: ☐ as a drawn box, and task lists without bullets.
+.zz-box {
+  display: inline-block; width: 0.85em; height: 0.85em; border: 1.5px solid $zz-fg; border-radius: 3px;
+  color: transparent; overflow: hidden; line-height: 0.85em; vertical-align: -0.1em; margin: 0 0.3em 0 0.35em;
+  &:first-child { margin-left: 0; }
+}
+.zz-opt { white-space: nowrap; margin-right: 0.35em; }
+// A task list hangs its boxes in the indent, so wrapped lines line up with the text.
+.main-content ul.contains-task-list { padding-left: 1.75em; }
+.main-content .task-list-item { list-style: none; &::before { content: none !important; } }
+.main-content .task-list-item-checkbox {
+  accent-color: var(--accent); width: 1em; height: 1em; margin: 0 0.75em 0 -1.75em; vertical-align: -0.15em;
+}
+
+// Forms on screen: the label column tinted; the blank cells left open.
+.main-content {
+  table.zz-form thead th { background: var(--accent); color: #fff; border-color: var(--accent); }
+  table.zz-form td:first-child { background: var(--tint); width: 32%; }
+  table.zz-form tbody tr:nth-child(2n) td:not(:first-child) { background: #fff; }
+  table.zz-form td:empty { height: 2.25rem; }
+  table.zz-log td:empty { height: 1.9rem; }
+  table.zz-track td { text-align: center; font-weight: 600; vertical-align: middle; height: 2.5rem; }
+  table.zz-track td:first-child { text-align: left; background: var(--tint); }
+  table.zz-markers td { text-align: center; font-weight: 700; color: var(--accent); background: var(--tint) !important; border: 1px dashed $zz-muted; }
+  table.zz-checkgrid td:nth-child(n+3), table.zz-checkgrid th:nth-child(n+3) { text-align: center; width: 3rem; }
+  table.zz-checkgrid td:first-child { font-family: $mono-font-family; font-size: 0.75rem; color: $zz-muted; white-space: nowrap; }
+}
+
+// Cue cards and slips: cards side by side on screen, coloured by side.
+.zz-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 1rem; margin: 1rem 0; }
+.zz-card {
+  --card: var(--accent);
+  border: 1px solid $zz-line; border-radius: 6px; padding: 0 1rem 0.5rem; overflow: hidden; font-size: 0.9rem;
+  &.zz-red { --card: #cf222e; }
+  &.zz-blue { --card: #0969da; }
+  h3 { margin: 0 -1rem 0.75rem !important; padding: 0.5rem 1rem; color: #fff !important; background: var(--card); font-size: 1rem !important; border: 0; }
+  p { margin: 0 0 0.5rem; }
+}
+.zz-slip { padding-bottom: 0.75rem; margin-bottom: 0.75rem; border-bottom: 1px dashed $zz-muted; &:last-child { border-bottom: 0; } }
+
+// The white cell marking in the site header.
+.zz-marking { font-weight: 700; letter-spacing: 0.06em; color: #8250df; padding: 0 1rem; font-size: 0.8rem; }
+
+// Theme fixes: one-line cell borders, left-aligned headers, header items centred.
+.main-content table { border-collapse: collapse; border-spacing: 0; }
+.main-content th { text-align: left; }
+.main-header { align-items: center; }
+.zz-marking { align-self: center; white-space: nowrap; }
+.site-title { font-size: 1.15rem !important; font-weight: 600; line-height: 1.25; }
+
+// Intelligence products: the issuing office's masthead is a small heading.
+.main-content h2.zz-masthead { font-size: 0.9rem; letter-spacing: 0.06em; color: $zz-muted; border: 0; padding: 0; }

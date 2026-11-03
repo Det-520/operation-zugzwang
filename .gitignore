@@ -1,0 +1,54 @@
+# ---- Built from the sources: tools/build_all.sh -------------------------
+/FINALIZED/
+/handouts/word/
+/handouts/*/counters.pdf
+/map/maps/
+# The white cell site's generated pages (tools/build_site.py) and Jekyll output
+/whitecell-site/_site/
+/whitecell-site/.jekyll-cache/
+/whitecell-site/index.html
+/whitecell-site/*.html
+/whitecell-site/common/
+/whitecell-site/redfor/
+/whitecell-site/bluefor/
+/whitecell-site/whitecell/
+/whitecell-site/reference/
+/whitecell-site/downloads/
+/whitecell-site/tools/
+/whitecell-site/assets/img/
+/whitecell-site/assets/fonts/
+
+# ---- Third-party files: python3 tools/fetch_third_party.py --------------
+# Reference PDFs and their text copies (the READMEs and summaries are ours)
+/references/*.pdf
+/references/text/
+/references/doctrine/*.pdf
+/references/doctrine/text/
+# Air Force Tongue and Quill templates (the zz-*.dotx made from them are ours)
+/tools/tq/templates/official/
+# Fonts (SIL OFL); map/fonts/fonts.conf is ours
+/map/fonts/*.otf
+/map/fonts/LICENSE.txt
+/tools/fonts/
+# The just-the-docs theme and jekyll-include-cache, around the site's own files
+/whitecell-site/THEME-LICENSE.txt
+/whitecell-site/_layouts/
+/whitecell-site/_plugins/
+/whitecell-site/assets/
+/whitecell-site/_includes/*
+!/whitecell-site/_includes/head_custom.html
+!/whitecell-site/_includes/header_custom.html
+/whitecell-site/_sass/*
+!/whitecell-site/_sass/custom/
+!/whitecell-site/_sass/color_schemes/
+/whitecell-site/_sass/color_schemes/*
+!/whitecell-site/_sass/color_schemes/zugzwang.scss
+
+# ---- Tooling --------------------------------------------------------------
+__pycache__/
+*.pyc
+.jekyll-cache/
+node_modules/
+.DS_Store
+*~
+*.swp
