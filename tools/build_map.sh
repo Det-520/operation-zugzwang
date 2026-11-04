@@ -24,5 +24,5 @@ if command -v nix-shell >/dev/null; then
 else
   bash -ec "$STEPS"
 fi
-pdftoppm -q -png -r 200 -singlefile maps/strait_map_v10_full.pdf ../handouts/assets/game-map
+pdftoppm -q -png -scale-to-x 4200 -scale-to-y -1 -singlefile maps/strait_map_v10_full.pdf ../handouts/assets/game-map
 echo "wrote map/maps/, map/data/, handouts/assets/game-map.png"

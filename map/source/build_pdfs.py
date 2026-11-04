@@ -10,7 +10,8 @@ SVG_W, SVG_H = 1580, 1140
 ASPECT = SVG_W / SVG_H
 
 # ---------------------------------------------------------------- full map, one page
-FULL_W_IN = 21.0
+N = 3                                        # letter tiles per side (see below)
+FULL_W_IN = N * 10.5                         # same scale as the assembled tiles
 FULL_H_IN = FULL_W_IN / ASPECT
 full_html = f"""<!doctype html><html><head><meta charset="utf-8"><style>
 @page {{ size: {FULL_W_IN}in {FULL_H_IN:.4f}in; margin: 0 }}
@@ -18,19 +19,30 @@ html, body {{ margin: 0; padding: 0; }}
 svg {{ display: block; width: {FULL_W_IN}in; height: {FULL_H_IN:.4f}in; }}
 </style></head><body>{svg}</body></html>"""
 
-# ---------------------------------------------------------------- 2 x 2 letter tiles
+# ---------------------------------------------------------------- N x N letter tiles
 # Each tile is laid out landscape, then turned onto a portrait page (top of the map
 # at the left edge), so the tiles print in the same orientation as the handouts.
 PW, PH = 1056.0, 816.0                       # the landscape tile, CSS px (96 dpi)
 WIN_W = 1008.0                               # 10.5 in trim window per tile (0.25 in side margins)
-S = WIN_W / (SVG_W / 2)                      # svg px -> css px
-WIN_H = (SVG_H / 2) * S                      # about 7.10 in
+S = WIN_W / (SVG_W / N)                      # svg px -> css px
+WIN_H = (SVG_H / N) * S                      # about 7.10 in
 X0 = (PW - WIN_W) / 2
 Y0 = (PH - WIN_H) / 2
+ASSEMBLED = f"{N * WIN_W / 96:.1f} x {N * WIN_H / 96:.1f} in"
 
-names = {(0, 0): "TILE 1  (top-left)", (0, 1): "TILE 2  (top-right)", (1, 0): "TILE 3  (bottom-left)", (1, 1): "TILE 4  (bottom-right)"}
-join = {(0, 0): "joins 2 on the right, 3 below", (0, 1): "joins 1 on the left, 4 below",
-        (1, 0): "joins 4 on the right, 1 above", (1, 1): "joins 3 on the left, 2 above"}
+ROW = ["top", "middle", "bottom"] if N == 3 else ["top", "bottom"]
+COL = ["left", "centre", "right"] if N == 3 else ["left", "right"]
+def num(r, c): return r * N + c + 1
+names, join = {}, {}
+for r in range(N):
+    for c in range(N):
+        pos = "centre" if (ROW[r], COL[c]) == ("middle", "centre") else f"{ROW[r]}-{COL[c]}"
+        names[(r, c)] = f"TILE {num(r, c)}  ({pos})"
+        nb = [f"{num(r, c - 1)} on the left"] if c > 0 else []
+        nb += [f"{num(r, c + 1)} on the right"] if c < N - 1 else []
+        nb += [f"{num(r - 1, c)} above"] if r > 0 else []
+        nb += [f"{num(r + 1, c)} below"] if r < N - 1 else []
+        join[(r, c)] = "joins " + ", ".join(nb)
 
 def marks():
     m = []
@@ -58,8 +70,8 @@ for (r, c), nm in names.items():
     <g stroke="#000" stroke-width="0.8" fill="none">{marks()}</g>
     <g font-family="Inter, Arial, sans-serif" fill="#222" font-size="10">
       <text x="{X0:.1f}" y="{Y0 - 26:.1f}" font-weight="700" letter-spacing="1">{nm}</text>
-      <text x="{X0 + 150:.1f}" y="{Y0 - 26:.1f}" fill="#555">{join[(r, c)]}</text>
-      <text x="{X0:.1f}" y="{Y0 + WIN_H + 34:.1f}" fill="#555">Trim to the corner marks and butt the four tiles edge to edge. Assembled map is 21 x 15.2 in.</text>
+      <text x="{X0 + 170:.1f}" y="{Y0 - 26:.1f}" fill="#555">{join[(r, c)]}</text>
+      <text x="{X0:.1f}" y="{Y0 + WIN_H + 34:.1f}" fill="#555">Trim to the corner marks and butt the {N * N} tiles edge to edge. Assembled map is {ASSEMBLED}.</text>
     </g>
   </svg>
 </div></section>""")

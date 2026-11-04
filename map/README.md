@@ -54,8 +54,8 @@ Key places (px and grid) are in `map_data.json` under `key_places`: Latah city a
 maps/                               built by tools/build_map.sh (not in git)
   strait_map_v10.svg                master vector map, 1580 x 1140 px
   strait_map_v10.png                2x raster of the same map
-  strait_map_v10_full.pdf           one page, 21 x 15.2 in
-  strait_map_v10_tiles_letter.pdf   4 letter pages (portrait, the map turned on the page) that butt together into the full map
+  strait_map_v10_full.pdf           one page, 31.5 x 22.7 in (the same scale as the assembled tiles)
+  strait_map_v10_tiles_letter.pdf   9 letter pages, 3 x 3 (portrait, the map turned on the page) that butt together into the full map
 data/
   map_data.json                     scale, lore numbers, zone table (centroids, bounding boxes, areas, grid cells), key places, bypass waypoints
   zones_px.geojson                  land zone polygons, islets and bypass line, in map pixels (see below)
