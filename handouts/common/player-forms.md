@@ -4,7 +4,7 @@ subtitle: "OPORD/FRAGO format, COA and Cons worksheets, request and secret COA s
 short: "Player Forms"
 ---
 
-**Audience:** every player. **Printing:** each team needs 1 OPORD/FRAGO format page, 7 COA worksheets, 7 Cons worksheets, 9 pages of request slips (3 to a page, 25 slips), and 2 secret COA slips. The white cell's Print Packet already holds this many for both teams, plus spares. The forms are black and white, so print them in greyscale.
+**Audience:** every player. **Printing:** each team needs 1 OPORD/FRAGO format page, 7 COA worksheets, 7 Cons worksheets, 9 pages of request slips (3 to a page, 25 slips), and 2 secret COA slips. The white cell's Print Packet already holds this many for both teams, plus spares; its Reference Forms version holds one of each per team, to copy from. The forms are black and white, so print them in greyscale.
 
 ## 1. Five-Paragraph OPORD and FRAGO Format
 

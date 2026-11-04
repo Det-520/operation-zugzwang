@@ -20,7 +20,8 @@ import sys
 import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_handouts import FIN, FONTS, H, ROOT, WC, clean, front_matter, packet_markdown, render_markdown  # noqa: E402
+from build_handouts import (FIN, FONTS, H, PACKET_NAME, REF_PACKET_NAME, ROOT, WC, clean, front_matter,  # noqa: E402
+                            packet_markdown, render_markdown)
 
 SITE = os.path.join(ROOT, "whitecell-site")
 GENERATED = ["common", "redfor", "bluefor", "whitecell", "reference", "downloads", "tools", "assets/img", "assets/fonts", "index.html"]
@@ -228,7 +229,8 @@ def main():
     md_page("handouts/whitecell/forms.md", "whitecell/forms", nav_order=5, parent="White Cell",
             dl=[("PDF", "White Cell/White Cell Forms.pdf")])
     md_page("handouts/whitecell/print-packet.md", "whitecell/print-packet", nav_order=6, parent="White Cell",
-            text=packet_markdown(), dl=[("PDF, one table", f"{WC}/Print Packet - One Table.pdf")])
+            text=packet_markdown(), dl=[("PDF, one table", f"{WC}/{PACKET_NAME}"),
+                                         ("PDF, reference forms only", f"{WC}/{REF_PACKET_NAME}")])
 
     md_page("handouts/common/rules-handbook.md", "common/rules-handbook", nav_order=1, parent="Common",
             dl=[("PDF", "Common Matrix - ASAP RELEASE/Player Rules Handbook.pdf")])

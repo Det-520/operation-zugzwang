@@ -22,7 +22,7 @@ short: "White Cell Checklist"
 - [ ] Every white cell member has read **both** sides' intelligence products and the key (Intelligence and Injects §3).
 - [ ] Every white cell member has read the ground truth (Intelligence and Injects §1), the RFF pools (Handbook §7), and the scoring tables (Handbook §8).
 - [ ] The timer and dice program (`whitecell-clock.html`) opens on each lead adjudicator's laptop, works offline, and can be shown on a screen.
-- [ ] One Print Packet printed for each table (4), game pieces in colour, forms in greyscale. Spares kept with the white cell. Counters and cue cards cut. Hidden counters in an envelope.
+- [ ] One Print Packet printed for each table (4) (the full packet, or the Reference Forms version plus photocopies), game pieces in colour, forms in greyscale. Spares kept with the white cell. Counters and cue cards cut. Hidden counters in an envelope.
 - [ ] Each table agrees with the others on what counts as an auto-success, so the four games are scored alike (Handbook §5.1).
 
 ## 2. Table setup (before 1345)

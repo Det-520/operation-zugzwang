@@ -23,7 +23,8 @@ What it does:
 - Copies the counters, the v10 map, and the white cell clock into place.
 - Assembles the white cell's Print Packet (PACKET): everything one table
   prints to run the game, with the right number of copies, behind a cover
-  sheet that lists it.
+  sheet that lists it. A second version (REF_PACKET_NAME) holds one copy of
+  each player form per side, as a reference to copy from, and no spares.
 
 The markdown is the source. Audience lines and FORMAT NOTE blocks stay out of
 the PDFs (the running header carries the audience). `render_markdown()` is
@@ -86,10 +87,12 @@ def intel(side):
 
 
 PACKET_NAME = "Print Packet - One Table.pdf"
+REF_PACKET_NAME = "Print Packet - One Table, Reference Forms.pdf"
 
 # (folder, file name, header, sources). A source is a markdown path, or
 # ("word", name) for a PDF from handouts/word/, or ("copy", path).
-# "packet" builds the Print Packet from the files above it, so it comes last.
+# "packet" builds the Print Packet from the files above it, so it comes last;
+# "packet:reference" builds the version with one copy of each player form.
 RELEASES = [
     (ASAP, "Player Rules Handbook.pdf", MATRIX, ["common/rules-handbook.md"]),
     (ASAP, "Player Forms and Templates.pdf", MATRIX, ["common/player-forms.md"]),
@@ -118,6 +121,7 @@ RELEASES = [
     (WC, "counters.pdf", None, [("copy", "handouts/whitecell/counters.pdf")]),
     (WC, "whitecell-clock.html", None, [("copy", "tools/whitecell-clock.html")]),
     (WC, PACKET_NAME, WC_ONLY, "packet"),
+    (WC, REF_PACKET_NAME, WC_ONLY, "packet:reference"),
 ]
 
 # What one table prints to run the game. (label, release file, section heading
@@ -147,6 +151,17 @@ PACKET = [
     ("Spare: REDFOR placement form", (WC, "White Cell Forms.pdf"), "4.1 REDFOR placement form", 1, "If the first fills up with crossings-out"),
     ("Spare: BLUEFOR placement form", (WC, "White Cell Forms.pdf"), "4.2 BLUEFOR placement form", 1, "If the first fills up with crossings-out"),
 ]
+
+
+PLAYER_FORMS = (ASAP, "Player Forms and Templates.pdf")
+
+
+def packet_items(variant="full"):
+    """PACKET as printed. "reference" keeps one copy of each player form per side and drops the spares."""
+    if variant == "full":
+        return PACKET
+    return [(label, f, h, 1, "Reference copy" if f == PLAYER_FORMS else note)
+            for label, f, h, _copies, note in PACKET if not label.startswith("Spare: ")]
 
 
 def word_name(md_path):
@@ -509,8 +524,8 @@ def write_pdf(pdfs_or_pages, name, dst):
 
 def build_one(browser, folder, name, header, sources, work):
     dst = os.path.join(FIN, folder, name)
-    if sources == "packet":
-        return build_packet(browser, header, dst, work)
+    if isinstance(sources, str) and sources.startswith("packet"):
+        return build_packet(browser, header, dst, work, sources.partition(":")[2] or "full")
     sources = expand(sources)
     if len(sources) == 1 and isinstance(sources[0], tuple) and sources[0][0] == "copy":
         shutil.copyfile(os.path.join(ROOT, sources[0][1]), dst)
@@ -562,11 +577,11 @@ def section_pages(pdf, heading):
     return list(range(starts[heading], later[0] if later else len(pages)))
 
 
-def packet_rows():
+def packet_rows(variant="full"):
     """[(label, file, pages per copy, copies, note)] with the page counts read from the built PDFs."""
     from pypdf import PdfReader
     rows = []
-    for label, (folder, fname), heading, copies, note in PACKET:
+    for label, (folder, fname), heading, copies, note in packet_items(variant):
         pdf = os.path.join(FIN, folder, fname)
         if not os.path.exists(pdf):
             sys.exit(f"missing {os.path.relpath(pdf, ROOT)}: build it before the print packet")
@@ -575,18 +590,29 @@ def packet_rows():
     return rows
 
 
-def packet_markdown(rows=None):
+def packet_markdown(rows=None, variant="full"):
     """The cover sheet, as markdown. Also used for the site page (rows=None reads the counts without page numbers)."""
+    ref = variant == "reference"
     lines = [
         "---",
-        'title: "Operation Zugzwang — Print Packet"',
-        'subtitle: "Everything one table prints to run the game · print one packet per table (4 tables)"',
+        'title: "Operation Zugzwang — Print Packet%s"' % (", Reference Forms" if ref else ""),
+        'subtitle: "%s · print one packet per table (4 tables)"' % (
+            "Everything one table prints, with one copy of each player form per side" if ref
+            else "Everything one table prints to run the game"),
         'short: "Print Packet"',
         "---",
         "",
         "**WHITE CELL ONLY.** This packet holds **both** sides' hidden counters and the white cell forms. "
         "Print it, split it into the stacks below, and keep it away from the players until each piece is handed out.",
         "",
+    ]
+    if ref:
+        lines += [
+            "This version holds **one copy of each player form and slip for each side**, as a reference, and no spares. "
+            f"Photocopy more from it as needed, or print `{PACKET_NAME}` for the full count.",
+            "",
+        ]
+    lines += [
         "## Contents (one table)",
         "",
         "| Printed | Item | Copies | Pages | Notes |",
@@ -594,7 +620,7 @@ def packet_markdown(rows=None):
     ]
     total = 0
     spares = False
-    for i, (label, _pdf, pages, copies, note) in enumerate(rows or [(r[0], None, [], r[3], r[4]) for r in PACKET]):
+    for i, (label, _pdf, pages, copies, note) in enumerate(rows or [(r[0], None, [], r[3], r[4]) for r in packet_items(variant)]):
         n = len(pages) * copies
         total += n
         if label.startswith("Spare: ") and not spares:
@@ -625,12 +651,12 @@ def packet_markdown(rows=None):
     return "\n".join(lines)
 
 
-def build_packet(browser, header, dst, work):
-    rows = packet_rows()
-    cover_md = os.path.join(work, "print-packet.md")
+def build_packet(browser, header, dst, work, variant="full"):
+    rows = packet_rows(variant)
+    cover_md = os.path.join(work, f"print-packet-{variant}.md")
     with open(cover_md, "w", encoding="utf-8") as f:
-        f.write(packet_markdown(rows))
-    cover = os.path.join(work, "packet-cover.pdf")
+        f.write(packet_markdown(rows, variant))
+    cover = os.path.join(work, f"packet-cover-{variant}.pdf")
     print_pdf(browser, page_html([cover_md], header, "Print Packet"), cover)
     items = [cover]
     for _label, pdf, pages, copies, _note in rows:
@@ -648,7 +674,7 @@ def main():
     work = tempfile.mkdtemp(prefix="zz-pdf-")
     if a.html_only:
         for folder, name, header, sources in picks:
-            if sources == "packet":
+            if isinstance(sources, str) and sources.startswith("packet"):
                 continue
             md = [s for s in expand(sources) if isinstance(s, str)]
             if md:
