@@ -78,9 +78,11 @@ $zz-soft: #f6f8fa;
   table.zz-form tbody tr:nth-child(2n) td:not(:first-child) { background: #fff; }
   table.zz-form td:empty { height: 2.25rem; }
   table.zz-log td:empty { height: 1.9rem; }
+  table.zz-track { table-layout: fixed; width: 100%; min-width: 36rem; }
+  table.zz-track col.zz-track-label { width: 27%; }
+  table.zz-track td, table.zz-track th { min-width: 0; }
   table.zz-track td { text-align: center; font-weight: 600; vertical-align: middle; height: 2.5rem; }
   table.zz-track td:first-child { text-align: left; background: var(--tint); }
-  table.zz-markers td { text-align: center; font-weight: 700; color: var(--accent); background: var(--tint) !important; border: 1px dashed $zz-muted; }
   table.zz-checkgrid td:nth-child(n+3), table.zz-checkgrid th:nth-child(n+3) { text-align: center; width: 3rem; }
   table.zz-checkgrid td:first-child { font-family: $mono-font-family; font-size: 0.75rem; color: $zz-muted; white-space: nowrap; }
 }

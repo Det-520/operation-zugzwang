@@ -33,8 +33,7 @@ Layout hooks in the markdown are HTML comments, so the files stay valid for
 markdownlint (no inline HTML):
 - `<!-- zz:NAME [NAME ...] -->` on the line before a table gives it those
   classes: `form` (labels left, room to write right; add `med` or `tall` for
-  bigger boxes), `log` (rows to fill in), `track` (the track board), `markers`
-  (cut-out track markers), `checkgrid` (a step-by-turn tick grid), `compact`
+  bigger boxes), `log` (rows to fill in), `track` (the track board), `checkgrid` (a step-by-turn tick grid), `compact`
   (a dense reference table).
 - `<!-- zz:begin cards -->` ... `<!-- zz:end -->` turns each `###` section in
   between into a cut-out card. `zz:begin slips` cuts the block into slips at
@@ -126,7 +125,7 @@ RELEASES = [
 # holds them all, in this order.
 PACKET = [
     ("White Cell Checklist", (WC, "White Cell Checklist.pdf"), None, 1, "Lead adjudicator. Tick it off through the afternoon."),
-    ("White Cell Forms", (WC, "White Cell Forms.pdf"), None, 1, "Score sheet, track board and markers, objective status card, both placement forms. Track board goes beside the map; the rest stays face down with the loggers."),
+    ("White Cell Forms", (WC, "White Cell Forms.pdf"), None, 1, "Score sheet, track board, objective status card, both placement forms. Track board goes beside the map; the rest stays face down with the loggers."),
     ("Starting conditions: reference and cue cards", (WEEK, "Starting Conditions.pdf"), None, 1, "Cut the cue cards apart and stand them face up beside the map."),
     ("Counters, both sides", (WC, "counters.pdf"), None, 1, "Print at 100% (not \"fit to page\"), in colour, on card stock if you can. Shows hidden assets: white cell only."),
     ("Map, letter tiles", (WEEK, "map-tiles.pdf"), None, 1, "Portrait, like the rest of the packet (the map is turned on the page). Trim and tape. For one large sheet, print map-full.pdf on a plotter instead."),
@@ -237,10 +236,13 @@ def _tint(rgb, k):
     return "#%02x%02x%02x" % tuple(round(255 + (c - 255) * k) for c in rgb)
 
 
+TRACK_COLS = 42  # divisible by every track's length (3, 6, 7), so each row fills the width evenly
+
+
 def track_colours(out):
     """Colour the track board's cells: deeper blue favours Omak, deeper red favours Cosmopolis.
     Opinion runs blue to red through white; Will is a red ramp, Stability a blue one;
-    Strait Traffic goes amber as it closes."""
+    Strait Traffic goes amber as it closes. Each row's values share the full width equally."""
     def cell(label, value):
         v = value.replace("−", "-").strip(" •")
         if "Opinion" in label and re.fullmatch(r"[+-]?\d", v):
@@ -259,19 +261,24 @@ def track_colours(out):
         if not tds:
             return m.group(0)
         label = re.sub(r"<[^>]+>", "", tds[0])
+        values = [t for t in tds[1:] if t.strip()]
+        span = TRACK_COLS // len(values)
         cells = ["<td>%s</td>" % tds[0]]
-        for t in tds[1:]:
+        for t in values:
             c = cell(label, re.sub(r"<[^>]+>", "", t))
+            style = ""
             if c:
                 rgb, k = c
-                fg = "#fff" if k > 0.55 else "#1f2328"
-                cells.append('<td style="background:%s;color:%s">%s</td>' % (_tint(rgb, k), fg, t))
-            else:
-                cells.append("<td>%s</td>" % t)
+                style = ' style="background:%s;color:%s"' % (_tint(rgb, k), "#fff" if k > 0.55 else "#1f2328")
+            cells.append('<td colspan="%d"%s>%s</td>' % (span, style, t))
         return "<tr>%s</tr>" % "".join(cells)
 
     def table(m):
-        return re.sub(r"<tr>.*?</tr>", row, m.group(0), flags=re.S)
+        t = re.sub(r"<tbody>.*?</tbody>", lambda b: re.sub(r"<tr>.*?</tr>", row, b.group(0), flags=re.S), m.group(0), flags=re.S)
+        heads = re.findall(r"<th>(.*?)</th>", t, re.S)
+        head = '<colgroup><col class="zz-track-label">%s</colgroup><thead><tr><th>%s</th><th colspan="%d">%s</th></tr></thead>' % (
+            "<col>" * TRACK_COLS, heads[0], TRACK_COLS, heads[1])
+        return re.sub(r"<thead>.*?</thead>", head, t, flags=re.S)
     return re.sub(r'<table class="[^"]*zz-track[^"]*">.*?</table>', table, out, flags=re.S)
 
 
@@ -393,12 +400,9 @@ table.zz-kv td:first-child { width: 28%; font-weight: 600; }
 
 /* the track board: cells big enough for a marker, coloured by track_colours() */
 table.zz-track { font-size: 11pt; table-layout: fixed; }
-table.zz-track td { height: 0.5in; box-sizing: border-box; text-align: center; vertical-align: middle; font-weight: 600; font-size: 10pt; padding: 2pt; }
-table.zz-track td:first-child, table.zz-track th:first-child { text-align: left; width: 27%; font-size: 9.5pt; }
-table.zz-track td:empty { border: 0; }
-table.zz-markers { width: auto; margin: 0.3em 0 1em; }
-table.zz-markers td { width: 0.95in; height: 0.62in; text-align: center; vertical-align: middle; font-weight: 700; font-size: 9pt;
-                      border: 1px dashed var(--muted); background: var(--tint) !important; color: var(--accent); }
+table.zz-track col.zz-track-label { width: 27%; }
+table.zz-track td { height: 0.75in; box-sizing: border-box; text-align: center; vertical-align: middle; font-weight: 600; font-size: 10pt; padding: 2pt; }
+table.zz-track td:first-child, table.zz-track th:first-child { text-align: left; font-size: 9.5pt; }
 table.zz-checkgrid { font-size: 8.5pt; }
 table.zz-checkgrid th:nth-child(n+3), table.zz-checkgrid td:nth-child(n+3) { text-align: center; width: 5.2%; padding: 3pt 2pt; }
 table.zz-checkgrid td { height: 0.27in; vertical-align: middle; }
@@ -605,7 +609,7 @@ def packet_markdown(rows=None):
         "## Printing",
         "",
         "- Print **single-sided at 100% scale** (\"actual size\", not \"fit to page\"). Every page keeps its content inside a 0.75 in margin.",
-        "- **Colour** for the game pieces: the counters, map tiles, cue cards, track board, and track markers use colour for sides. "
+        "- **Colour** for the game pieces: the counters, map tiles, cue cards, and track board use colour for sides. "
         "Everything else (the forms, worksheets, and slips) is black and white, so print it in greyscale to save ink.",
         "- **Card stock** for the counters and cue cards, if you have it.",
         "- Cut the counters along the grey lines, and the cue cards and request slips along the dashed lines.",
@@ -614,7 +618,7 @@ def packet_markdown(rows=None):
         "",
         "- [ ] The lead adjudicator's laptop with the timer and dice program (`whitecell-clock.html`), shown where both teams can see it",
         "- [ ] An envelope for the hidden counters",
-        "- [ ] Coins or tokens for the four track markers, if you don't cut out the printed ones",
+        "- [ ] Coins or small objects for the four track markers",
         "- [ ] Pens for each team and each logger",
         "",
     ]

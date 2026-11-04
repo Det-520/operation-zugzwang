@@ -38,7 +38,7 @@ Fill this in after Turn 7 (Handbook §8). Score each objective **A** (Achieved),
 
 ## 2. Track board
 
-This sheet sits beside the map where both teams can see it. Put a marker on each track's current value. The tracks start at **Open**, **−1**, **3**, and **4**; Strait Traffic moves to **Restricted** at the kickoff inject.
+This sheet sits beside the map where both teams can see it. Put a marker (a coin or any small object) on each track's current value. The tracks start at **Open**, **−1**, **3**, and **4**; Strait Traffic moves to **Restricted** at the kickoff inject.
 
 <!-- zz:track -->
 
@@ -67,14 +67,6 @@ Deeper **blue** favours Omak (BLUEFOR), deeper **red** favours Cosmopolis (REDFO
 | --- | --- | --- | --- |
 | | | ☐ 2 ☐ 3 | ☐ ☐ ☐ |
 | | | ☐ 2 ☐ 3 | ☐ ☐ ☐ |
-
-Track markers (cut out, or use coins):
-
-<!-- zz:markers -->
-
-| | | | |
-| --- | --- | --- | --- |
-| STRAIT | OPINION | WILL | STABILITY |
 
 <!-- pagebreak -->
 
