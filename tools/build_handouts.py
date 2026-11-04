@@ -382,7 +382,7 @@ h2.zz-masthead { font-size: 10pt; letter-spacing: 0.06em; color: var(--muted); b
           color: transparent; overflow: hidden; line-height: 0.8em; vertical-align: -0.08em; margin: 0 0.3em 0 0.35em; }
 .zz-box:first-child { margin-left: 0; }
 ul.contains-task-list { list-style: none; padding-left: 1.4em; }
-.task-list-item-checkbox { appearance: none; -webkit-appearance: none; width: 0.85em; height: 0.85em; border: 1.1pt solid var(--accent);
+.task-list-item-checkbox { appearance: none; -webkit-appearance: none; width: 0.85em; height: 0.85em; border: 1.1pt solid var(--fg);
           border-radius: 2px; margin: 0 0.55em 0 -1.4em; vertical-align: -0.1em; }
 
 /* forms: label column on the left, room to write on the right */
