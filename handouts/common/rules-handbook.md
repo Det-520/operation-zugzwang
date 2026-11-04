@@ -4,7 +4,7 @@ subtitle: "AFROTC LLAB 12 · October 2026"
 short: "Player Rules Handbook"
 ---
 
-**Audience:** every player, REDFOR and BLUEFOR. Nothing in this handbook is secret. Released ASAP, before the scenario; scenario details in the examples are redacted.
+**Audience:** every player, REDFOR and BLUEFOR. Nothing in this handbook is secret. Released ASAP, before the scenario; scenario details in the examples are replaced with bracketed placeholders.
 
 **You are expected to arrive at the LLAB having read, and knowing, everything in your read-ahead:** this handbook, the Scenario Brief, the Scenario Schedule, the Player Forms, and your team's documents. Your team's documents are secret, so don't show them to the other team.
 
@@ -74,7 +74,7 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 
 **White cell resolution (2:00):**
 
-- **BLUEFOR exclusion zone.** Pros 1 and 2 are strong (+2). Pro 3 is about the *effect*, not about success, so it counts 0 here. REDFOR Con 1 is strong (−1), because the maritime ISR presence is an established fact. REDFOR Con 2 is about *consequences*, so it doesn't change the odds but will shape the outcome. Closing [CHOKEPOINT] with patrol boats and coastal missiles was a planned COA in BLUEFOR's Phase I brief and is still valid (+1). The COA needs NDF and [MILITIA GROUP] forces to work together, so starting condition [DISUNITY CONDITION] applies (−1). **Net +1.** The program rolls 6, and 6 + 1 = **7, a Partial success.** The exclusion zone is declared and shipping halts, moving [SHIPPING TRACK] to **Closed**, but REDFOR [MARITIME PATROL AIRCRAFT]s and SIGINT tracked the patrol boats' patrol sectors and radar handoffs (now an established fact). [OPINION TRACK] moves 1 toward [REDFOR NATION].
+- **BLUEFOR exclusion zone.** Pros 1 and 2 are strong (+2). Pro 3 is about the *effect*, not about success, so it counts 0 here. REDFOR Con 1 is strong (−1), because the maritime ISR presence is an established fact. REDFOR Con 2 is about *consequences*, so it doesn't change the odds but will shape the outcome. Closing [CHOKEPOINT] with patrol boats and coastal missiles was a planned COA in BLUEFOR's Phase I brief and is still valid (+1). The COA needs [NAVY] and [MILITIA GROUP] forces to work together, so starting condition [DISUNITY CONDITION] applies (−1). **Net +1.** The program rolls 6, and 6 + 1 = **7, a Partial success.** The exclusion zone is declared and shipping halts, moving [SHIPPING TRACK] to **Closed**, but REDFOR [MARITIME PATROL AIRCRAFT]s and SIGINT tracked the patrol boats' patrol sectors and radar handoffs (now an established fact). [OPINION TRACK] moves 1 toward [REDFOR NATION].
 - **REDFOR strike.** Pros 1 and 2 are strong (+2). BLUEFOR Con 1 is strong (−1), because the relocation was briefed before the war, and it cancels REDFOR Pro 3 (surprise counts 0). BLUEFOR Con 2 is true, but the [TANKER]s are part of the package, so it counts 0. **Net +1.** The program rolls 9, and 9 + 1 = **10, a Success.** [AIR DEFENSE UNIT] is caught relocating and is **Destroyed**.
 - **Ongoing effect** announced: "Exclusion zone in [CHOKEPOINT]": −1 to any COA moving shipping through [STRAIT AREA] until the coastal threat and patrol boats are suppressed.
 
@@ -95,9 +95,9 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 **A COA has two parts.**
 
 1. **Action:** who does what, where, and with which assets.
-2. **Measurable effect:** what will be true on the map or tracks if it succeeds. Examples: "[AIR DEFENSE UNIT] destroyed," "[SHIPPING TRACK] moves to Open," "[REGIONAL ALLY] grants combat basing," "[BLUEFOR NATION] Regime Stability −1."
+2. **Measurable effect:** what will be true on the map or tracks if it succeeds. Examples: "[AIR DEFENSE UNIT] destroyed," "[SHIPPING TRACK] moves to Open," "[REGIONAL ALLY] grants combat basing," "[BLUEFOR NATION] [STABILITY TRACK] −1."
 
-**One action per turn.** The action can be big ("mobilize the militia brigades") or a multi-asset package ("[FIGHTER JET] + [TANKER] + [EW AIRCRAFT] strike package"), but it must serve **one** effect. Two unrelated things are two COAs. Pick one. Choosing priorities is the point.
+**One action per turn.** The action can be big ("mobilize the [RESERVE FORCES]") or a multi-asset package ("[FIGHTER JET] + [TANKER] + [EW AIRCRAFT] strike package"), but it must serve **one** effect. Two unrelated things are two COAs. Pick one. Choosing priorities is the point.
 
 **Think beyond kinetic.** Diplomatic, information, cyber, space, economic, logistics, and deception COAs are all valid and are often stronger. Use **DIME** (Diplomatic, Informational, Military, Economic) and **PMESII** (Political, Military, Economic, Social, Information, Infrastructure) as checklists.
 
@@ -108,7 +108,7 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 | **Big projects** | Take **at most 3 successful COAs**, e.g. building a coalition or standing up a dispersed ACE network. The white cell states the number up front. |
 | **Protected and hidden things** | Need successful COAs to find or get through them, **no more than 3 layers**. Example: a hidden mobile SAM must first be **found** (ISR COA), then **struck**. |
 | **Long-term COAs** | If the effect can't finish within one turn's 3 days, success means it **has started and continues** until someone stops it. |
-| **Announcements** | Press statements and declarations are free. Your briefer can add a one-sentence public statement in the COA slot. A statement with a measurable effect ("…in order to raise International Opinion by 1") *is* a COA. |
+| **Announcements** | Press statements and declarations are free. Your briefer can add a one-sentence public statement in the COA slot. A statement with a measurable effect ("…in order to raise [OPINION TRACK] by 1") *is* a COA. |
 
 ### 2.3 Pros and Cons
 
@@ -118,7 +118,7 @@ Strong reasons are **specific**, **relevant**, and **grounded**. They draw on:
 
 - **Established facts:** anything in the briefings, or anything created by an earlier successful COA. These are the strongest reasons. Building on the story is rewarded.
 - **Asset capabilities and limitations** listed in the order of battle. Every asset has a stated limitation. Those are your Cons.
-- **Reasonable assumptions**, e.g. "trained aircrews outperform untrained militia." Unreasonable assumptions ("the militia shoots down the stealth bomber with rifles") count for nothing.
+- **Reasonable assumptions**, e.g. "trained aircrews outperform untrained militia." Unreasonable assumptions ("the militia shoots down a high-flying [AIRCRAFT] with rifles") count for nothing.
 - **Doctrine**, e.g. "This applies *mass* and *surprise* (principles of joint operations) and *concentration* (tenet of airpower)." Citing doctrine correctly and specifically counts. Name-dropping it doesn't.
 
 Weak, vague, or duplicate reasons are worth 0. Three weak reasons are worse than one strong one, because you used up the time.
@@ -217,7 +217,7 @@ The white cell makes the final decision. It works through each COA like this:
 | Answer | A short written answer at the start of the next Prepare | Approved, partly approved, or denied, with the **arrival turn** |
 
 - Forces that arrive by RFF **do nothing on the turn they arrive** unless the timing table says otherwise.
-- A big RFF (a carrier strike group, a ground brigade, permission to strike [ENEMY CAPITAL]) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
+- A big RFF (a [MAJOR FORMATION], or new authorities like permission to strike [ENEMY CAPITAL]) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ### 2.10 Roles
 
