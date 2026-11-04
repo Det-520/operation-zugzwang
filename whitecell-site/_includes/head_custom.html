@@ -1,4 +1,4 @@
-{%- comment -%} No favicon: an empty icon stops browsers asking for /favicon.ico. {%- endcomment -%}
-<link rel="icon" href="data:,">
+{%- comment -%} Favicon: a pixel-art king. The clock (tools/whitecell-clock.html) carries the same SVG inline. {%- endcomment -%}
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
 {%- comment -%} Keep search engines out: the site is public but shows both sides' secrets. {%- endcomment -%}
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
