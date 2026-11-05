@@ -49,23 +49,3 @@ Each turn is about 3 days, so 7 turns cover about 3 weeks of conflict. The white
 ### 1.4 Phase III – Planning and FRAGO
 
 - **Command handover and FRAGO.** After Debrief 1, the **Phase III–IV flight commander** takes command. The new flight commander gives a **1-minute oral Fragmentary Order (FRAGO)** to the team's logger: a brief situation update, updated Commander's Intent, and **up to 2 new planned COAs for Phase IV (Turns 5–7)**, which earn the same **+1 (Planned)** bonus when executed as briefed.
-
-### 1.5 Example turn (unredacted)
-
-*This is the unredacted version of the example in Player Rules Handbook §1.3. It uses Turn 1 of Operation Zugzwang to show how a turn plays. It is an illustration, not a prediction, and it isn't intelligence about either side.*
-
-**BLUEFOR COA (2:00):** "NDF patrol boats and the PFA maritime militia, covered by our Harpoon coastal-defense battery, establish an armed maritime exclusion and inspection zone across the Narrows, **in order to** move Strait Traffic from Restricted to **Closed**. It works because: (1) the Narrows are only ~25 miles wide and sit inside our ~75-mile Harpoon anti-ship missile umbrella, so REDFOR surface ships can't escort freighters through safely; (2) the militia's 40 armed boats blend in with coastal traffic and swarm any ship that tries to run the Narrows, which gives us *surprise* and *mass*; (3) closing the Strait pressures Cosmopolis's economy and its Domestic Will without us firing first on Cosmopolis warships."
-
-**REDFOR COA (2:00):** "A strike package of F-35As and an EC-37B Compass Call, refueled by KC-46s, strikes Patriot battalion PAT-1 covering the Narrows, **in order to** destroy PAT-1 and open the air over the Strait for our ISR. It works because: (1) the F-35A is a stealth aircraft built to penetrate integrated air defenses; (2) Compass Call jamming cuts PAT-1 off from its early-warning radar network, which is *synergistic effects*; (3) the war just started, which gives us *surprise*, because PAT-1 hasn't had time to relocate."
-
-**REDFOR Cons on BLUEFOR (1:00):** "(1) Our RC-135, P-8A, and MQ-9s have been watching the Narrows since Phase I and will track patrol boat formations and holds. (2) Shutting down an international strait by threatening merchant shipping will turn International Opinion against Omak."
-
-**BLUEFOR Cons on REDFOR (1:00):** "(1) Patriot is a mobile system, and our Phase I brief said we'd relocate PAT-1 at the outbreak of war. (2) Camas-based fighters have to fly ~620 miles each way, so they depend on tankers."
-
-**White cell resolution (2:00):**
-
-- **BLUEFOR maritime exclusion zone.** Pros 1 and 2 are strong (+2). Pro 3 is about the *effect*, not about success, so it counts 0 here. REDFOR Con 1 is strong (−1), because the maritime ISR presence is an established fact. REDFOR Con 2 is about *consequences*, so it doesn't change the odds but will shape the outcome. Closing the Narrows with patrol boats and coastal missiles was a planned COA in BLUEFOR's Phase I brief and is still valid (+1). The COA needs NDF and PFA forces to work together, so *A House Divided* applies (−1). **Net +1.** The program rolls 6, and 6 + 1 = **7, a Partial success.** The exclusion zone is declared and shipping halts, moving Strait Traffic to **Closed**, but REDFOR P-8s and SIGINT tracked the patrol boats' patrol sectors and radar handoffs (now an established fact). International Opinion moves 1 toward Cosmopolis.
-- **REDFOR strike.** Pros 1 and 2 are strong (+2). BLUEFOR Con 1 is strong (−1), because the relocation was briefed before the war, and it cancels REDFOR Pro 3 (surprise counts 0). BLUEFOR Con 2 is true, but the KC-46s are part of the package, so it counts 0. **Net +1.** The program rolls 9, and 9 + 1 = **10, a Success.** PAT-1 is caught relocating and is **Destroyed**.
-- **Ongoing effect** announced: "Exclusion zone in the Narrows": −1 to any COA moving shipping through the Strait until the coastal threat and patrol boats are suppressed.
-
-**What to take from it:** specific Pros win, the best Cons attack the reasons rather than the goal, a good Phase I plan pays off, and Cons about *consequences* still matter even when they don't change the roll.

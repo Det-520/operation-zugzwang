@@ -62,7 +62,7 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 
 ### 1.3 Example turn
 
-*Scenario details are replaced with bracketed placeholders such as [FIGHTER JET]. The full version will be given with scenario information at a later time.*
+*Scenario details are replaced with bracketed placeholders such as [FIGHTER JET].*
 
 **BLUEFOR COA (2:00):** "[NAVY] [PATROL BOAT]s and the [MILITIA GROUP] maritime militia, covered by our [COASTAL MISSILE BATTERY], establish an armed maritime exclusion and inspection zone across [CHOKEPOINT], **in order to** move [SHIPPING TRACK] from Restricted to **Closed**. It works because: (1) [CHOKEPOINT] is only ~[XX] miles wide and sits inside our ~[XX]-mile [ANTI-SHIP MISSILE] umbrella, so REDFOR surface ships can't escort freighters through safely; (2) the militia's [NUMBER] armed boats blend in with coastal traffic and swarm any ship that tries to run [CHOKEPOINT], which gives us *surprise* and *mass*; (3) closing [CHOKEPOINT] pressures [REDFOR NATION]'s economy and its [MORALE TRACK] without us firing first on [REDFOR NATION] warships."
 
