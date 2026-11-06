@@ -131,7 +131,7 @@ Nothing is handed over on paper (Rules §2.5). Slack is the **record**: teams st
 | COA and Pros | Group channel | By the end of its COA slot | Read the asset IDs while adjudicating. **Only what was said aloud counts.** |
 | Cons | Group channel | By the end of its Cons slot | Same |
 | Each RFI or RFF, one per message | Team channel | During Prepare (Phase I: by minute 12) | Logger counts the first 3 (Phase I: 4) and posts the lead adjudicator's answer in a **thread** under each, by the start of the next Prepare |
-| Secret COA | Team channel | In its COA slot, announced aloud | Logger pins it and checks its trigger every resolve step |
+| Secret COA | Team channel | In its COA slot, announced aloud; or during Phase I or III, unannounced and not using a turn's COA | Logger pins it and checks its trigger every resolve step |
 
 - Post nothing in a team channel except answers and procedure ("Requests closed"). Never put anything from a team channel into the group channel or the other team's channel.
 - **Slack down?** Hand out the backup paper slips from the Print Packet and carry on.
@@ -232,7 +232,7 @@ Read these aloud, word for word or close to it.
 | Weak, vague, or duplicate reason | 0 |
 | **Planned** COA, executed as briefed in Phase I or Phase III FRAGO and still valid (check the placement form) | +1 |
 | Each starting condition or ongoing effect that applies (§6) | ±1 |
-| An asset in the COA is **Degraded** | −1 |
+| Each asset in the COA that is **Degraded** (each counter in a package counts) | −1 each |
 
 #### Outcome Reference
 
@@ -290,7 +290,7 @@ Both COAs happen simultaneously across the 3-day turn window. Because REDFOR bri
 | **Protected or hidden target** | At most 3 layers, e.g. *find* (ISR COA), then *strike*. A strike on a hidden counter nobody has found is impossible, or becomes an ISR COA. An intel product that points at a hidden asset is a good Pro for the *find* COA, not a substitute for it. |
 | **Long-term COA** | Success means the effect **has started and continues** until someone stops it. Record it as an ongoing effect. |
 | **Announcement** | Free, unless it claims a measurable effect. Then it is the team's COA. |
-| **Secret COA** | One per team per phase. The logger pins the Slack post (or keeps the backup slip). Resolve when the trigger occurs, using your own judgment in place of Cons. **A loose trigger doesn't fire.** |
+| **Secret COA** | One per team per phase (II and IV). It may be posted in the planning phase before (I or III); then it costs no turn's COA. The logger pins the Slack post (or keeps the backup slip). Resolve when the trigger occurs, using your own judgment in place of Cons. **A loose trigger doesn't fire.** |
 | **Arguing a player-controlled actor agrees** | Not allowed. Tell the team to ask in person (a parley). |
 | **Persuading a white-cell actor** (Latah, Tekoa, Asotin, the press) | A normal COA. Use the ground truth (Intelligence and Injects §1) for how those actors really feel. |
 
@@ -317,9 +317,9 @@ If both teams keep arguing, or the call is too close to count in time, don't deb
 | S-R2 | Single Hub | A BLUEFOR strike on Camas succeeds | Affects **every** counter on Camas (can Degrade several) | ACE dispersal: 2 successful COAs |
 | S-R3 | Latah Hesitates | REDFOR tries combat sorties from Latah | Not allowed | A diplomatic COA, or Opinion +3 |
 | S-R4 | Legitimacy Deficit | A REDFOR COA relies on third-party cooperation while Opinion ≤ −1 | −1 | Opinion ≥ 0 |
-| S-B1 | A House Divided | A BLUEFOR COA needs NDF **and** PFA forces together (check the owner column in the Master Asset List) | −1 | A "unified command" COA, or Stability 5 |
+| S-B1 | A House Divided | A BLUEFOR COA needs NDF **and** PFA forces together (check the owner column in the Master Asset List) | −1 | A "unified command" COA (takes the −1 itself; removal starts next turn), or Stability 5 |
 | S-B2 | Sapphire Loyalists | REDFOR argues defections or sabotage | Allowed, at −1 (S-B5) | A BLUEFOR counterintelligence COA removes the option |
-| S-B3 | Home Ground | A BLUEFOR **defensive** COA in Z10–Z12 (defend, disperse, hide, repair, ambush) | +1 | Permanent |
+| S-B3 | Home Ground | A BLUEFOR **defensive** COA in Z10–Z12 (defend, disperse, hide, repair, ambush, counterintelligence) | +1 | Permanent |
 | S-B4 | Asotin's Backing | BLUEFOR requests B-40 or B-41 | Routinely approved | Permanent |
 | S-B5 | Supportive Population | A REDFOR COA relies on Omak civilians (SOF in Omak, loyalist uprisings, info ops aimed at Omak's public) | −1. Also: BLUEFOR RFIs about REDFOR activity inside Omak get full answers. | Stability ≤ 2 |
 
@@ -353,7 +353,7 @@ At the end of each resolve step, state any **ongoing effects** in one line ("ref
 
 ## 7. Ruling on RFFs
 
-Rule on RFFs during step 8 and tell the team the **arrival turn**. "N" is the turn of approval. Phase I RFFs count from Turn 1. Arriving forces **act the turn after** they arrive. Forces arrive on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination; rule on whether that destination is realistic.
+Rule on RFFs during step 8 and tell the team the **arrival turn**. **Approvals stand** (Rules §5): once approved, a force arrives and a grant stays even if the track that allowed it moves later. "N" is the turn of approval. Phase I RFFs count from Turn 1. Arriving forces **act the turn after** they arrive. Forces arrive on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination; rule on whether that destination is realistic.
 
 ### REDFOR
 
@@ -386,7 +386,7 @@ Rule on RFFs during step 8 and tell the team the **arrival turn**. "N" is the tu
 
 **Free-text RFFs** (not in a pool): judge them by realism, the timing table, and politics. A big request may need a successful COA first to build the case. **All assets must be U.S. systems.**
 
-**Watch R3.** Opinion starts at −1, so B-42's condition is met from the start. If B-42 or B-43 arrives, REDFOR's objective R3 fails. That is a legitimate outcome, but make sure the conditions are really met when you approve.
+**Watch R3.** Opinion starts at −1, so B-42's condition is met from the start. If B-42 or B-43 arrives, REDFOR's objective R3 fails. That is a legitimate outcome, but make sure the conditions are really met when you approve. Once approved, B-42 arrives even if Opinion later rises above −1.
 
 ## 8. End of game and scoring
 

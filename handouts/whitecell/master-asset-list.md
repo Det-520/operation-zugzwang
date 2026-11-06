@@ -78,7 +78,7 @@ Arriving forces go on **Z6 Camas** unless the RFF names another destination.
 | B-07 | AN/FPS-117 early-warning radar network · NDF · a Z10, b Z11, c Z12 | Detection and cueing for Patriot and fighters | Fixed. Jammable. Strikable. |
 | B-08 | Harpoon CB-1 (~75 mi) · NDF · Z10 west Narrows | Holds shipping and warships at risk | Needs targeting data |
 | **B-09** | **Harpoon CB-2 · NDF · Z10 east Narrows** | **Same as B-08** | **Needs targeting data** |
-| **B-10** | **HIMARS + PrSM (~500 km), Asotin-supplied (Army) · NDF · Z12** | **Can reach Camas. Strikes bases, ports, ships at anchor. Shoot-and-scoot.** | **2–3 salvos per game. SBIRS sees launches. Camas Patriot can intercept.** |
+| **B-10** | **HIMARS + PrSM (~500 km), Asotin-supplied (Army) · NDF · Z12** | **Can reach Camas. Strikes bases, ports, ships at anchor. Shoot-and-scoot.** | **SBIRS sees launches. Camas Patriot can intercept.** |
 | **B-11** | **Quickstrike mine stockpile · NDF · Z10** | **Mines the Narrows, by F-16 or by boat** | **Clearable, given time. Mining costs Opinion.** |
 | B-12 | Mark VI patrol boats (~8) · NDF · a Z8, b Z10 | Patrol, escort, interception, minelaying | Very vulnerable to A-10, P-8, helicopters once found |
 | B-13 | 1st Armored Bde (M1A1, M2) · NDF · Z11 | Defends Omak City (the capital) | Vulnerable to air attack in the open |

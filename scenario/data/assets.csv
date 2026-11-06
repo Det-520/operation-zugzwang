@@ -40,7 +40,7 @@ B-06,BLUEFOR,NDF,NASAMS batteries (x3) + Stinger teams,Army-type,start,Z10-Z12,3
 B-07,BLUEFOR,NDF,AN/FPS-117 early-warning radar network,USAF-type,start,Z10;Z11;Z12,3,AN/FPS-117 early-warning radar site,visible,,,,"Detection and cueing","Fixed; jammable; strikeable"
 B-08,BLUEFOR,NDF,Harpoon Coastal Defense battery CB-1,Navy-type,start,Z10,,,visible,,,,"Anti-ship coverage of Strait","Needs targeting data"
 B-09,BLUEFOR,NDF,Harpoon Coastal Defense battery CB-2,Navy-type,start,Z10,,,hidden,,,,"Anti-ship coverage of Strait","Needs targeting data"
-B-10,BLUEFOR,NDF,HIMARS battalion with PrSM (~500 km),Army-type,start,Z12,,,hidden,,,,"Long-range strike; reaches Camas","2-3 salvos; launches detected; interceptable"
+B-10,BLUEFOR,NDF,HIMARS battalion with PrSM (~500 km),Army-type,start,Z12,,,hidden,,,,"Long-range strike; reaches Camas","Launches detected; interceptable"
 B-11,BLUEFOR,NDF,Quickstrike naval mine stockpile,Navy-type,start,Z10,,,hidden,,,,"Mining the Narrows","Clearable; costs International Opinion"
 B-12,BLUEFOR,NDF,Mark VI patrol boat flotilla (~8),Navy-type,start,Z8;Z10,2,,visible,,,,"Patrol, interception, minelaying","Vulnerable to A-10/P-8/helicopters"
 B-13,BLUEFOR,NDF,1st Armored Brigade (M1A1/M2),Army-type,start,Z11,,,visible,,,,"Defends Omak City (capital)","Vulnerable to air attack in open"

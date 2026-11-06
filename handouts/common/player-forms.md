@@ -112,7 +112,7 @@ short: "Player Forms"
 
 | SECRET COA SLIP | |
 | --- | --- |
-| **Turn / Team / Phase** | Turn ___ / ☐ REDFOR ☐ BLUEFOR / ☐ II ☐ IV |
+| **Turn / Team / Phase** | Turn ___ (or ☐ posted in planning) / ☐ REDFOR ☐ BLUEFOR / ☐ II ☐ IV |
 
 <!-- zz:form tall -->
 
@@ -162,7 +162,7 @@ RFF: Asset (pool ID or free text) | Destination | Purpose
 ### 6.4 Secret COA (team channel, once per phase)
 
 ```text
-SECRET COA | Turn __ | REDFOR/BLUEFOR | Phase II/IV
+SECRET COA | Turn __ (or Planning) | REDFOR/BLUEFOR | Phase II/IV
 The trap or deception (what, where, which assets):
 Precise trigger (If ... then ...):
 Intended effect:

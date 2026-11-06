@@ -141,7 +141,9 @@ Four yeses make a strong reason (±1). One that is decisive on its own can be ±
 
 - Use these for **misdirection or conditional traps** only, e.g. decoy SAM sites, a honeypot network, booby-trapped port facilities. Don't use them for ordinary actions you'd simply rather hide.
 - Each team may make **one secret COA per phase**.
-- Post it in your team channel with a **precise trigger** (template in the Player Forms), and announce aloud "We are making a secret COA." That is your COA for the turn. The other team can't give Cons against something it can't see.
+- Post it in your team channel with a **precise trigger** (template in the Player Forms). The other team can't give Cons against something it can't see.
+- **During a turn**, announce aloud "We are making a secret COA." That is your COA for the turn.
+- **During a planning phase** (Phase I or III), post it before the phase ends and tell your logger in your brief. It then counts as that coming phase's secret COA, it doesn't use up a turn's COA, and no announcement is made.
 - The white cell resolves it **when the trigger occurs**. A trigger written too loosely doesn't fire. Precision is your job.
 
 ### 2.5 Arguing about other actors
@@ -174,7 +176,7 @@ The white cell makes the final decision. It works through each COA like this:
    | Weak, vague, or duplicate reason | 0 |
    | **Planned** COA executed as briefed and still valid | +1 |
    | Starting conditions or ongoing effects that apply (Scenario Brief §6) | ±1 each |
-   | An asset used in the COA is **Degraded** | −1 |
+   | Each asset used in the COA that is **Degraded** (each counter in a package counts) | −1 each |
 
 4. **Roll 2d6** in the dice program, add the modifiers, and read the result:
 

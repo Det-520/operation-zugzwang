@@ -104,11 +104,11 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 - **[CANON] Phase I request limit:** up to **4 requests in total** (RFIs and RFFs combined), **posted in the team channel by minute 12** (6 minutes before Phase I ends) so the white cell can adjudicate them while loggers hear the OPORD briefs. The white cell posts answers and rulings in each team's channel after the kickoff inject, before Turn 1 begins. Phase I RFFs follow normal arrival timing (`scenario/00-overview.md` §6), counted from Turn 1.
 - In the last 3 minutes (minutes 15–18) each team gives an **oral brief** of its plan to its own logger, **organized like a five-paragraph OPORD**: Situation, Mission, Execution, Sustainment, Command & Signal (AFDP 5-0 App. E; see App. A). No written OPORD is expected.
 - **Planned COAs.** The brief may name **up to 3 planned COAs** in intended sequence for Phase II, e.g. "Turn 1: X; Turn 2: Y; Turn 3: Z". The logger writes them down. When a team later executes a planned COA *substantially as briefed, and the situation still supports it*, the white cell adds **+1 (Planned)**. If events make a planned COA invalid (the target is gone, the resources were lost, or the enemy forced a reaction), the bonus is lost. Recognizing that and adapting is the point.
-- Phase I has **no COAs**. The first COAs come in Turn 1, after the kickoff inject.
+- Phase I has **no COAs**. The first COAs come in Turn 1, after the kickoff inject. A team may post its Phase II secret COA during Phase I (§3.4).
 
 ### 2.4 Phase III – Planning and FRAGO [CANON]
 
-- **Command handover and FRAGO.** After Turn 4 and Debrief 1, the **Phase III–IV flight commander** takes command for the 8 minutes of Phase III (`LLAB-SETUP.md` §3). In the last minute of Phase III, the new flight commander gives a **1-minute oral Fragmentary Order (FRAGO)** to the team's logger: updated Commander's Intent and **up to 2 new planned COAs for Phase IV (Turns 5–7)**, which earn the same **+1 (Planned)** bonus when executed as briefed.
+- **Command handover and FRAGO.** After Turn 4 and Debrief 1, the **Phase III–IV flight commander** takes command for the 8 minutes of Phase III (`LLAB-SETUP.md` §3). In the last minute of Phase III, the new flight commander gives a **1-minute oral Fragmentary Order (FRAGO)** to the team's logger: updated Commander's Intent and **up to 2 new planned COAs for Phase IV (Turns 5–7)**, which earn the same **+1 (Planned)** bonus when executed as briefed. A team may also post its Phase IV secret COA during Phase III (§3.4).
 
 ### 2.5 Slack channels [CANON unless tagged]
 
@@ -167,7 +167,9 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 
 - Use these for **misdirection or conditional traps** only, e.g. decoy SAM sites, a honeypot network, booby-trapped port facilities. Do not use them for ordinary actions you'd simply rather hide.
 - Each team may make **one secret COA per phase** (Phase II and Phase IV).
-- To make one, post it in your team channel (§2.5) with a **precise trigger**, and announce aloud "We are making a secret COA." That is your COA for the turn. The other team can't give Cons against something it can't see.
+- To make one, post it in your team channel (§2.5) with a **precise trigger**. The other team can't give Cons against something it can't see.
+- **During a turn**, announce aloud "We are making a secret COA." That is your COA for the turn.
+- **During a planning phase**, post it before the phase ends: Phase I for Phase II's secret COA, Phase III for Phase IV's. Tell your logger in the brief or FRAGO. It doesn't use up a turn's COA, and no announcement is made. Time cost: none.
 - The white cell resolves it **when the trigger occurs** and applies its own judgment in place of Cons. A trigger written too loosely doesn't fire. Precision is the player's job.
 
 ### 3.5 Arguing about actors [PROPOSED]
@@ -198,7 +200,7 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
    | Weak, vague, or duplicate reason | 0 |
    | **Planned** COA executed as briefed in Phase I (or Phase III FRAGO) and still valid | +1 |
    | **Starting conditions or ongoing effects** that apply (`scenario/00-overview.md` §5) | ±1 each, as listed |
-   | Asset used in the COA is **Degraded** | −1 |
+   | Each asset used in the COA that is **Degraded** (a package's counters count separately) | −1 each |
 
 4. **Roll 2d6 in the dice program**, add the modifiers, and read the band:
 
@@ -273,6 +275,7 @@ An asset spread over several zones is printed as **one counter per part**, lette
 - **[PROPOSED]** A force that arrives by RFF, or that an inject creates, and has no printed counter goes on a **blank counter** (R-, B-, or grey X- for third parties) from the white cell counter sheet. The white cell writes a new ID on it (free-text RFFs from R-50 and B-50, inject forces from X-01) and the zone.
 - **[PROPOSED]** Forces that arrive by RFF **do nothing on the turn they arrive** unless the scenario timing table says otherwise. Their arrival is announced and their counters placed during white cell resolution.
 - **[CANON]** Forces that arrive by RFF are placed in their side's main base zone unless the RFF names another destination: **Z6 Camas** for REDFOR and **Z11 Omak City** for BLUEFOR, Asotin support included. Authorities and intelligence sharing (R-39, B-41) get no counter on the map.
+- **[CANON] Approvals stand.** Once the white cell approves an RFF or grants something through a COA (basing, recognition, authorities), it is not rescinded when the track or condition that allowed it later changes. Approved forces still arrive, and grants stay. Only the other side can undo them, with a successful COA (a strike, or interdiction in transit). Time cost: none.
 - **[PROPOSED]** A big RFF (a carrier strike group, a ground brigade, new authorities like permission to strike Omak City, the enemy capital) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ---
