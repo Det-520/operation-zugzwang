@@ -50,7 +50,7 @@ All on **Camas (Z6)** unless noted. All **visible**.
 
 ## 3. RFF pool
 
-Request these with an RFF slip. Arrival is counted from the turn the request is approved (Scenario Brief §7). Arriving forces go on **Z6 Camas** unless your RFF names another destination, and they do nothing on the turn they arrive.
+Request these with an RFF posted in your team's secret Slack channel. Arrival is counted from the turn the request is approved (Scenario Brief §7). Arriving forces go on **Z6 Camas** unless your RFF names another destination, and they do nothing on the turn they arrive.
 
 | ID | Asset | Arrives | Approval |
 | --- | --- | --- | --- |

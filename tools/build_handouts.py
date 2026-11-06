@@ -115,6 +115,7 @@ RELEASES = [
     (BLUE, "counters.pdf", None, [("copy", "handouts/bluefor/counters.pdf")]),
     (WC, "White Cell Handbook.pdf", WC_ONLY, ["whitecell/handbook.md"]),
     (WC, "White Cell Checklist.pdf", WC_ONLY, ["whitecell/checklist.md"]),
+    (WC, "White Cell Likely Plans.pdf", WC_ONLY, ["whitecell/likely-plans.md"]),
     (WC, "White Cell Intelligence and Injects.pdf", WC_ONLY, ["whitecell/intel-and-injects.md"]),
     (WC, "Master Asset List.pdf", WC_ONLY, ["whitecell/master-asset-list.md"]),
     (WC, "White Cell Forms.pdf", WC_ONLY, ["whitecell/forms.md"]),

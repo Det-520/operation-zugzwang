@@ -26,7 +26,7 @@ Each team's intelligence estimate is **deliberately partly wrong**, and its inte
 
 ## 2. Answering RFIs
 
-Answer from what that side would plausibly know: incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. **Never** reveal secret objectives or secret COAs. Write answers in one or two sentences and hand them back at the start of the next Prepare.
+Answer from what that side would plausibly know: incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. **Never** reveal secret objectives or secret COAs. Write answers in one or two sentences. The logger posts each one in a thread under the team's request in its team channel by the start of the next Prepare.
 
 - **Hidden counters** are revealed by a successful ISR **COA**, not by an RFI. An RFI can give hints ("signals intelligence suggests additional air defense emitters in the interior") but not a location.
 - **An RFI that asks to confirm an intelligence product** gets an answer consistent with the key (§3): confirm what is true (without giving locations of hidden counters), cast doubt on what is false, and say "no further information" about noise.

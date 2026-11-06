@@ -1,18 +1,22 @@
 """Make printable, cut-out counters from scenario/data/assets.csv.
 
-Usage: python3 tools/make_counters.py [--size INCHES] [--copies N]
+Usage: python3 tools/make_counters.py [--size INCHES] [--copies N] [--blanks N]
 
 Writes three US Letter PDFs, one per audience folder, so each team only gets
 its own counters:
   handouts/redfor/counters.pdf     REDFOR counters
   handouts/bluefor/counters.pdf    BLUEFOR counters
-  handouts/whitecell/counters.pdf  all counters, on one page at the default size
+  handouts/whitecell/counters.pdf  all counters, plus blank counters, on one page
+                                   at the default size
 
 Each counter is a small square: ID and owner in a colored band, a short asset
 name, then service and availability (HOME, RFF, HIDDEN) along the bottom.
 A counter whose `parts` column is 2 or more is printed once per part, lettered
 after the ID (B-07a, B-07b, B-07c), so each part can sit in its own zone. Its
 `part_asset` column, if filled, gives the singular name printed on each part.
+The white cell sheet ends with blank counters (--blanks of each: REDFOR, BLUEFOR,
+and grey OTHER for third parties) to write on when an RFF or inject creates a
+force that has no counter. Each has a write-in line for the ID and two for the name.
 Counters share cut lines, so a paper cutter can take a whole row at once.
 No third-party packages are needed; the PDF is written directly.
 """
@@ -43,7 +47,10 @@ HEADER = 30
 COLORS = {
     "REDFOR": ((0.70, 0.11, 0.11), (1.00, 0.92, 0.92)),
     "BLUEFOR": ((0.10, 0.25, 0.60), (0.91, 0.94, 1.00)),
+    "OTHER": ((0.38, 0.38, 0.38), (0.95, 0.95, 0.95)),
 }
+# Blank counters go on the white cell sheet only. ID prefix written in the band.
+BLANK_PREFIX = {"REDFOR": "R-", "BLUEFOR": "B-", "OTHER": "X-"}
 
 # Helvetica and Helvetica-Bold advance widths (1/1000 em), ASCII 32-126.
 _HELV = [
@@ -128,7 +135,37 @@ class Page:
         return "\n".join(self.ops).encode("latin-1")
 
 
+def draw_blank(page, x, y, s, side):
+    """A counter to write on: side band with the ID prefix, write-in lines, NEW tag."""
+    band, fill = COLORS[side]
+    pad = s * 0.06
+    band_h = s * 0.24
+    foot = s * 0.14
+    page.rect(x, y, s, s, fill=fill)
+    page.rect(x, y + s - band_h, s, band_h, fill=band)
+    id_size = band_h * 0.62
+    base = y + s - band_h + (band_h - id_size * 0.72) / 2
+    page.text(x + pad, base, BLANK_PREFIX[side], "F2", id_size, (1, 1, 1))
+    # Write-in box for the ID number, in the band.
+    bx = x + pad + text_width(BLANK_PREFIX[side], "F2", id_size) + pad * 0.5
+    page.rect(bx, base - id_size * 0.15, x + s - pad - bx, id_size * 0.95, fill=(1, 1, 1))
+    # Two lines for the asset name.
+    line_col = (0.62, 0.62, 0.62)
+    area_top = y + s - band_h - pad
+    area_bot = y + foot + pad
+    for frac in (0.62, 0.22):
+        ly = area_bot + (area_top - area_bot) * frac
+        page.rect(x + pad, ly, s - 2 * pad, 0.01, stroke=line_col, line=0.4)
+    foot_size = foot * 0.62
+    fy = y + pad * 0.7
+    page.text(x + pad, fy, "Zone", "F1", foot_size, (0.25, 0.25, 0.25))
+    page.text(x + s - pad, fy, "NEW", "F2", foot_size, band, "right")
+
+
 def draw_counter(page, x, y, s, row):
+    if row.get("blank"):
+        draw_blank(page, x, y, s, row["side"])
+        return
     band, fill = COLORS[row["side"]]
     pad = s * 0.06
     band_h = s * 0.24
@@ -191,7 +228,9 @@ def layout(rows, s, title, audience):
         page.text(PAGE_W - MARGIN, PAGE_H - MARGIN - 10, audience, "F2", 9, (0.6, 0, 0), "right")
         page.text(MARGIN, PAGE_H - MARGIN - 22,
                   "Cut along the gray lines. HOME = starts at home base; RFF = request for forces; "
-                  "HIDDEN = keep off the board until revealed.", "F1", 7, (0.3, 0.3, 0.3))
+                  "HIDDEN = keep off the board until revealed."
+                  + (" NEW = blank, for forces from RFFs or injects." if any(r and r.get("blank") for r in rows) else ""),
+                  "F1", 7, (0.3, 0.3, 0.3))
         top = PAGE_H - MARGIN - HEADER
         x0 = (PAGE_W - cols * s) / 2
         for i, row in enumerate(chunk):
@@ -243,6 +282,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--size", type=float, default=0.75, help="counter edge in inches (default 0.75)")
     parser.add_argument("--copies", type=int, default=1, help="copies of each counter (default 1)")
+    parser.add_argument("--blanks", type=int, default=10,
+                        help="blank counters of each kind (REDFOR, BLUEFOR, OTHER) on the white cell sheet (default 10)")
     args = parser.parse_args()
 
     with CSV_PATH.open(newline="", encoding="utf-8") as f:
@@ -255,6 +296,10 @@ def main():
             # Blank cells finish the row, so each side starts on a fresh row.
             sheet += [None] * (-len(sheet) % cols)
             sheet += [r for r in rows if r["side"] == side for _ in range(args.copies)]
+        if len(sides) > 1 and args.blanks > 0:
+            for side in ("REDFOR", "BLUEFOR", "OTHER"):
+                sheet += [None] * (-len(sheet) % cols)
+                sheet += [{"side": side, "blank": True}] * args.blanks
         label = sides[0] if len(sides) == 1 else "all"
         pages = layout(sheet, s, f"Operation Zugzwang - {label} counters", AUDIENCE[sides])
         write_pdf(path, pages)

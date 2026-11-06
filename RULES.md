@@ -53,8 +53,8 @@ A rule with no tag inherits the tag of its section heading.
 5. **Format of your Cons (1 minute):**
    > "Their COA will fail or fall short because: **(1)** … **(2)** … **(3)** …"
 6. **Good reasons** are specific and grounded in facts. They point to your assets' capabilities, the map, things that happened earlier in the game ("established facts"), and doctrine (tenets of airpower, principles of joint operations). Repeating a reason in new words earns nothing.
-7. **Odds.** With no strong reasons either way, a COA succeeds on 7+ on two dice (58%). Each strong reason for it adds +1, and each strong reason against it subtracts 1. If a COA is obviously sound and unopposed, it succeeds without a roll.
-8. **RFIs and RFFs.** Each turn you may hand the white cell **up to 3 written requests in total**, any mix of:
+7. **Odds.** With no strong reasons either way, a COA succeeds on 7+ on two dice (58%). Each strong reason for it adds +1, and each strong reason against it subtracts 1. If a COA is obviously sound and unopposed, it succeeds without a roll. If a call is too contentious to count, the white cell may take a quick **estimative vote** on how likely it is instead (§4.3).
+8. **RFIs and RFFs.** Each turn you may post **up to 3 requests in total** in your team's private Slack channel (§2.5), any mix of:
    - **RFI (Request for Information):** a question about the situation.
    - **RFF (Request for Forces):** a request for more assets or authorities from your national command. Reinforcements take time to arrive.
    Requests don't count as your COA, and there is no debate on them.
@@ -86,8 +86,8 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 
 | # | Step | Time | Who | Notes |
 | --- | --- | --- | --- | --- |
-| 1 | Prepare | 5 min | Both teams | Choose this turn's COA, write RFIs and RFFs, negotiate (§6). The white cell hands back answers to last turn's RFIs at the start of this step. |
-| 2 | Submit RFIs/RFFs | — | Both teams → white cell | Written slips, handed over at the end of Prepare. No debate. |
+| 1 | Prepare | 5 min | Both teams | Choose this turn's COA, write RFIs and RFFs, negotiate (§6). The white cell posts answers to last turn's RFIs in each team channel by the start of this step. |
+| 2 | Submit RFIs/RFFs | — | Both teams → white cell | Posted in the team channel (§2.5) by the end of Prepare. No debate. |
 | 3 | BLUEFOR COA + Pros | 2 min | BLUEFOR briefer | Format in §3.2 |
 | 4 | REDFOR COA + Pros | 2 min | REDFOR briefer | |
 | 5 | Prepare Cons | 2 min | Both teams | |
@@ -101,7 +101,7 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 ### 2.3 Phase I – Planning [CANON]
 
 - Teams arrive having read the rules, scenario brief, and their team's intelligence products (distributed ≥ 24 hours prior). During Phase I (18 minutes), they organize their team, build a plan, and file RFIs and RFFs to posture forces before the war starts.
-- **[CANON] Phase I request limit:** up to **4 requests in total** (RFIs and RFFs combined), **submitted by minute 12** (6 minutes before Phase I ends) so the white cell can adjudicate them while loggers hear the OPORD briefs. The white cell hands back answers and rulings after the kickoff inject, before Turn 1 begins. Phase I RFFs follow normal arrival timing (`scenario/00-overview.md` §6), counted from Turn 1.
+- **[CANON] Phase I request limit:** up to **4 requests in total** (RFIs and RFFs combined), **posted in the team channel by minute 12** (6 minutes before Phase I ends) so the white cell can adjudicate them while loggers hear the OPORD briefs. The white cell posts answers and rulings in each team's channel after the kickoff inject, before Turn 1 begins. Phase I RFFs follow normal arrival timing (`scenario/00-overview.md` §6), counted from Turn 1.
 - In the last 3 minutes (minutes 15–18) each team gives an **oral brief** of its plan to its own logger, **organized like a five-paragraph OPORD**: Situation, Mission, Execution, Sustainment, Command & Signal (AFDP 5-0 App. E; see App. A). No written OPORD is expected.
 - **Planned COAs.** The brief may name **up to 3 planned COAs** in intended sequence for Phase II, e.g. "Turn 1: X; Turn 2: Y; Turn 3: Z". The logger writes them down. When a team later executes a planned COA *substantially as briefed, and the situation still supports it*, the white cell adds **+1 (Planned)**. If events make a planned COA invalid (the target is gone, the resources were lost, or the enemy forced a reaction), the bonus is lost. Recognizing that and adapting is the point.
 - Phase I has **no COAs**. The first COAs come in Turn 1, after the kickoff inject.
@@ -109,6 +109,25 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 ### 2.4 Phase III – Planning and FRAGO [CANON]
 
 - **Command handover and FRAGO.** After Turn 4 and Debrief 1, the **Phase III–IV flight commander** takes command for the 8 minutes of Phase III (`LLAB-SETUP.md` §3). In the last minute of Phase III, the new flight commander gives a **1-minute oral Fragmentary Order (FRAGO)** to the team's logger: updated Commander's Intent and **up to 2 new planned COAs for Phase IV (Turns 5–7)**, which earn the same **+1 (Planned)** bonus when executed as briefed.
+
+### 2.5 Slack channels [CANON unless tagged]
+
+- Nothing is handed over on paper. Slack is the **record**: briefs and arguments are still given **aloud** in their slots (§2.2), and only what is said in the slot counts. A post that adds reasons not said aloud adds nothing.
+- C/Nacanaynay creates the channels and sends the invitations. Players join before the LLAB (`LLAB-SETUP.md` §2). Each group has two kinds of channel:
+  - **Group channel** (public): both teams of the group and its white cell. Each team posts its **COA and Pros** (by the end of its COA slot) and its **Cons** (by the end of its Cons slot), using asset IDs, so the white cell can read them while it adjudicates.
+  - **Team channel** (secret): one team and its group's white cell. The other team is never in it, so it is as secret as the team packet. The team posts its **RFIs, RFFs, and secret COAs** there, and the white cell answers there. The team's logger watches it.
+
+| Group | Group channel (public) | REDFOR team channel | BLUEFOR team channel |
+| --- | --- | --- | --- |
+| 1 | `opz-group1-army` | `opz-alpha-redfor` | `opz-bravo-bluefor` |
+| 2 | `opz-group2-af` | `opz-charlie-redfor` | `opz-delta-bluefor` |
+| 3 | `opz-group3-hangar` | `opz-echo-redfor` | `opz-foxtrot-bluefor` |
+| 4 | `opz-group4-conference` | `opz-golf-redfor` | `opz-hotel-bluefor` |
+
+- **One request per message.** The white cell counts the first 3 request messages after the previous turn's resolve step (4 in Phase I). **[PROPOSED]** A request posted after the deadline isn't answered; post it again next turn.
+- **[PROPOSED]** The logger answers in a **thread under each request** (RFI answers and RFF rulings) and posts nothing else in a team channel except procedure. Templates for each post are in the Player Forms.
+- **[PROPOSED]** **Backup:** if Slack or the network fails, teams write the same thing on paper (backup slips in the Print Packet) and hand it to the white cell.
+- Time cost: none. Posting happens inside steps that already exist, and the white cell no longer collects or returns slips.
 
 ---
 
@@ -148,7 +167,7 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 
 - Use these for **misdirection or conditional traps** only, e.g. decoy SAM sites, a honeypot network, booby-trapped port facilities. Do not use them for ordinary actions you'd simply rather hide.
 - Each team may make **one secret COA per phase** (Phase II and Phase IV).
-- To make one, write it on a slip with a **precise trigger**, hand it to the white cell, and announce "We are making a secret COA." That is your COA for the turn. The other team can't give Cons against something it can't see.
+- To make one, post it in your team channel (§2.5) with a **precise trigger**, and announce aloud "We are making a secret COA." That is your COA for the turn. The other team can't give Cons against something it can't see.
 - The white cell resolves it **when the trigger occurs** and applies its own judgment in place of Cons. A trigger written too loosely doesn't fire. Precision is the player's job.
 
 ### 3.5 Arguing about actors [PROPOSED]
@@ -205,7 +224,15 @@ Both COAs are briefed before either is resolved, so **they happen simultaneously
 ### 4.3 Time pressure
 
 - **[PROPOSED]** If the 2 minutes run out, the lead adjudicator makes the call on the spot. Resolving fast matters more than resolving perfectly.
-- **[PROPOSED] Contentious calls** happen when both teams keep arguing. Don't debate. Either make the call, or take a 10-second **estimative vote**: each white cell member shows fingers (1 = remote … 5 = almost certain), the white cell takes the **median**, and rolls against it (App. C).
+- **[PROPOSED] Contentious calls** happen when both teams keep arguing. Don't debate. Either make the call, or take an estimative vote.
+- **[CANON] Estimative vote.** For a contentious call (both teams keep arguing, or the white cell can't settle the modifiers in time), the lead adjudicator may skip counting modifiers and call a **10-second estimative vote**. Each white cell member shows 1–5 fingers for how likely the COA is to work. The white cell takes the **median**, and the dice program rolls against it:
+
+  | Vote | 1 | 2 | 3 | 4 | 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Meaning | Remote | Unlikely | Even chance | Likely | Almost certain |
+  | Happens on | 11+ on 2d6 (8%) | 9+ (28%) | 50% (percentage roll) | 6+ (72%) | 4+ (92%) |
+
+  If it happens, treat it as a **Success**. If not, a **Failure**. The lead adjudicator announces "estimative vote" before voting, so players know which method decided the call. Time cost: about 10 seconds, and it usually saves time.
 - **[CANON] No recalculation.** Because the timing is strict, an objection raised late (after its slot, or after the roll) **is not considered**, and a result is not re-run once announced.
 
 ### 4.4 Fog of war [CANON: white cell introduces fog of war; mechanics PROPOSED]
@@ -238,11 +265,12 @@ An asset spread over several zones is printed as **one counter per part**, lette
 | --- | --- | --- |
 | Purpose | Ask what your side knows: enemy disposition, weather, a third party's stance, civilian situation | Ask your national command for more assets or authorities |
 | Limit | **Up to 3 requests per turn in total, RFIs and RFFs combined** (Phase I: 4 due at minute 12, see §2.3) | (shared with RFIs) |
-| Format | One question per slip, ≤ 1 sentence | Asset (from the scenario's RFF pool or a free-text request), destination, and purpose |
+| Format | One question per Slack message, ≤ 1 sentence | Asset (from the scenario's RFF pool or a free-text request), destination, and purpose |
 | Counts as COA? | No | No |
 | Debate? | No | No |
-| White cell response | Short written answer, delivered at the start of the next Prepare step | Approve, approve partially, or deny, with the **arrival turn** (`scenario/00-overview.md` §6). National politics shape approval (scenario tracks, e.g. Domestic Will). |
+| White cell response | Short written answer in a thread under the request, posted by the start of the next Prepare step | Approve, approve partially, or deny, with the **arrival turn** (`scenario/00-overview.md` §6). National politics shape approval (scenario tracks, e.g. Domestic Will). |
 
+- **[PROPOSED]** A force that arrives by RFF, or that an inject creates, and has no printed counter goes on a **blank counter** (R-, B-, or grey X- for third parties) from the white cell counter sheet. The white cell writes a new ID on it (free-text RFFs from R-50 and B-50, inject forces from X-01) and the zone.
 - **[PROPOSED]** Forces that arrive by RFF **do nothing on the turn they arrive** unless the scenario timing table says otherwise. Their arrival is announced and their counters placed during white cell resolution.
 - **[CANON]** Forces that arrive by RFF are placed in their side's main base zone unless the RFF names another destination: **Z6 Camas** for REDFOR and **Z11 Omak City** for BLUEFOR, Asotin support included. Authorities and intelligence sharing (R-39, B-41) get no counter on the map.
 - **[PROPOSED]** A big RFF (a carrier strike group, a ground brigade, new authorities like permission to strike Omak City, the enemy capital) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
@@ -271,8 +299,8 @@ An asset spread over several zones is printed as **one counter per part**, lette
 
 ### 8.1 Lead adjudicator checklist (per turn)
 
-1. Start the timer program for Prepare (5:00). Hand out RFI answers from last turn.
-2. Collect request slips at the end of Prepare (≤ 3 per team).
+1. Start the timer program for Prepare (5:00). Check that last turn's RFI answers are posted in each team channel.
+2. At the end of Prepare, close requests: count the first 3 request posts per team (§2.5).
 3. Call the BLUEFOR COA (2:00), then the REDFOR COA (2:00). Don't allow interruptions.
 4. Start the Cons prep (2:00). Call REDFOR Cons (1:00), then BLUEFOR Cons (1:00).
 5. Resolve each COA: screen → auto-success? → modifiers → dice program → narrate.
@@ -326,8 +354,8 @@ If the game runs at several tables simultaneously, every white cell uses this do
 | Role | Per game | Job |
 | --- | --- | --- |
 | **Lead adjudicator** | 1 | Runs the timer program, gives injects, runs the dice program, final adjudication authority |
-| **BLUEFOR logger** | 1 | Receives the BLUEFOR Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (App. B). Moves BLUEFOR counters. |
-| **REDFOR logger** | 1 | Same for REDFOR |
+| **BLUEFOR logger** | 1 | Receives the BLUEFOR Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (App. B). Moves BLUEFOR counters. Watches BLUEFOR's team channel, counts its requests, and posts the lead adjudicator's answers there (§2.5). |
+| **REDFOR logger** | 1 | Same for REDFOR, in REDFOR's team channel |
 
 ### 9.3 End of game [PROPOSED]
 
@@ -367,7 +395,7 @@ After the final turn's resolution, the white cell states the end state (map and 
 
 ## 11. Open decisions for the designer
 
-Settled (now CANON): owner, 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral five-paragraph Phase I brief, 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5).
+Settled (now CANON): owner, written traffic over Slack instead of paper, with briefs still given aloud: COAs and Cons in each group's public channel, requests, answers, and secret COAs in private team channels (§2.5), the estimative vote for contentious calls (§4.3), 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral five-paragraph Phase I brief, 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5).
 
 Still open:
 
@@ -375,7 +403,6 @@ Still open:
 | --- | --- | --- |
 | O1 | Adjudication details: the five result bands and the ±4 modifier cap (§4.1) | As written |
 | O4 | Team-to-team parleys during Prepare (§6) | Allowed, ≤ 2 min |
-| O5 | Estimative-vote fallback for contentious calls (§4.3) | Optional |
 
 ---
 
@@ -421,7 +448,7 @@ When something changes, cross out the old entry and write the new one. Ongoing e
 | Natural roll needed | 11+ | 10+ | 9+ | 8+ | 7+ | 6+ | 5+ | 4+ | 3+ |
 | Chance of at least Partial success | 8% | 17% | 28% | 42% | 58% | 72% | 83% | 92% | 97% |
 
-**Estimative vote → target (for §4.3):** 1 = Remote (10%, needs 11+ on 2d6) · 2 = Unlikely (30%, 9+) · 3 = Even chance (50%) · 4 = Likely (70%, 6+) · 5 = Almost certain (90%, 4+). These match Mouat's cheat card. The dice program can also roll a straight percentage.
+**Estimative vote → target (for §4.3):** 1 = Remote (needs 11+ on 2d6, 8%) · 2 = Unlikely (9+, 28%) · 3 = Even chance (percentage roll, 50%) · 4 = Likely (6+, 72%) · 5 = Almost certain (4+, 92%). These follow Mouat's cheat card (10/30/50/70/90%) as closely as 2d6 allows. The dice program has an estimative-vote roll.
 
 ## Appendix D — Doctrine crosswalk (game mechanic → doctrine)
 

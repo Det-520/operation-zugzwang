@@ -47,6 +47,7 @@ Most of this content comes from the designer's original *LLAB 12 General Plan* (
 - Teams and flight commanders (both Phase I–II and Phase III–IV) are assigned (§4).
 - Each cadet receives the **common player documents**: `handouts/common/rules-handbook.md` (especially §1 How to play), `handouts/common/scenario-brief.md`, `handouts/common/player-forms.md`, and the doctrine one-pagers. Cadets are expected to arrive knowing how to play.
 - Each cadet receives the **team-specific documents and intelligence products** for their side (`handouts/redfor/` or `handouts/bluefor/`, including the Commander's Read-Ahead, Team Packet, Order of Battle, and all 15 intelligence products in `intel/`). Because cadets receive the intelligence products at least 24 hours in advance, they can read and evaluate them before Phase I begins.
+- **[CANON] Slack.** C/Nacanaynay creates the channels and sends the invitations with the team assignments. Every cadet joins their **group channel** (public, both teams) and their **team channel** (secret) before the LLAB (`RULES.md` §2.5). Slack is the written record: COAs and Cons go in the group channel, requests and secret COAs in the team channel. Briefs are still given aloud. Each team needs at least one laptop or phone signed in at the table.
 - Anything else is at the discretion of C/Nacanaynay.
 
 ---
@@ -58,21 +59,21 @@ Most of this content comes from the designer's original *LLAB 12 General Plan* (
 | 1325 | 1335 | Door checks (10) | Barton Track | 3 |
 | 1335 | 1340 | Wing formation (5) | Barton Track | 3 |
 | 1340 | 1345 | Transit to GLP rooms (5) | — | 3 |
-| 1345 | 1403 | **GLP Phase I – Planning** (18) | Army/AF classrooms | 3 |
-| 1403 | 1405 | **Inject: war has begun** (2) | Army/AF classrooms | 3 |
-| 1405 | 1505 | **GLP Phase II: Turns 1–4** (60) | Army/AF classrooms | 3 |
-| 1505 | 1512 | Debrief 1 (7) | Army/AF classrooms | 2 |
-| 1512 | 1520 | **GLP Phase III – Planning and FRAGO** (8) | Army/AF classrooms | 3 |
-| 1520 | 1605 | **GLP Phase IV: Turns 5–7** (45) | Army/AF classrooms | 3 |
-| 1605 | 1612 | Debrief 2 (7) | Army/AF classrooms | 2 |
+| 1345 | 1403 | **GLP Phase I – Planning** (18) | Group rooms (§5) | 3 |
+| 1403 | 1405 | **Inject: war has begun** (2) | Group rooms (§5) | 3 |
+| 1405 | 1505 | **GLP Phase II: Turns 1–4** (60) | Group rooms (§5) | 3 |
+| 1505 | 1512 | Debrief 1 (7) | Group rooms (§5) | 2 |
+| 1512 | 1520 | **GLP Phase III – Planning and FRAGO** (8) | Group rooms (§5) | 3 |
+| 1520 | 1605 | **GLP Phase IV: Turns 5–7** (45) | Group rooms (§5) | 3 |
+| 1605 | 1612 | Debrief 2 (7) | Group rooms (§5) | 2 |
 | 1612 | 1617 | Transit (5) | — | 3 |
 | 1617 | 1625 | Closing remarks (8) | Hangar | 2 |
 
 ### Event notes
 
 - **Door checks and wing formation:** following previous procedures.
-- **Phase I (1345–1403, 18 min):** teams organize their staff, synthesize pre-read intel, and build a plan. Up to **4 requests (RFIs/RFFs combined)** are due at **minute 12 (1357)** so the lead adjudicator can answer them while teams rehearse and brief. In the last 3 minutes (**1400–1403**), each team briefs its five-paragraph OPORD and up to 3 planned COAs to its logger (`RULES.md` §2.3).
-- **Inject (1403–1405, 2 min):** the white cell lead adjudicator reads the kickoff inject (`scenario/whitecell-injects.md` §1) and hands back Phase I RFI answers and RFF rulings.
+- **Phase I (1345–1403, 18 min):** teams organize their staff, synthesize pre-read intel, and build a plan. Up to **4 requests (RFIs/RFFs combined)** are due in Slack at **minute 12 (1357)** so the lead adjudicator can answer them while teams rehearse and brief. In the last 3 minutes (**1400–1403**), each team briefs its five-paragraph OPORD and up to 3 planned COAs to its logger (`RULES.md` §2.3).
+- **Inject (1403–1405, 2 min):** the white cell lead adjudicator reads the kickoff inject (`scenario/whitecell-injects.md` §1), and the loggers post Phase I RFI answers and RFF rulings in each team channel.
 - **Phase II (1405–1505, 60 min):** 4 full turns of 15 minutes each (`RULES.md` §2.2).
 - **Debrief 1 (1505–1512, 7 min):** led by the Phase I–II flight commander. Afterward, the **Phase III–IV flight commander** takes over (§4.2).
 - **Phase III – Planning and FRAGO (1512–1520, 8 min):** teams plan under the new flight commander. In the last minute (**1519–1520**), the new flight commander gives a **1-minute oral FRAGO** to the logger with updated Commander's Intent and up to 2 new planned COAs for Phase IV (`RULES.md` §2.4).
@@ -100,9 +101,16 @@ Most of this content comes from the designer's original *LLAB 12 General Plan* (
 
 ## 5. Room setup
 
-- **Rooms:** the Army and AF classrooms. Tables and chairs are easy to rearrange there, and two rooms keep the number of room managers down.
-- **Two groups per room.** Each group gets one table, arranged so its two teams and white cell sit in a circle. That makes two table areas per room.
-- Room leads set up the rooms before the LLAB.
+- **One group per room.** Each group plays in its own room, at one table arranged so its two teams and white cell sit in a circle. The group's public Slack channel is named for its room (`RULES.md` §2.5).
+
+| Group | Room | Teams | Group channel |
+| --- | --- | --- | --- |
+| 1 | Army classroom | Alpha (REDFOR), Bravo (BLUEFOR) | `opz-group1-army` |
+| 2 | AF classroom | Charlie (REDFOR), Delta (BLUEFOR) | `opz-group2-af` |
+| 3 | Hangar | Echo (REDFOR), Foxtrot (BLUEFOR) | `opz-group3-hangar` |
+| 4 | Conference room | Golf (REDFOR), Hotel (BLUEFOR) | `opz-group4-conference` |
+
+- **[CANON] No room leads.** Each group's white cell sets up its own room before the LLAB and puts it back afterward. Group 3 plays in the Hangar, where closing remarks are held, so its table needs no transit at 1612 but must be cleared before 1617.
 
 ---
 
@@ -111,13 +119,12 @@ Most of this content comes from the designer's original *LLAB 12 General Plan* (
 | Role | Count | Job |
 | --- | --- | --- |
 | White cell lead adjudicator | 1 per group (4) | Timekeeper (timer program), inject-giver, dice program, final adjudication (`RULES.md` §9.2) |
-| BLUEFOR action logger | 1 per group (4) | Receives the BLUEFOR Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (`RULES.md` App. B). Doesn't log every move. |
-| REDFOR action logger | 1 per group (4) | Receives the REDFOR Phase I brief and Phase III FRAGO. Keeps the REDFOR placement form (`RULES.md` App. B). Doesn't log every move. |
+| BLUEFOR action logger | 1 per group (4) | Receives the BLUEFOR Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (`RULES.md` App. B). Watches BLUEFOR's team channel and posts the white cell's answers. Doesn't log every move. |
+| REDFOR action logger | 1 per group (4) | Receives the REDFOR Phase I brief and Phase III FRAGO. Keeps the REDFOR placement form (`RULES.md` App. B). Watches REDFOR's team channel and posts the white cell's answers. Doesn't log every move. |
 | GMC evaluator | 1 per team (8) | Observes one team. 2 Form 2s per team, **16 Form 2s** total. |
-| Room lead | 1 per room (2) | Room setup, keeping both tables in the room consistent |
 | Extras | as available | POC evals, FEF evals |
 
-**[PROPOSED]** That comes to at least **22 POC** before extras. **[OPEN]** Confirm POC availability.
+**[PROPOSED]** That comes to at least **20 POC** before extras. **[OPEN]** Confirm POC availability.
 
 ---
 
@@ -140,10 +147,11 @@ Evaluators can tie their observations to the training objective's performance me
 
 - **[CANON] Dice:** a computer program rolls 2d6 for adjudication. No physical dice.
 - **[CANON] Timekeeping:** a timer program runs the turn clock (`RULES.md` §2.2).
-- **Print Packet:** `build/White Cell/Print Packet - One Table.pdf` holds everything one table prints (checklist, White Cell Forms, starting-condition cue cards, counters, map tiles, both teams' player forms and slips, and spare forms and slips at the back), with a cover listing it. Every page is portrait. Print the game pieces (counters, map, cue cards, track board) in colour and the forms in greyscale. Print one per group (4). `Print Packet - One Table, Reference Forms.pdf` is the same packet with one copy of each player form and slip per side and no spares, to photocopy from.
+- **Print Packet:** `build/White Cell/Print Packet - One Table.pdf` holds everything one table prints (checklist, White Cell Forms, starting-condition cue cards, counters, map tiles, both teams' player forms and slips, and spare forms and slips at the back; the slips are the backup if Slack fails), with a cover listing it. Every page is portrait. Print the game pieces (counters, map, cue cards, track board) in colour and the forms in greyscale. Print one per group (4). `Print Packet - One Table, Reference Forms.pdf` is the same packet with one copy of each player form and slip per side and no spares, to photocopy from.
 - **Printed pieces:** map (`map/maps/strait_map_v10_full.pdf`, or `strait_map_v10_tiles_letter.pdf` to print in pieces; see `map/README.md`), asset counters, and tracks (`scenario/00-overview.md` §3 and §5).
-- **[PROPOSED] Asset counters:** run `python3 tools/make_counters.py` to build them from `scenario/data/assets.csv`. Print `handouts/whitecell/counters.pdf` (both sides, 1 page) once per table, so 4 sets. Print at 100% scale (not "fit to page"), in color if possible, on card stock if available, and cut along the gray lines with a paper cutter. Counters are 0.75 in. Assets spread over several zones print one counter per part, lettered B-07a, B-07b, and so on (`RULES.md` §4.5). Use `--size` to change that, or `--copies` for spares. `handouts/redfor/counters.pdf` and `handouts/bluefor/counters.pdf` hold one side each, for a team that wants its own set to plan with. Never give a team the other side's sheet or the white cell sheet, because they show hidden assets. Regenerate after any change to the CSV.
-- **POC digital tools:** the dice and timer programs. Scores, tracks, and placements go on the paper White Cell Forms (`handouts/whitecell/forms.md`).
+- **[PROPOSED] Asset counters:** run `python3 tools/make_counters.py` to build them from `scenario/data/assets.csv`. Print `handouts/whitecell/counters.pdf` (both sides, 1 page) once per table, so 4 sets. Print at 100% scale (not "fit to page"), in color if possible, on card stock if available, and cut along the gray lines with a paper cutter. Counters are 0.75 in. Assets spread over several zones print one counter per part, lettered B-07a, B-07b, and so on (`RULES.md` §4.5). The white cell sheet also has **blank counters**, 10 each of REDFOR (R-), BLUEFOR (B-), and grey third-party (X-), to write on when an RFF or inject creates a force without a counter (`RULES.md` §5). Use `--size` to change the size, `--copies` for spares, or `--blanks` for more or fewer blanks. `handouts/redfor/counters.pdf` and `handouts/bluefor/counters.pdf` hold one side each, for a team that wants its own set to plan with. Never give a team the other side's sheet or the white cell sheet, because they show hidden assets. Regenerate after any change to the CSV.
+- **[CANON] Slack:** 12 channels, created by C/Nacanaynay: one public channel per group and one secret channel per team (`RULES.md` §2.5). Each group's white cell is in its group channel and both of its team channels.
+- **POC digital tools:** the dice and timer programs, and Slack. Scores, tracks, and placements go on the paper White Cell Forms (`handouts/whitecell/forms.md`).
 - **Borrowed pieces:** assets from other GLPs will be borrowed and repurposed. No additional purchases should be needed.
 
 ---
@@ -155,6 +163,8 @@ Evaluators can tie their observations to the training objective's performance me
 | We've never run a game of this type | Prepare well in advance: good pre-event information, POC (especially the white cell) who know the capabilities, and **POC run-throughs** of the game. |
 | **Going over time** | Professional designers recommend at least 6 turns of up to 30 minutes (3–4 hours). Here, turns are cut to 15 minutes, giving 7 turns in about 2 hours. There is time padding between phases. Shorten Prepare, never the Cons (`RULES.md` §8.4). |
 | Players struggle with the rules at first | Rules go out ≥ 24 hours ahead with a one-page quick-start. Clarify as needed. The worked example is in `RULES.md` §10. |
+| Slack or the network fails during play | Teams write the same posts on the backup paper slips in the Print Packet and hand them to the white cell (`RULES.md` §2.5). Loggers carry a phone hotspot if the room's Wi-Fi is weak. |
+| Four rooms drift apart in how generously they rule | The lead adjudicators agree on auto-success and COA size beforehand (`RULES.md` §8.5) and can check with each other by Slack during play. |
 | Players act outside reasonable bounds | The white cell bounds behavior at its discretion. It can kill actions or issue injects that restrict behavior, e.g. a new national directive (`RULES.md` §8.4, inject I-13 in `scenario/whitecell-injects.md`). |
 
 ---

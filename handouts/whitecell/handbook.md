@@ -23,8 +23,8 @@ The white cell is the neutral referee. It runs the clock, judges the arguments, 
 | Role | Job |
 | --- | --- |
 | **Lead adjudicator** | Runs the **timer program** and the **dice program**. Calls each step. Gives injects. Rules on every COA and RFF. **Final authority.** |
-| **BLUEFOR logger** | Hears BLUEFOR's Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (White Cell Forms §4.2): planned COAs, hidden-counter locations, arrivals, and counters that changed. Moves BLUEFOR counters. Doesn't log every move. |
-| **REDFOR logger** | Same for REDFOR (White Cell Forms §4.1) |
+| **BLUEFOR logger** | Hears BLUEFOR's Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (White Cell Forms §4.2): planned COAs, hidden-counter locations, arrivals, and counters that changed. Moves BLUEFOR counters. Watches BLUEFOR's team channel, counts its requests, and posts the lead adjudicator's answers (§2.4). Doesn't log every move. |
+| **REDFOR logger** | Same for REDFOR (White Cell Forms §4.1), in REDFOR's team channel |
 
 The white cell should work to be efficient and generally help teams stay within the bounds of the rules. As white cell, you are given lots of freedom:
 
@@ -53,12 +53,14 @@ Generally, you should be helpful in ensuring that teams understand the rules and
 
 - **ASAP:** general rules information (Player Rules Handbook, Player Forms)
 - **One week prior (over Canvas):** scenario information (Scenario Brief, Scenario Schedule, Starting Conditions, map)
-- **24 hours prior (over email):** team assignments and team information
+- **24 hours prior (over email):** team assignments, team information, and the Slack invitations (C/Nacanaynay sends them; §2.4)
 
 ### 2.2 Prep checklist (before the LLAB)
 
 The White Cell Checklist has the full list, from a week out to cleanup, in order.
 
+- [ ] Everyone in the white cell has read the Likely Plans guide, so you know the COAs to expect and how to rule on them.
+- [ ] You're in your group's Slack channel and both of its team channels (§2.4).
 - [ ] Everyone in the white cell has read **both** sides' intelligence products and the key (Intelligence and Injects §3), so you recognize a Pro built on a false report.
 - [ ] The timer program and dice program work on the lead adjudicator's device. It should be shown on screen for all players to see.
 - [ ] Printed: one **Print Packet** per table (`White Cell/Print Packet - One Table.pdf`). `Print Packet - One Table, Reference Forms.pdf` is the same packet with one copy of each player form and slip for each side and no spares, for tables that will photocopy their own. Its cover lists what is in it: the White Cell Checklist, White Cell Forms (score sheet, track board, objective status card, both placement forms), starting-condition cue cards, counters, the map in letter tiles, both teams' player forms and request slips, and spare forms and slips at the back. Print the game pieces (counters, map, cue cards, track board) in colour and the rest in greyscale. For one large map, print `map-full.pdf` on a plotter (v10 or later, with Camas inside PrSM range).
@@ -113,6 +115,27 @@ A hidden counter goes on the map under three conditions:
   - If a team mentions a hidden asset in a COA or argument, it is revealed, whether or not the COA had its intended effect.
 - **Disclosed** by an inject (e.g. I-06)
 
+### 2.4 Slack channels
+
+Nothing is handed over on paper (Rules §2.5). Slack is the **record**: teams still brief and argue **aloud**, and only what is said in the slot counts. C/Nacanaynay creates the channels and sends the invitations. Each group has a **public group channel** (both teams and the white cell) and a **secret team channel** for each team (that team and the white cell). Each logger watches its side's team channel.
+
+| Group | Group channel (public) | REDFOR team channel | BLUEFOR team channel |
+| --- | --- | --- | --- |
+| 1 | `opz-group1-army` | `opz-alpha-redfor` | `opz-bravo-bluefor` |
+| 2 | `opz-group2-af` | `opz-charlie-redfor` | `opz-delta-bluefor` |
+| 3 | `opz-group3-hangar` | `opz-echo-redfor` | `opz-foxtrot-bluefor` |
+| 4 | `opz-group4-conference` | `opz-golf-redfor` | `opz-hotel-bluefor` |
+
+| Teams post | Where | When | White cell does |
+| --- | --- | --- | --- |
+| COA and Pros | Group channel | By the end of its COA slot | Read the asset IDs while adjudicating. **Only what was said aloud counts.** |
+| Cons | Group channel | By the end of its Cons slot | Same |
+| Each RFI or RFF, one per message | Team channel | During Prepare (Phase I: by minute 12) | Logger counts the first 3 (Phase I: 4) and posts the lead adjudicator's answer in a **thread** under each, by the start of the next Prepare |
+| Secret COA | Team channel | In its COA slot, announced aloud | Logger pins it and checks its trigger every resolve step |
+
+- Post nothing in a team channel except answers and procedure ("Requests closed"). Never put anything from a team channel into the group channel or the other team's channel.
+- **Slack down?** Hand out the backup paper slips from the Print Packet and carry on.
+
 <!-- pagebreak -->
 
 ## 3. Master schedule of phases
@@ -121,10 +144,10 @@ A hidden counter goes on the map under three conditions:
 | --- | --- | --- | --- |
 | **1345–1403** | **18** | **Phase I – Planning** | |
 | 1345–1357 | 12 | • Team planning & requests | Read the Phase I opening script. Start the 18-minute timer. Teams organize and plan using their pre-read intelligence products. |
-| **1357** | — | • **Phase I request cutoff (min 12)** | **Collect up to 4 requests (RFIs/RFFs combined) per team.** Lead adjudicator writes answers and rulings during the next 6 minutes while teams rehearse and brief. |
+| **1357** | — | • **Phase I request cutoff (min 12)** | **Close requests: count up to 4 request posts (RFIs/RFFs combined) in each team channel.** Lead adjudicator writes answers and rulings during the next 6 minutes while teams rehearse and brief. |
 | 1357–1400 | 3 | • Brief rehearsal | Teams finalize their five-paragraph OPORD brief. Lead adjudicator finishes answering Phase I requests. |
 | 1400–1403 | 3 | • Phase I OPORD briefs (last 3 min) | Each logger hears its own team's oral five-paragraph OPORD brief and writes its **planned COAs** (up to 3, Turns 1–3) and, for BLUEFOR, the zones of **B-06a, B-06b, and B-06c** (NASAMS) on the placement form (White Cell Forms §4). |
-| **1403–1405** | **2** | **Kickoff inject** | Read the kickoff inject (Intelligence and Injects §4.1). Move Strait Traffic to **Restricted**. Hand back Phase I RFI answers and RFF rulings. |
+| **1403–1405** | **2** | **Kickoff inject** | Read the kickoff inject (Intelligence and Injects §4.1). Move Strait Traffic to **Restricted**. Loggers post Phase I RFI answers and RFF rulings in each team channel. |
 | **1405–1505** | **60** | **Phase II: Turns 1–4** | Run four 15-minute turns (§4): · **Turn 1:** 1405–1420 · **Turn 2:** 1420–1435 · **Turn 3:** 1435–1450 · **Turn 4:** 1450–1505 *(S-R1 bites on Camas strikes unless resupplied)* |
 | **1505–1512** | **7** | **Debrief 1** | Phase I–II flight commanders lead it. Hand command to the **Phase III–IV flight commanders** afterward. |
 | **1512–1520** | **8** | **Phase III: Planning and FRAGO** | **1512–1519 (7 min):** Phase IV planning under the new flight commander. · **1519–1520 (last 1 min):** Each logger hears the new flight commander's **1-minute oral FRAGO** and writes **up to 2 new planned COAs for Phase IV (Turns 5–7)** on the placement form. |
@@ -141,11 +164,11 @@ Read these aloud, word for word or close to it.
 
 #### Phase I minute 12 call (1357)
 
-> "Six minutes left in Phase I. Hand in your Phase I request slips now—up to four per team. You have three minutes to rehearse before you brief your logger."
+> "Six minutes left in Phase I. Requests close now—we'll answer the first four posted in your team channel. You have three minutes to rehearse before you brief your logger."
 
 #### Turn start
 
-> "Turn [N]. Prepare, five minutes. Your RFI answers are on the table. Requests are due when the timer ends."
+> "Turn [N]. Prepare, five minutes. Your RFI answers are in your team channel. Requests are due there when the timer ends."
 
 #### Phase III Planning and FRAGO call (1519)
 
@@ -161,8 +184,8 @@ Read these aloud, word for word or close to it.
 
 | Step | Turn Clock | Duration | Lead adjudicator says or does |
 | --- | --- | --- | --- |
-| **Prepare** | 0:00–5:00 | 5:00 | Start the timer. Hand out last turn's RFI answers. Authorize parleys (≤ 2 min) on request. |
-| Collect slips | 5:00 | — | Up to **3** requests per team. Refuse any extra. |
+| **Prepare** | 0:00–5:00 | 5:00 | Start the timer. Check that last turn's RFI answers are posted in the team channels. Authorize parleys (≤ 2 min) on request. |
+| Requests close | 5:00 | — | Count the first **3** request posts per team. Don't answer extras or late posts. |
 | **BLUEFOR COA** | 5:00–7:00 | 2:00 | "BLUEFOR, your COA." No interruptions. |
 | **REDFOR COA** | 7:00–9:00 | 2:00 | "REDFOR, your COA." |
 | Prepare Cons | 9:00–11:00 | 2:00 | "Two minutes to prepare Cons." Note the Pros you'll accept while they huddle. |
@@ -267,20 +290,20 @@ Both COAs happen simultaneously across the 3-day turn window. Because REDFOR bri
 | **Protected or hidden target** | At most 3 layers, e.g. *find* (ISR COA), then *strike*. A strike on a hidden counter nobody has found is impossible, or becomes an ISR COA. An intel product that points at a hidden asset is a good Pro for the *find* COA, not a substitute for it. |
 | **Long-term COA** | Success means the effect **has started and continues** until someone stops it. Record it as an ongoing effect. |
 | **Announcement** | Free, unless it claims a measurable effect. Then it is the team's COA. |
-| **Secret COA** | One per team per phase. Keep the slip. Resolve when the trigger occurs, using your own judgment in place of Cons. **A loose trigger doesn't fire.** |
+| **Secret COA** | One per team per phase. The logger pins the Slack post (or keeps the backup slip). Resolve when the trigger occurs, using your own judgment in place of Cons. **A loose trigger doesn't fire.** |
 | **Arguing a player-controlled actor agrees** | Not allowed. Tell the team to ask in person (a parley). |
 | **Persuading a white-cell actor** (Latah, Tekoa, Asotin, the press) | A normal COA. Use the ground truth (Intelligence and Injects §1) for how those actors really feel. |
 
 ### 5.5 Contentious calls
 
-If both teams keep arguing, don't debate. Either **make the call**, or take a **10-second estimative vote**: each white cell member shows fingers, you take the **median**, and roll against it.
+If both teams keep arguing, or the call is too close to count in time, don't debate. Either **make the call**, or announce an **estimative vote** (Rules §4.3; players know this rule from Player Rules Handbook §2.7): each white cell member shows 1–5 fingers for how likely the COA is to work, you take the **median**, and roll against it with the dice program's **Estimative vote** button. **Happens = Success. Doesn't happen = Failure.** Narrate it like any other result.
 
 #### Estimative Vote Card
 
 | Fingers | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
 | Meaning | Remote | Unlikely | Even chance | Likely | Almost certain |
-| Roll needed on 2d6 | 11+ | 9+ | ≈ 50% (use the program's percentage roll) | 6+ | 4+ |
+| Roll needed on 2d6 | 11+ (8%) | 9+ (28%) | 50% (the program's percentage roll) | 6+ (72%) | 4+ (92%) |
 
 <!-- pagebreak -->
 
@@ -358,6 +381,8 @@ Rule on RFFs during step 8 and tell the team the **arrival turn**. "N" is the tu
 | B-41 | Asotin intel sharing | N+1 | **Routine.** Fuller RFI answers about Camas and naval movements from then on. |
 | B-42 | Asotin PAC-3 battery, "volunteer" crews | N+3 | Opinion ≤ −1 **or** REDFOR has struck an Asotin shipment. Domestic Will reacts. |
 | B-43 | Asotin "volunteer" F-16 Block 70 squadron | N+3 | Opinion ≤ −2. A major escalation. Consider a Cosmopolis–Asotin crisis inject. |
+
+**No counter for it?** A free-text RFF or a force an inject creates (an Asotin escort, a pirate band, a Latah squadron) goes on a **blank counter** from the white cell counter sheet: red R-, blue B-, or grey X- for third parties. Write the ID (free-text RFFs from **R-50** and **B-50**, inject forces from **X-01**), a short name, and the zone. Note it on that side's placement form.
 
 **Free-text RFFs** (not in a pool): judge them by realism, the timing table, and politics. A big request may need a successful COA first to build the case. **All assets must be U.S. systems.**
 
