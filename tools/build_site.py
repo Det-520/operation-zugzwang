@@ -178,6 +178,7 @@ permalink: /
 <li><a href="{clock}" target="_blank">Timer and dice program</a> (opens in a new tab; works offline once loaded)</li>
 <li><a href="{checklist}">White Cell Checklist</a>: everything to do, in order, from a week out to cleanup</li>
 <li><a href="{handbook}">White Cell Handbook</a>: running a turn, adjudication, scoring</li>
+<li><a href="{plans}">Likely Plans</a>: the COAs each side will probably try, their intel traps, and quick rulings</li>
 <li><a href="{injects}">Injects</a> and the <a href="{key}">intelligence product key</a></li>
 <li><a href="{assets}">Master Asset List</a> and <a href="{forms}">White Cell Forms</a> (placement forms, trackers)</li>
 <li><a href="{starting}">Starting conditions</a> and the <a href="{map}">game map (PDF)</a></li>
@@ -189,7 +190,7 @@ permalink: /
 </ul>
 <h2>What's here</h2>
 <table><thead><tr><th>Section</th><th>Contents</th><th>Players see it?</th></tr></thead><tbody>
-<tr><td>White Cell</td><td>Handbook, Checklist, Intelligence and Injects (one page per section), Master Asset List, Forms, Print Packet</td><td>No</td></tr>
+<tr><td>White Cell</td><td>Handbook, Checklist, Likely Plans, Intelligence and Injects (one page per section), Master Asset List, Forms, Print Packet</td><td>No</td></tr>
 <tr><td>Common</td><td>Rules Handbook, Scenario Brief, Scenario Schedule, Starting Conditions, Player Forms</td><td>Both teams</td></tr>
 <tr><td>REDFOR</td><td>Commander's letter, Team Packet, Order of Battle, and each intelligence product (RI-01 to RI-15) on its own page</td><td>REDFOR only</td></tr>
 <tr><td>BLUEFOR</td><td>Commander's letter, Team Packet, Order of Battle, and each intelligence product (BI-01 to BI-15) on its own page</td><td>BLUEFOR only</td></tr>
@@ -222,6 +223,8 @@ def main():
             dl=[("PDF", "White Cell/White Cell Handbook.pdf")])
     md_page("handouts/whitecell/checklist.md", "whitecell/checklist", nav_order=2, parent="White Cell",
             dl=[("PDF", "White Cell/White Cell Checklist.pdf")])
+    md_page("handouts/whitecell/likely-plans.md", "whitecell/likely-plans", nav_order=2.5, parent="White Cell",
+            dl=[("PDF", "White Cell/White Cell Likely Plans.pdf")])
     split_sections("handouts/whitecell/intel-and-injects.md", "whitecell/intel-and-injects", "Intelligence and Injects", 3,
                    dl=[("PDF", "White Cell/White Cell Intelligence and Injects.pdf")])
     md_page("handouts/whitecell/master-asset-list.md", "whitecell/master-asset-list", nav_order=4, parent="White Cell",
@@ -259,7 +262,7 @@ def main():
 
     copy_downloads()
     with open(os.path.join(SITE, "index.html"), "w", encoding="utf-8") as f:
-        f.write(INDEX.format(clock=url("tools/whitecell-clock.html"), handbook=url("whitecell/handbook/"),
+        f.write(INDEX.format(clock=url("tools/whitecell-clock.html"), handbook=url("whitecell/handbook/"), plans=url("whitecell/likely-plans/"),
                              checklist=url("whitecell/checklist/"), packet=url("whitecell/print-packet/"),
                              starting=url("common/starting-conditions/"), downloads=url("downloads/"),
                              injects=url("whitecell/intel-and-injects/injects/"),

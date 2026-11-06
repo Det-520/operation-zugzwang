@@ -21,6 +21,7 @@ Each side's intelligence estimate (§2 of each packet) is deliberately **partly 
 | Latah | Logistics only (S-R3). No combat basing. | Slightly optimistic ("talks ongoing") | **Wrong**: thinks Latah will host bombers |
 | Asotin | Arms (B-40) and intel (B-41) are routine. Personnel (B-42, B-43) come only under the conditions in the BLUEFOR packet §1.4. Asotin avoids direct war unless provoked. | Doesn't know the extent | **Overestimates** Asotin's commitment ("whatever is needed") |
 | Sapphire loyalists | A small minority (S-B2) | **Overestimates** them ("significant sentiment") | — |
+| MV *Fortune's Promise* (seized at kickoff) | Docked at Fortune Harbor (Z10), with the crew held aboard under PFA militia guard (B-19a). An RFI gets the location: a docked ship can't be hidden from satellites. | — | — |
 
 ---
 

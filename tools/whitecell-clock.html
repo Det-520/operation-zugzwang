@@ -420,18 +420,18 @@
 
   // ---------- timer definitions (RULES.md §2.2–2.4, LLAB-SETUP.md) ----------
   const SAY = {
-    prep: n => `“Turn ${n}. Prepare, five minutes. Your RFI answers are on the table. Requests are due when the timer ends.” Hand out last turn's RFI answers. At the end, collect up to 3 request slips per team.`,
+    prep: n => `“Turn ${n}. Prepare, five minutes. Your RFI answers are in your team channel. Requests are due there when the timer ends.” Check last turn's RFI answers are posted. At the end, close requests: count the first 3 request posts per team.`,
   };
   const turnBlock = (n, phase) => ({ id: `t${n}`, tag: `T${n}`, short: `Turn ${n}`, name: `${phase} · Turn ${n}`, turn: n });
   // Run of show: block order and durations only (LLAB-SETUP.md §3). Keep the text safe to show: hidden assets and injects stay in the handbook.
   const BLOCKS = [
     { id: "p1", tag: "P1", short: "Phase I", name: "Phase I – Planning", steps: [
       { id: "plan", name: "Team planning & requests", dur: 720, who: "Both teams", say: "“You have 18 minutes to organize your team, synthesize your intelligence, and build a plan. You may submit up to four requests, RFIs or RFFs, due at minute 12. In the last three minutes you will brief your plan to your logger. There are no COAs in Phase I. Your time starts now.”" },
-      { id: "reh", name: "Brief rehearsal", dur: 180, who: "Both teams", say: "“Six minutes left in Phase I. Hand in your Phase I request slips now, up to four per team. You have three minutes to rehearse before you brief your logger.” Answer the requests during this step and the next." },
+      { id: "reh", name: "Brief rehearsal", dur: 180, who: "Both teams", say: "“Six minutes left in Phase I. Requests close now. We'll answer the first four posted in your team channel. You have three minutes to rehearse before you brief your logger.” Answer the requests during this step and the next." },
       { id: "opord", name: "OPORD briefs", dur: 180, who: "Teams → loggers", say: "Each logger hears its team's oral five-paragraph brief and writes its planned COAs (up to 3, Turns 1–3) and, for BLUEFOR, the B-06 NASAMS zones on the placement form (White Cell Forms §4)." },
     ] },
     { id: "ko", tag: "KO", short: "Kickoff", name: "Kickoff inject", steps: [
-      { id: "kick", name: "Kickoff inject", dur: 120, who: "White cell", say: "Read the kickoff inject. Move Strait Traffic to Restricted. Hand back Phase I RFI answers and RFF rulings." },
+      { id: "kick", name: "Kickoff inject", dur: 120, who: "White cell", say: "Read the kickoff inject. Move Strait Traffic to Restricted. Loggers post Phase I RFI answers and RFF rulings in each team channel." },
     ] },
     turnBlock(1, "Phase II"), turnBlock(2, "Phase II"), turnBlock(3, "Phase II"), turnBlock(4, "Phase II"),
     { id: "d1", tag: "D1", short: "Debrief 1", name: "Debrief 1", steps: [

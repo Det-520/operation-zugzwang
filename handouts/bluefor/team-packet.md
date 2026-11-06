@@ -48,9 +48,9 @@ Keep these from REDFOR. The white cell scores them after Turn 7.
 
 | ID | Name | What it means for you |
 | --- | --- | --- |
-| S-B1 | A House Divided | −1 when NDF and PFA forces must work together. Fix: a "unified command" COA, or Regime Stability 5. |
+| S-B1 | A House Divided | −1 when NDF and PFA forces must work together. Fix: a "unified command" COA (it takes this −1 itself; the fix starts next turn), or Regime Stability 5. |
 | S-B2 | Sapphire Loyalists | REDFOR may try defections or sabotage (at −1). A successful counterintelligence COA ends the threat for good. |
-| S-B3 | **Home Ground** | **+1** to your defensive COAs in Z10–Z12: defending, dispersing, hiding, repairing, ambushing |
+| S-B3 | **Home Ground** | **+1** to your defensive COAs in Z10–Z12: defending, dispersing, hiding, repairing, ambushing, counterintelligence |
 | S-B4 | **Asotin's Backing** | Asotin arms (B-40) and intel (B-41) are routinely approved |
 | S-B5 | **Supportive Population** | REDFOR takes −1 on COAs relying on Omak civilians, and your RFIs about REDFOR inside Omak get full answers. Lost if Regime Stability falls to 2 or lower. |
 

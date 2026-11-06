@@ -25,9 +25,9 @@ Public, and on cue cards at the table. Use them in your Pros and Cons: each one 
 
 | ID | Name | Effect | How to remove it |
 | --- | --- | --- | --- |
-| S-B1 | **A House Divided** | −1 on COAs that need NDF **and** PFA forces to work together | A successful "unified command" COA, or Regime Stability reaches 5 |
+| S-B1 | **A House Divided** | −1 on COAs that need NDF **and** PFA forces to work together | A successful "unified command" COA (it takes this −1 itself, and the removal starts next turn), or Regime Stability reaches 5 |
 | S-B2 | **Sapphire Loyalists** | A small minority. REDFOR may argue for defections or sabotage, but such COAs take **−1** because of S-B5. | A successful counterintelligence COA removes the option entirely |
-| S-B3 | **Home Ground** *(advantage)* | **+1** to BLUEFOR **defensive** COAs in Omak zones (Z10–Z12): defending, dispersing, hiding, repairing, ambushing. Defenders know the terrain, and any ground incursion is very costly. | Permanent |
+| S-B3 | **Home Ground** *(advantage)* | **+1** to BLUEFOR **defensive** COAs in Omak zones (Z10–Z12): defending, dispersing, hiding, repairing, ambushing, counterintelligence. Defenders know the terrain, and any ground incursion is very costly. | Permanent |
 | S-B4 | **Asotin's Backing** *(advantage)* | BLUEFOR requests for Asotin arms and intel are **routinely approved**. Bigger escalations need conditions. Supplies arrive via the West Approach and by air. REDFOR must argue a successful COA to interdict them, and interdiction risks Asotin escalation. | Permanent |
 | S-B5 | **Supportive Population** *(advantage)* | Regime Stability starts at 4. REDFOR COAs that rely on Omak civilians (SOF operating in Omak, loyalist uprisings, information ops aimed at Omak's public) take **−1**. BLUEFOR RFIs about REDFOR activity *inside Omak* get full answers (local lookouts). | Eroded: if Regime Stability falls to 2 or lower, the −1 no longer applies |
 
@@ -71,7 +71,7 @@ Public, and on cue cards at the table. Use them in your Pros and Cons: each one 
 
 **Constraint on BLUEFOR.** COAs that need NDF **and** PFA forces to work together take **−1**.
 
-**Removed by:** a successful "unified command" COA, or Regime Stability reaches 5.
+**Removed by:** a successful "unified command" COA, or Regime Stability reaches 5. The unified command COA takes this −1 itself, and the removal starts next turn, because reorganizing takes time.
 
 **Removed on turn:** ______
 
@@ -85,7 +85,7 @@ Public, and on cue cards at the table. Use them in your Pros and Cons: each one 
 
 ### S-B3 · Home Ground
 
-**Advantage for BLUEFOR.** **+1** to BLUEFOR **defensive** COAs in Omak zones (Z10–Z12): defending, dispersing, hiding, repairing, ambushing. Defenders know the terrain, and any ground incursion is very costly.
+**Advantage for BLUEFOR.** **+1** to BLUEFOR **defensive** COAs in Omak zones (Z10–Z12): defending, dispersing, hiding, repairing, ambushing, counterintelligence. Defenders know the terrain, and any ground incursion is very costly.
 
 **Permanent.**
 

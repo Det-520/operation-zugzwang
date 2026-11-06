@@ -2,7 +2,8 @@
 
 Usage: python3 tools/check_assets.py
 Exits non-zero if IDs differ between the packets and the CSV, or if a CSV row
-is missing an asset name, role, or limitation.
+is missing an asset name, role, or limitation, or if a split counter's `parts`
+count doesn't match its list of zones (Z8;Z10).
 """
 
 import csv
@@ -39,6 +40,13 @@ def main() -> int:
         for field in REQUIRED:
             if not row[field].strip():
                 problems.append(f"{asset_id}: empty '{field}' in CSV")
+        parts = row.get("parts", "").strip()
+        if parts and (not parts.isdigit() or int(parts) < 2):
+            problems.append(f"{asset_id}: 'parts' must be blank or 2 or more, not '{parts}'")
+        elif row.get("part_asset", "").strip() and not parts:
+            problems.append(f"{asset_id}: 'part_asset' is set but 'parts' is blank")
+        elif ";" in row["zone"] and len(row["zone"].split(";")) != int(parts or 1):
+            problems.append(f"{asset_id}: {len(row['zone'].split(';'))} zones listed but parts is '{parts or 1}'")
 
     for asset_id in sorted(packet_ids.keys() - csv_ids.keys()):
         problems.append(f"{asset_id}: in {packet_ids[asset_id]} packet but not in CSV")

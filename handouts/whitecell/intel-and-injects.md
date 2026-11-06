@@ -22,11 +22,12 @@ Each team's intelligence estimate is **deliberately partly wrong**, and its inte
 | Latah | Logistics only (S-R3). No combat basing. Wants air and missile defense first (I-11). | Slightly optimistic ("talks ongoing") | **Wrong:** thinks Latah will host bombers |
 | Asotin | Arms and intel are routine. Personnel only under the B-42 and B-43 conditions. Avoids direct war unless provoked. | Extent unknown | **Overestimates** it ("whatever is needed") |
 | Sapphire loyalists | A small minority (S-B2) | **Overestimates** them ("significant sentiment") | — |
+| MV *Fortune's Promise* | Docked at Fortune Harbor (Z10), with the crew held aboard under PFA militia guard (B-19a). An RFI gets the location: a docked ship can't be hidden from satellites. | — | — |
 | Tekoa | Neutral. Its clans profit from piracy and will sell "quiet" to both sides. | — | — |
 
 ## 2. Answering RFIs
 
-Answer from what that side would plausibly know: incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. **Never** reveal secret objectives or secret COAs. Write answers in one or two sentences and hand them back at the start of the next Prepare.
+Answer from what that side would plausibly know: incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. **Never** reveal secret objectives or secret COAs. Write answers in one or two sentences. The logger posts each one in a thread under the team's request in its team channel by the start of the next Prepare.
 
 - **Hidden counters** are revealed by a successful ISR **COA**, not by an RFI. An RFI can give hints ("signals intelligence suggests additional air defense emitters in the interior") but not a location.
 - **An RFI that asks to confirm an intelligence product** gets an answer consistent with the key (§3): confirm what is true (without giving locations of hidden counters), cast doubt on what is false, and say "no further information" about noise.
@@ -70,7 +71,7 @@ Both sides' products were written so that each team has **true hints** about the
 | RI-08 | Omak envoys seeking recognition in two neutral capitals. Civilian casualties help them. | **True** | **B3** (recognition by two states). Restraint denies it. |
 | RI-09 | "Indigo Sparks" defaced the Camas port website and threatens Camas power | **True** | **B-21** hacktivist cell. I-09 (Camas power outage) is a natural follow-up. |
 | RI-10 | P-8 caught a brief coastal targeting radar on the **eastern** Narrows headland | **True** | **B-09** Harpoon CB-2. R-15 is at risk in the eastern Narrows. |
-| RI-11 | Untested paid informant: heavy cylinders loaded onto two ferries fitted with rails | **True** (despite the D3 rating) | **B-11** mines, laid from requisitioned ferries. A good test of whether teams dismiss low-rated sources. |
+| RI-11 | Untested paid informant: heavy cylinders under guard on the quay, and rails fitted to two civilian ferries beside them | **True** (despite the D3 rating) | **B-11** mines at Fortune Harbor, and ferries made ready for BLUEFOR to requisition (B-32) as minelayers. A good test of whether teams dismiss low-rated sources. |
 | RI-12 | Viral claim of "Asotin troops" at Omak City airport (the capital). The analyst note says transport aircrew. | **Partly true** (aircrew, not troops) | **R3** is not yet failed. Teams that believe the post may write off R3 or escalate needlessly. |
 | RI-13 | Latah wants its "skies safe" before allowing combat aircraft, and asked about air defense | **True** | The path to removing **S-R3**: R-35 to Latah (I-11) |
 | RI-14 | Pirate attack. Tekoan clans collect "harbor fees" from pirate coves. | **Noise** (true) | Tekoa's hidden agenda (piracy profit) |
@@ -104,7 +105,7 @@ Both sides' products were written so that each team has **true hints** about the
 
 > "FLASH. Talks have collapsed. This morning the PFA government declared the Strait of Great Fortune **closed to Cosmopolis-flagged and allied military shipping**, and PFA maritime militia boarded and seized the Cosmopolis-flagged container ship **MV *Fortune's Promise*** and its crew of 22. Asotin has called the seizure 'a lawful act of a sovereign nation.' The President of Cosmopolis, invoking the defense treaty with Omak's 'legitimate' Sapphire government, has ordered military operations. Omak's government has declared that any attack will be met with full force. **A state of war exists.** Strait Traffic is now **Restricted**."
 
-Then move Strait Traffic to **Restricted**. The seized ship and crew are a ready-made objective and bargaining chip for either side.
+Then move Strait Traffic to **Restricted**. The seized ship is docked at **Fortune Harbor (Z10)**, with the crew held aboard under PFA militia guard (B-19a). It and its crew are a ready-made objective and bargaining chip for either side.
 
 ### 4.2 Inject pool
 
@@ -115,12 +116,12 @@ Then move Strait Traffic to **Restricted**. The seized ship and crew are a ready
 | I-03 | **Leaked strike video** shows civilian casualties (pick the side that caused the most civilian risk). Opinion ±1. | Restraint and legitimacy | Turn 3–4 |
 | I-04 | **Cosmopolis legislature hearing** questions the war's legality. Domestic Will −1 unless REDFOR's next COA addresses it. | Political front for REDFOR | Turn 3–5 |
 | I-05 | **The Sapphire president, from Cosmopolis**, calls for an uprising. Stability −1 unless BLUEFOR's next COA counters it. | Pressure on BLUEFOR's home front | Turn 2–4 |
-| I-06 | **An NDF officer defects** with air defense information: REDFOR learns one hidden B-06 or B-09 location. | Rewards REDFOR exploiting S-B2 | After a successful REDFOR loyalist COA |
+| I-06 | **An NDF officer defects** with air defense information: REDFOR learns the location of one hidden NASAMS battery (B-06a, b, or c) or of B-09. | Rewards REDFOR exploiting S-B2 | After a successful REDFOR loyalist COA |
 | I-07 | **An Asotin convoy** of cargo ships, escorted by Asotin destroyers, heads for the West Approach. REDFOR must decide whether to stop it (needs R-39 authority). | Great-power dilemma: R3 vs. escalation | Turn 3–5 |
 | I-08 | **Pirates hijack** a cargo ship off the Tekoa coast while both navies are busy. | Second-order effect of chaos | Any turn the Strait is Restricted or Closed |
 | I-09 | **Cyberattack** knocks Camas civilian power offline for a day. Camas's government demands that Cosmopolis protect it. | Host-nation pressure, S-R2 | After a B-21 COA, or Turn 3–4 |
 | I-10 | **GPS jamming** across the Strait, likely Asotin-supplied. −1 to GPS-dependent precision COAs for one turn unless REDFOR argues around it. | Space and EMS awareness (R-20) | Turn 4–6 |
-| I-11 | **Latah offers combat basing**, if Cosmopolis first deploys Patriot or THAAD to Latah (R-35). | Opportunity plus a dilemma (ACE) | When Opinion ≥ +1 |
+| I-11 | **Latah offers combat basing**, if Cosmopolis first deploys Patriot or THAAD to Latah (R-35). Once granted, the basing stays even if Opinion later falls. | Opportunity plus a dilemma (ACE) | When Opinion ≥ +1 |
 | I-12 | **Mediation offer**: a neutral state offers to host talks. | Off-ramp. Tests whether teams can win without fighting. | Phase III |
 | I-13 | **Bounding directive**: national command forbids an escalating behavior (e.g. "no further strikes on Fortune Harbor port infrastructure"). | Keeps the game on the rails | As needed |
 

@@ -13,7 +13,7 @@ short: "Player Rules Handbook"
 | Part | What it covers |
 | --- | --- |
 | **1. How to play** | The game in one page, the turn clock, and an example turn |
-| **2. The rules in detail** | COAs, Pros and Cons, adjudication, requests, negotiation, roles, end of game |
+| **2. The rules in detail** | COAs, Pros and Cons, adjudication, requests, negotiation, roles, Slack channels, end of game |
 | **3. Reference** | Doctrine cheat sheet and glossary |
 
 <!-- pagebreak -->
@@ -34,16 +34,17 @@ short: "Player Rules Handbook"
    > "Their COA will fail or fall short because: **(1)** … **(2)** … **(3)** …"
 
 6. **Good reasons** are specific and grounded in facts. They point to your assets' capabilities, the map, things that happened earlier in the game ("established facts"), and doctrine (tenets of airpower, principles of joint operations). Repeating a reason in new words earns nothing.
-7. **Odds.** With no strong reasons either way, a COA succeeds on 7+ on two dice (58%). Each strong reason for it adds +1, and each strong reason against it subtracts 1. If a COA is obviously sound and unopposed, it succeeds without a roll.
-8. **RFIs and RFFs.** Each turn you may hand the white cell **up to 3 written requests in total**, any mix of:
+7. **Odds.** With no strong reasons either way, a COA succeeds on 7+ on two dice (58%). Each strong reason for it adds +1, and each strong reason against it subtracts 1. If a COA is obviously sound and unopposed, it succeeds without a roll. If a call is too contentious to count, the white cell may take a quick **estimative vote** on how likely it is instead (§2.7).
+8. **RFIs and RFFs.** Each turn you may post **up to 3 requests in total** in your team's secret Slack channel, any mix of:
    a. **RFI (Request for Information):** a question about the situation.
    b. **RFF (Request for Forces):** a request for more assets or authorities from your national command. Reinforcements take time to arrive.
 
    Requests don't count as your COA, and there is no debate on them.
 9. **Turn clock (15 minutes, run by a timer program).** See §1.2. **BLUEFOR always goes first.**
-10. **No interrupting.** It's a courtroom, not a debate. You speak in your slot and are silent in theirs. Raise only points of fact or procedure. **If you miss your slot, the point is lost.** There are no do-overs.
-11. **Arguing about the other side is allowed.** You can argue *their* troops are tired or *their* radar has a gap. You cannot argue that a player-controlled actor *agrees* to something. Ask them in person instead.
-12. **The point** is good decisions and good reasoning under pressure: plan, communicate, brief, defend your choices, and adapt.
+10. **Slack, not paper.** Slack is the written record, and you still brief out loud. Post your COA and Cons in your group's public channel, and your requests and any secret COA in your team's secret channel, where the white cell answers (§2.11).
+11. **No interrupting.** It's a courtroom, not a debate. You speak in your slot and are silent in theirs. Raise only points of fact or procedure. **If you miss your slot, the point is lost.** There are no do-overs.
+12. **Arguing about the other side is allowed.** You can argue *their* troops are tired or *their* radar has a gap. You cannot argue that a player-controlled actor *agrees* to something. Ask them in person instead.
+13. **The point** is good decisions and good reasoning under pressure: plan, communicate, brief, defend your choices, and adapt.
 
 ### 1.2 The turn clock
 
@@ -51,13 +52,13 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 
 | Step | Clock | Time | Who | What happens |
 | --- | --- | --- | --- | --- |
-| **Prepare** | 0:00–5:00 | 5:00 | Both teams | Pick this turn's COA. Write up to 3 RFI/RFF slips. Negotiate if you want (§2.6, ≤ 2:00). The white cell hands back last turn's RFI answers at the start. |
-| Hand in slips | 5:00 | — | Both teams | Give your RFI/RFF slips (≤ 3 combined) to the white cell. No debate. |
-| **BLUEFOR COA + Pros** | 5:00–7:00 | 2:00 | BLUEFOR briefer | Action, measurable effect, up to 3 reasons |
-| **REDFOR COA + Pros** | 7:00–9:00 | 2:00 | REDFOR briefer | Action, measurable effect, up to 3 reasons |
+| **Prepare** | 0:00–5:00 | 5:00 | Both teams | Pick this turn's COA. Post up to 3 RFIs/RFFs in your team channel. Negotiate if you want (§2.6, ≤ 2:00). Last turn's RFI answers are in your team channel at the start. |
+| Requests close | 5:00 | — | Both teams | The white cell counts your first 3 request posts. No debate. |
+| **BLUEFOR COA + Pros** | 5:00–7:00 | 2:00 | BLUEFOR briefer | Brief aloud: action, measurable effect, up to 3 reasons. Post the same COA in the group channel by 7:00. |
+| **REDFOR COA + Pros** | 7:00–9:00 | 2:00 | REDFOR briefer | Brief aloud: action, measurable effect, up to 3 reasons. Post the same COA in the group channel by 9:00. |
 | Prepare Cons | 9:00–11:00 | 2:00 | Both teams | Huddle to pick up to 3 Cons against the enemy's COA |
-| **REDFOR Cons** on BLUEFOR's COA | 11:00–12:00 | 1:00 | REDFOR | Up to 3 reasons BLUEFOR's COA fails or has costs |
-| **BLUEFOR Cons** on REDFOR's COA | 12:00–13:00 | 1:00 | BLUEFOR | Up to 3 reasons REDFOR's COA fails or has costs |
+| **REDFOR Cons** on BLUEFOR's COA | 11:00–12:00 | 1:00 | REDFOR | Up to 3 reasons BLUEFOR's COA fails or has costs. Post them in the group channel by 12:00. |
+| **BLUEFOR Cons** on REDFOR's COA | 12:00–13:00 | 1:00 | BLUEFOR | Up to 3 reasons REDFOR's COA fails or has costs. Post them in the group channel by 13:00. |
 | **White cell resolves** | 13:00–15:00 | 2:00 | White cell | Rolls, narrates, rules on RFFs, moves counters and tracks, maybe an inject |
 
 ### 1.3 Example turn
@@ -140,7 +141,9 @@ Four yeses make a strong reason (±1). One that is decisive on its own can be ±
 
 - Use these for **misdirection or conditional traps** only, e.g. decoy SAM sites, a honeypot network, booby-trapped port facilities. Don't use them for ordinary actions you'd simply rather hide.
 - Each team may make **one secret COA per phase**.
-- Write it on a slip with a **precise trigger** (Player Forms), hand it to the white cell, and announce "We are making a secret COA." That is your COA for the turn. The other team can't give Cons against something it can't see.
+- Post it in your team channel with a **precise trigger** (template in the Player Forms). The other team can't give Cons against something it can't see.
+- **During a turn**, announce aloud "We are making a secret COA." That is your COA for the turn.
+- **During a planning phase** (Phase I or III), post it before the phase ends and tell your logger in your brief. It then counts as that coming phase's secret COA, it doesn't use up a turn's COA, and no announcement is made.
 - The white cell resolves it **when the trigger occurs**. A trigger written too loosely doesn't fire. Precision is your job.
 
 ### 2.5 Arguing about other actors
@@ -173,7 +176,7 @@ The white cell makes the final decision. It works through each COA like this:
    | Weak, vague, or duplicate reason | 0 |
    | **Planned** COA executed as briefed and still valid | +1 |
    | Starting conditions or ongoing effects that apply (Scenario Brief §6) | ±1 each |
-   | An asset used in the COA is **Degraded** | −1 |
+   | Each asset used in the COA that is **Degraded** (each counter in a package counts) | −1 each |
 
 4. **Roll 2d6** in the dice program, add the modifiers, and read the result:
 
@@ -196,12 +199,22 @@ The white cell makes the final decision. It works through each COA like this:
 
 **When COAs interact or collide.** Both COAs happen simultaneously across the 3-day turn window. If one affects the other's odds (e.g. BLUEFOR disperses SAMs while REDFOR strikes them), the white cell folds that into the modifiers. If both teams' COAs can't both succeed (e.g. both try to seize the same port), the program rolls for each side, each adds its own modifiers, and the higher total wins. A tie is a stalemate: both are Partial.
 
+**Estimative vote.** When a call is contentious (both teams keep arguing, or the call is too close to count), the lead adjudicator may announce an **estimative vote** instead of counting modifiers. Each white cell member shows 1–5 fingers for how likely your COA is to work, the white cell takes the median, and the dice program rolls against it. If it happens, it's a **Success**; if not, a **Failure**. It takes about 10 seconds, and the result is final like any other.
+
+| Vote (median) | 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- | --- |
+| Meaning | Remote | Unlikely | Even chance | Likely | Almost certain |
+| Chance it happens | 8% (11+) | 28% (9+) | 50% | 72% (6+) | 92% (4+) |
+
+The arguments still matter: the white cell members vote on how strong your Pros and the other team's Cons were.
+
 **No recalculation.** An objection raised late (after its slot, or after the roll) **is not considered**, and a result is not re-run once announced.
 
 ### 2.8 Counters and fog of war
 
 - **Counter states:** **Ready** · **Degraded** (−1 when used) · **Destroyed** (removed).
 - **Visible** counters start on the central map, where both teams can see them.
+- **Split counters.** An asset spread over several zones has one counter per part, lettered after its ID. For example, the PFA militia brigades are B-19a, B-19b, and B-19c, one each in Z10, Z11, and Z12. Each part moves, is found, and is Degraded or Destroyed on its own, and a strike on a zone touches only the parts in it. Name one part ("B-19b") or the whole asset ("B-19", meaning every part).
 - **Hidden** counters stay on your team sheet. The enemy doesn't know about them until they are found by a successful ISR COA, revealed by their own use, or disclosed by an inject. Mentioning a hidden asset in a COA or in a Pro or Con counts as using it, whether or not the COA succeeds. Once a hidden counter is used, it goes on the map.
 - **RFI answers** reflect what your intelligence would plausibly know. They may be incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. RFIs never reveal the enemy's secret objectives or secret COAs.
 - **Injects** are events the white cell introduces, such as weather, civilian events, leaks, and third-party moves. There is at most one per turn. Injects may also set new national directives.
@@ -213,10 +226,12 @@ The white cell makes the final decision. It works through each COA like this:
 | --- | --- | --- |
 | Purpose | Ask what your side knows: enemy disposition, weather, a third party's stance, the civilian situation | Ask your national command for more assets or authorities |
 | Limit | **Up to 3 per turn, RFIs and RFFs combined** | Shared with RFIs |
-| Format | One question per slip, one sentence | Asset (from your RFF pool, or a free-text request), destination, and purpose |
-| Answer | A short written answer at the start of the next Prepare | Approved, partly approved, or denied, with the **arrival turn** |
+| Format | One Slack message per request: one question, one sentence | Asset (from your RFF pool, or a free-text request), destination, and purpose |
+| Answer | A short written answer in a thread under your post, by the start of the next Prepare | Approved, partly approved, or denied, with the **arrival turn** |
 
+- Requests posted after Prepare ends aren't answered. Post them again next turn.
 - Forces that arrive by RFF **do nothing on the turn they arrive** unless the timing table says otherwise.
+- Forces that arrive by RFF go on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR) unless your RFF names another destination.
 - A big RFF (a [MAJOR FORMATION], or new authorities like permission to strike [ENEMY CAPITAL]) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ### 2.10 Roles
@@ -230,7 +245,21 @@ The white cell makes the final decision. It works through each COA like this:
 
 You **may use computers** during play. The decisions and briefs must be your team's own.
 
-### 2.11 End of game
+### 2.11 Slack channels
+
+- **Before the LLAB:** accept the Slack invitation that comes with your team assignment and join both of your channels:
+  - your **group channel** (public), shared by both teams in your group and the white cell, for example `opz-group1-army`;
+  - your **team channel** (secret), shared only by your team and your group's white cell, for example `opz-alpha-redfor`. The other team is never in it.
+- **Bring a device.** At least one teammate keeps Slack open at the table. Pick a team member to post.
+- **Group channel:** your COA and Pros (by the end of your COA slot) and your Cons (by the end of your Cons slot).
+- **Team channel:** each RFI or RFF as its own message (during Prepare), and any secret COA. Never post secrets in the group channel.
+- Copy-and-paste templates are in the Player Forms.
+- **Speaking still counts.** Your briefer briefs out loud in your slot, and only what is said in the slot counts. The post is the written record the white cell reads while it adjudicates, so use asset IDs (R-01, B-19b). Reasons in the post that weren't said aloud add nothing.
+- **What you get back:** RFI answers and RFF rulings in a thread under each request, in your team channel.
+- **If Slack goes down,** write the same thing on a backup paper slip from the white cell and hand it over.
+- Never share your team channel's contents where the other team can see them.
+
+### 2.12 End of game
 
 After Turn 7 the white cell states the final map and tracks, then scores each team's three secret objectives as **Achieved**, **Partial**, or **Not achieved**. The two sides' objectives aren't always opposed, so it is possible for both teams to achieve something. Talking to the other team can pay off.
 
@@ -282,6 +311,7 @@ Cite these by name in your Pros and Cons, and say *how* they apply.
 | **Reasonable assumption** | Something any professional would accept without proof (trained troops beat untrained ones) |
 | **RFI / RFF** | Request for Information / Request for Forces |
 | **Inject** | A white cell event that changes the situation |
+| **Estimative vote** | A quick white cell vote (1–5) on how likely a contentious COA is to work, rolled in the dice program instead of counting modifiers |
 | **White cell** | The neutral control group: the lead adjudicator and loggers |
 | **REDFOR / BLUEFOR** | The two opposing player sides |
 | **Counter** | A printed piece on the map representing an asset or effect |
