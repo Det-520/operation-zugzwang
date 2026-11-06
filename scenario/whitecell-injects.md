@@ -24,7 +24,7 @@ The seized ship and crew make a ready-made objective and bargaining chip for eit
 | I-03 | **Leaked strike video** shows civilian casualties (the white cell picks the side that caused the most civilian risk). International Opinion ±1. | Restraint and legitimacy | Turn 3–4 |
 | I-04 | **Cosmopolis legislature hearing** questions the war's legality. Domestic Will −1 unless REDFOR's next COA addresses it. | Political front for REDFOR | Turn 3–5 |
 | I-05 | **The Sapphire president, speaking from Cosmopolis**, calls for an uprising. Regime Stability −1 unless BLUEFOR's next COA counters it. | Pressure on BLUEFOR's home front | Turn 2–4 |
-| I-06 | **An NDF officer defects**, carrying information on air defense positions (REDFOR learns one hidden B-06 or B-09 location). | Rewards REDFOR exploitation of S-B2 | After a successful REDFOR loyalist COA |
+| I-06 | **An NDF officer defects**, carrying information on air defense positions (REDFOR learns the location of one hidden NASAMS battery, B-06a, b, or c, or of B-09). | Rewards REDFOR exploitation of S-B2 | After a successful REDFOR loyalist COA |
 | I-07 | **An Asotin convoy** of cargo ships, escorted by Asotin destroyers, heads for the West Approach. REDFOR must decide whether to stop it (it needs R-39 authority). | Great-power dilemma: R3 vs. escalation | Turn 3–5 |
 | I-08 | **Pirates hijack** a cargo ship off the Tekoa coast while both navies are busy. | Second-order effect of chaos | Any turn the Strait is Restricted or Closed |
 | I-09 | **Cyberattack** knocks Camas civilian power offline for a day. Camas's government demands that Cosmopolis protect it. | Host-nation pressure, S-R2 | After a B-21 COA, or Turn 3–4 |

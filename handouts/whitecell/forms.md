@@ -153,7 +153,9 @@ Deeper **blue** favours Omak (BLUEFOR), deeper **red** favours Cosmopolis (REDFO
 
 | Hidden counter | Starts in | Now in | Revealed (turn) | State |
 | --- | --- | --- | --- | --- |
-| B-06 NASAMS ×3 + Stingers | **Chosen in Phase I:** ☐ Z10 ☐ Z11 ☐ Z12 | | | ☐ R ☐ D ☐ X |
+| B-06a NASAMS battery + Stinger team | **Chosen in Phase I:** ☐ Z10 ☐ Z11 ☐ Z12 | | | ☐ R ☐ D ☐ X |
+| B-06b NASAMS battery + Stinger team | **Chosen in Phase I:** ☐ Z10 ☐ Z11 ☐ Z12 | | | ☐ R ☐ D ☐ X |
+| B-06c NASAMS battery + Stinger team | **Chosen in Phase I:** ☐ Z10 ☐ Z11 ☐ Z12 | | | ☐ R ☐ D ☐ X |
 | B-09 Harpoon CB-2 | Z10, east Narrows | | | ☐ R ☐ D ☐ X |
 | B-10 HIMARS with PrSM | Z12 | | | ☐ R ☐ D ☐ X |
 | B-11 Quickstrike mines | Z10 | | | ☐ R ☐ D ☐ X |

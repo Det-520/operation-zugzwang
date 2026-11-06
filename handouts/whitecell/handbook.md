@@ -86,11 +86,12 @@ The White Cell Checklist has the full list, from a week out to cleanup, in order
 | Z1 Cosmopolis (off-map box) | R-16, R-17, R-19, R-20 | |
 | Z6 Camas | R-01 to R-14 | |
 | Z9 East Approach | R-15 | |
-| Z8 Narrows / Z10 Coast | | B-12, B-18 (patrol and militia boats) |
-| Z10 Omak Coast | | B-04 (PAT-1), B-08 (CB-1), B-14, B-15 |
-| Z11 Omak City (Capital) | | B-01, B-02, B-05 (PAT-2), B-13, B-17, B-20 |
-| Z12 Omak Interior | | B-03, B-16 |
-| Z10–Z12 (spread) | | B-07 (radar network), B-19 (militia brigades) |
+| Z8 Narrows | | B-12a (patrol boats), B-18a (militia boats) |
+| Z10 Omak Coast | | B-04 (PAT-1), B-08 (CB-1), B-14, B-15, B-07a, B-12b, B-18b, B-19a |
+| Z11 Omak City (Capital) | | B-01, B-02, B-05 (PAT-2), B-13, B-17, B-20, B-07b, B-19b |
+| Z12 Omak Interior | | B-03, B-16, B-07c, B-19c |
+
+B-07 (radar network) and B-19 (militia brigades) have one counter in each of Z10, Z11, and Z12. B-12 and B-18 have one in Z8 and one in Z10. Each part moves and takes damage on its own (Rules §4.5).
 
 **Hidden counters stay off the map**, on the owning team's sheet and on the Master Asset List:
 
@@ -99,7 +100,7 @@ The White Cell Checklist has the full list, from a week out to cleanup, in order
 | REDFOR | R-18 B-2A Spirit | Z1 Cosmopolis |
 | REDFOR | R-21 Cyber mission teams | Z1 (acts remotely) |
 | REDFOR | R-22 AFSOC MC-130J + Special Tactics | Z1 |
-| BLUEFOR | B-06 NASAMS ×3 + Stingers | **BLUEFOR chooses the zones in Phase I. The logger marks them on the placement form.** |
+| BLUEFOR | B-06a, B-06b, B-06c NASAMS batteries + Stingers | **BLUEFOR chooses a zone in Z10–Z12 for each battery in Phase I. The logger marks them on the placement form. Each battery is revealed on its own.** |
 | BLUEFOR | B-09 Harpoon CB-2 | Z10, east Narrows |
 | BLUEFOR | B-10 HIMARS with PrSM | Z12 Interior |
 | BLUEFOR | B-11 Quickstrike mines | Z10 |
@@ -122,7 +123,7 @@ A hidden counter goes on the map under three conditions:
 | 1345–1357 | 12 | • Team planning & requests | Read the Phase I opening script. Start the 18-minute timer. Teams organize and plan using their pre-read intelligence products. |
 | **1357** | — | • **Phase I request cutoff (min 12)** | **Collect up to 4 requests (RFIs/RFFs combined) per team.** Lead adjudicator writes answers and rulings during the next 6 minutes while teams rehearse and brief. |
 | 1357–1400 | 3 | • Brief rehearsal | Teams finalize their five-paragraph OPORD brief. Lead adjudicator finishes answering Phase I requests. |
-| 1400–1403 | 3 | • Phase I OPORD briefs (last 3 min) | Each logger hears its own team's oral five-paragraph OPORD brief and writes its **planned COAs** (up to 3, Turns 1–3) and, for BLUEFOR, the **B-06 NASAMS zones** on the placement form (White Cell Forms §4). |
+| 1400–1403 | 3 | • Phase I OPORD briefs (last 3 min) | Each logger hears its own team's oral five-paragraph OPORD brief and writes its **planned COAs** (up to 3, Turns 1–3) and, for BLUEFOR, the zones of **B-06a, B-06b, and B-06c** (NASAMS) on the placement form (White Cell Forms §4). |
 | **1403–1405** | **2** | **Kickoff inject** | Read the kickoff inject (Intelligence and Injects §4.1). Move Strait Traffic to **Restricted**. Hand back Phase I RFI answers and RFF rulings. |
 | **1405–1505** | **60** | **Phase II: Turns 1–4** | Run four 15-minute turns (§4): · **Turn 1:** 1405–1420 · **Turn 2:** 1420–1435 · **Turn 3:** 1435–1450 · **Turn 4:** 1450–1505 *(S-R1 bites on Camas strikes unless resupplied)* |
 | **1505–1512** | **7** | **Debrief 1** | Phase I–II flight commanders lead it. Hand command to the **Phase III–IV flight commanders** afterward. |
@@ -174,7 +175,7 @@ Read these aloud, word for word or close to it.
 - [ ] Strait Traffic **Closed** → Domestic Will **−1**.
 - [ ] Any track at a trigger value? Apply it (§6.2).
 - [ ] Turn 4 or later and Camas not resupplied → S-R1's −1 applies to Camas-based strikes.
-- [ ] Any RFF arriving this turn → place its counter. It acts next turn.
+- [ ] Any RFF arriving this turn → place its counter (REDFOR: Z6 Camas, BLUEFOR: Z11 Omak City, unless the RFF named another destination). It acts next turn.
 - [ ] Any secret COA trigger met → resolve it now.
 
 ### 4.2 Keeping order
@@ -329,7 +330,7 @@ At the end of each resolve step, state any **ongoing effects** in one line ("ref
 
 ## 7. Ruling on RFFs
 
-Rule on RFFs during step 8 and tell the team the **arrival turn**. "N" is the turn of approval. Phase I RFFs count from Turn 1. Arriving forces **act the turn after** they arrive.
+Rule on RFFs during step 8 and tell the team the **arrival turn**. "N" is the turn of approval. Phase I RFFs count from Turn 1. Arriving forces **act the turn after** they arrive. Forces arrive on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination; rule on whether that destination is realistic.
 
 ### REDFOR
 

@@ -51,7 +51,7 @@ This packet holds your forces (including hidden ones the enemy doesn't know abou
 
 ### 1.4 RFF pool
 
-Request these with an RFF. Arrival is counted from the turn the request is approved (`scenario/00-overview.md` §6).
+Request these with an RFF. Arrival is counted from the turn the request is approved (`scenario/00-overview.md` §6). Arriving forces are placed on **Z6 Camas** unless the RFF names another destination (`RULES.md` §5).
 
 | ID | Asset | Arrives | Approval notes |
 | --- | --- | --- | --- |

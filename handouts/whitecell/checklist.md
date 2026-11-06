@@ -42,7 +42,7 @@ short: "White Cell Checklist"
 - [ ] **1357** Read the minute-12 call. Collect up to **4** request slips per team. Refuse extras.
 - [ ] **1357–1403** Lead adjudicator writes the RFI answers and RFF rulings. Phase I RFFs count from Turn 1 (Handbook §7).
 - [ ] **1400–1403** Each logger hears its team's oral OPORD brief and writes its **planned COAs** (up to 3, Turns 1–3) on the placement form.
-- [ ] BLUEFOR logger writes the **B-06 NASAMS zones** BLUEFOR chooses.
+- [ ] BLUEFOR logger writes the zone BLUEFOR chooses for each NASAMS battery (**B-06a, B-06b, B-06c**).
 
 ## 4. Kickoff inject (1403–1405)
 

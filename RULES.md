@@ -214,6 +214,22 @@ Both COAs are briefed before either is resolved, so **they happen simultaneously
 - **RFI answers** reflect what your existing intelligence would plausibly know. That may be incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. RFIs never reveal the enemy's secret objectives or secret COAs.
 - **Injects** (§7) add friction: weather, civilian events, leaks, third-party moves.
 
+### 4.5 Split counters [CANON: one counter per part; details PROPOSED]
+
+An asset spread over several zones is printed as **one counter per part**, lettered after its ID. The letters are parts of the same asset, not new IDs.
+
+| Asset | Parts | Starting zones |
+| --- | --- | --- |
+| B-06 NASAMS ×3 + Stingers (hidden) | B-06a, B-06b, B-06c | BLUEFOR picks a zone in Z10–Z12 for each part in Phase I (two may share a zone) |
+| B-07 Early-warning radar network | B-07a, B-07b, B-07c | Z10, Z11, Z12 |
+| B-12 Mark VI patrol boats | B-12a, B-12b | Z8, Z10 |
+| B-18 PFA maritime militia | B-18a, B-18b | Z8, Z10 |
+| B-19 PFA militia brigades ×3 | B-19a, B-19b, B-19c | Z10, Z11, Z12 |
+
+- Each part moves, is found, and is Degraded or Destroyed **on its own**. A strike on a zone touches only the parts in that zone.
+- A COA, Pro, or Con may name one part ("B-19b") or the whole asset ("B-19", meaning every part). For a hidden asset, naming one part reveals only that part. Naming the asset without a letter reveals all of its parts.
+- Time cost: none. The white cell already rules by zone.
+
 ---
 
 ## 5. Requests: RFIs and RFFs [CANON: limit of 3 combined per turn; Phase I: 4 due at minute 12]
@@ -228,6 +244,7 @@ Both COAs are briefed before either is resolved, so **they happen simultaneously
 | White cell response | Short written answer, delivered at the start of the next Prepare step | Approve, approve partially, or deny, with the **arrival turn** (`scenario/00-overview.md` §6). National politics shape approval (scenario tracks, e.g. Domestic Will). |
 
 - **[PROPOSED]** Forces that arrive by RFF **do nothing on the turn they arrive** unless the scenario timing table says otherwise. Their arrival is announced and their counters placed during white cell resolution.
+- **[CANON]** Forces that arrive by RFF are placed in their side's main base zone unless the RFF names another destination: **Z6 Camas** for REDFOR and **Z11 Omak City** for BLUEFOR, Asotin support included. Authorities and intelligence sharing (R-39, B-41) get no counter on the map.
 - **[PROPOSED]** A big RFF (a carrier strike group, a ground brigade, new authorities like permission to strike Omak City, the enemy capital) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ---
@@ -350,7 +367,7 @@ After the final turn's resolution, the white cell states the end state (map and 
 
 ## 11. Open decisions for the designer
 
-Settled (now CANON): owner, 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral five-paragraph Phase I brief, 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, and the v10 map with Camas inside PrSM range.
+Settled (now CANON): owner, 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral five-paragraph Phase I brief, 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5).
 
 Still open:
 
@@ -391,7 +408,7 @@ Still open:
 Each logger keeps one placement form for its side (`handouts/whitecell/forms.md` §4). It records where things are **now**, not a history. Loggers don't log every COA, roll, or move. The form holds:
 
 - the planned COAs from the Phase I brief (Turns 1–3) and the Phase III FRAGO (up to 2, Turns 5–7), each ticked when executed as briefed (for the +1 in §4.1);
-- each hidden counter's zone, the turn it was revealed, and its state (BLUEFOR's B-06 zones are chosen in Phase I);
+- each hidden counter's zone, the turn it was revealed, and its state, with one line per part of a split counter (BLUEFOR chooses the zones of B-06a, B-06b, and B-06c in Phase I; §4.5);
 - approved RFFs, with the turn each arrives and where it is placed;
 - visible counters that have moved, been Degraded, or been Destroyed since the starting setup.
 

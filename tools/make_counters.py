@@ -10,6 +10,9 @@ its own counters:
 
 Each counter is a small square: ID and owner in a colored band, a short asset
 name, then service and availability (HOME, RFF, HIDDEN) along the bottom.
+A counter whose `parts` column is 2 or more is printed once per part, lettered
+after the ID (B-07a, B-07b, B-07c), so each part can sit in its own zone. Its
+`part_asset` column, if filled, gives the singular name printed on each part.
 Counters share cut lines, so a paper cutter can take a whole row at once.
 No third-party packages are needed; the PDF is written directly.
 """
@@ -164,6 +167,19 @@ def draw_counter(page, x, y, s, row):
         page.text(x + s - pad, fy, " ".join(tags), "F2", foot_size, band, "right")
 
 
+def expand_parts(rows):
+    """One row per printed piece: a row with parts = N becomes N rows lettered a, b, c..."""
+    out = []
+    for row in rows:
+        n = int(row.get("parts") or 1)
+        if n == 1:
+            out.append(row)
+        else:
+            name = row.get("part_asset") or row["asset"]
+            out += [dict(row, id=row["id"] + "abcdefgh"[i], asset=name) for i in range(n)]
+    return out
+
+
 def layout(rows, s, title, audience):
     cols = int((PAGE_W - 2 * MARGIN) // s)
     per_page = cols * int((PAGE_H - 2 * MARGIN - HEADER) // s)
@@ -230,7 +246,7 @@ def main():
     args = parser.parse_args()
 
     with CSV_PATH.open(newline="", encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
+        rows = expand_parts(list(csv.DictReader(f)))
     s = args.size * 72
     cols = int((PAGE_W - 2 * MARGIN) // s)
     for path, sides in OUTPUTS.items():

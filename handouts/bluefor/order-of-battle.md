@@ -7,7 +7,8 @@ short: "BLUEFOR Order of Battle"
 **BLUEFOR EYES ONLY.** **Never show this to REDFOR.** *Fictional training scenario. All military systems are real U.S. systems, described with unclassified, approximate capabilities.*
 
 **Counter states:** Ready · Degraded (−1 when used) · Destroyed (removed).\
-**Visible** counters start on the central map, and REDFOR can see them. **Hidden** counters stay on this sheet until you use them or REDFOR finds them. In the tables below, hidden assets are the **shaded** rows (bold here).
+**Visible** counters start on the central map, and REDFOR can see them. **Hidden** counters stay on this sheet until you use them or REDFOR finds them. In the tables below, hidden assets are the **shaded** rows (bold here).\
+**Split counters:** B-06, B-07, B-12, B-18, and B-19 have one counter per part (a, b, c). Each part moves and takes damage on its own (Rules Handbook §2.8).
 
 Your force is smaller and lower-end than REDFOR's. The NDF bought its U.S.-type equipment from Cosmopolis under the old treaty, so **Cosmopolis knows your systems well**. Asotin-supplied items are also modeled as U.S. systems (a game convention). Your strength comes from your advantages: **Home Ground** (S-B3), **Asotin's Backing** (S-B4), and **Supportive Population** (S-B5). See Team Packet §3.
 
@@ -20,28 +21,30 @@ Your force is smaller and lower-end than REDFOR's. The NDF bought its U.S.-type 
 | B-03 | **F-15C Eagle** squadron (~12, older) · NDF · Z12 Interior | Air-superiority interceptor | Aging airframes. Spare parts came from Cosmopolis and are now cut off. |
 | B-04 | **Patriot battalion PAT-1** (PAC-2) · NDF · Z10 Coast (covers the Narrows) | Denies the air over the Strait to non-stealthy aircraft. Can engage missiles. | Mobile but slow to relocate. Its radar emits when active, which the RC-135 can find. |
 | B-05 | **Patriot battalion PAT-2** (PAC-2) · NDF · Z11 Omak City (Capital) | Protects Omak City and the main air base | Same as B-04 |
-| **B-06** | **NASAMS batteries (×3) plus Stinger teams · NDF · any Omak zone** | **Pop-up threats that ambush low or slow aircraft (A-10, MQ-9, C-130J, helicopters)** | **Short to medium range** |
-| B-07 | **AN/FPS-117 early-warning radar** network · NDF · Z10–Z12 | Long-range detection and cueing for Patriot and fighters | Fixed sites. Can be jammed (EC-37B) and struck. |
+| **B-06** | **NASAMS batteries (×3) plus Stinger teams · NDF · B-06a/b/c in Z10–Z12, your choice** | **Pop-up threats that ambush low or slow aircraft (A-10, MQ-9, C-130J, helicopters)** | **Short to medium range** |
+| B-07 | **AN/FPS-117 early-warning radar** network · NDF · B-07a Z10, B-07b Z11, B-07c Z12 | Long-range detection and cueing for Patriot and fighters | Fixed sites. Can be jammed (EC-37B) and struck. |
 | B-08 | **Harpoon Coastal Defense** battery CB-1 (~75 mi) · NDF · Z10 (west Narrows) | Holds shipping and warships in the Strait at risk | Needs targeting data from radar, drones, or the militia |
 | **B-09** | **Harpoon Coastal Defense battery CB-2 · NDF · Z10 (east Narrows)** | **Same as B-08** | **Same** |
 | **B-10** | **HIMARS battalion with PrSM (~500 km), Asotin-supplied missiles (Army) · NDF · Z12 Interior** | **Can reach Camas. Strikes bases, ports, and ships at anchor. Shoot-and-scoot.** | **Limited missiles (2–3 salvos per game). Launches are seen by Cosmopolis missile-warning satellites. Patriot on Camas can intercept.** |
 | **B-11** | **Quickstrike naval mine stockpile · NDF · Z10** | **Mines the Narrows. Can be dropped by F-16s or laid by boats.** | **REDFOR can clear mines, given time. Mining an international strait costs International Opinion.** |
-| B-12 | **Mark VI patrol boat** flotilla (~8) · NDF · Z10 / Z8 | Strait patrol, escort, interception, minelaying | Very vulnerable to A-10s, P-8s, and helicopters once found |
+| B-12 | **Mark VI patrol boat** flotilla (~8) · NDF · B-12a Z8, B-12b Z10 | Strait patrol, escort, interception, minelaying | Very vulnerable to A-10s, P-8s, and helicopters once found |
 | B-13 | 1st Armored Brigade: **M1A1 Abrams, M2 Bradley** (Army) · NDF · Z11 | Defends Omak City (the capital) | Vulnerable to air attack in the open |
 | B-14 | 2nd Armored Brigade: **M1A1, M2** (Army) · NDF · Z10 | Defends the coast and Fortune Harbor | Same |
 | B-15 | Coastal Defense Brigade: **M777** howitzers, **Javelin** teams (Army) · NDF · Z10 | Anti-landing defense | Static |
 | B-16 | Drone squadron: **MQ-9A Reaper** (~6) + **Switchblade 600** loitering munitions · NDF + PFA · Z12 | ISR for targeting (cues B-08 and B-10). Cheap precision strikes. | Easily shot down by fighters and Patriot |
 | B-17 | **C-130H Hercules** airlift detachment · NDF · Z11 | Moves troops and supplies inside Omak. Receives airlifted Asotin supplies. | Vulnerable once REDFOR has air superiority |
-| B-18 | **PFA maritime militia** (~40 armed civilian boats) · PFA · Z10 / Z8 | Harassment, minelaying, swarming, scouting. Blends in with civilian traffic. | Light weapons. Low training. Political cost if civilians are hit. |
-| B-19 | **PFA militia brigades** (×3, ~15,000 fighters, with M4s, Javelins, and Stingers from NDF depots) · PFA · Z10–Z12 | Urban and rural defense. Makes ground incursions very costly (S-B3). Internal security. | Poor discipline. Abuses create backlash. |
+| B-18 | **PFA maritime militia** (~40 armed civilian boats) · PFA · B-18a Z8, B-18b Z10 | Harassment, minelaying, swarming, scouting. Blends in with civilian traffic. | Light weapons. Low training. Political cost if civilians are hit. |
+| B-19 | **PFA militia brigades** (×3, ~15,000 fighters, with M4s, Javelins, and Stingers from NDF depots) · PFA · B-19a Z10, B-19b Z11, B-19c Z12 | Urban and rural defense. Makes ground incursions very costly (S-B3). Internal security. | Poor discipline. Abuses create backlash. |
 | B-20 | **PFA Information Directorate** (state media and social media) · PFA · Z11 | Propaganda. Exploits the meddling scandal (moves International Opinion and Domestic Will). | Credibility drops if caught lying |
 | **B-21** | **PFA "hacktivist" cyber cell · PFA** | **Nuisance attacks, leaks, disruption of Camas and Cosmopolis civilian networks** | **Low sophistication. Attribution invites escalation.** |
 
-**Your hidden assets.** REDFOR's intelligence doesn't have a full picture of B-06, B-09, B-10, B-11, or B-21. A hidden asset goes on the map once you use it, so think about *when* to reveal each one. **Tell your logger during Phase I which zones your three NASAMS batteries (B-06) are in.** A secret COA (Rules Handbook §2.4) is one way to turn a hidden asset into a trap.
+**Your hidden assets.** REDFOR's intelligence doesn't have a full picture of B-06, B-09, B-10, B-11, or B-21. A hidden asset goes on the map once you use it, so think about *when* to reveal each one. **Tell your logger during Phase I which zone each NASAMS battery (B-06a, B-06b, B-06c) is in.** Two may share a zone. Each battery is revealed on its own. A secret COA (Rules Handbook §2.4) is one way to turn a hidden asset into a trap.
 
 **NDF or PFA?** Note each asset's owner. A COA that needs **both** NDF and PFA forces takes −1 for *A House Divided* (S-B1) until you fix it.
 
 ## 2. RFF pool: national mobilization
+
+Arriving forces, including Asotin support (§3), go on **Z11 Omak City** unless the RFF names another destination, and they do nothing on the turn they arrive.
 
 | ID | Asset | Arrives | Approval |
 | --- | --- | --- | --- |

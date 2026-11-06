@@ -50,7 +50,7 @@ All on **Camas (Z6)** unless noted. All **visible**.
 
 ## 3. RFF pool
 
-Request these with an RFF slip. Arrival is counted from the turn the request is approved (Scenario Brief §7). Arriving forces do nothing on the turn they arrive.
+Request these with an RFF slip. Arrival is counted from the turn the request is approved (Scenario Brief §7). Arriving forces go on **Z6 Camas** unless your RFF names another destination, and they do nothing on the turn they arrive.
 
 | ID | Asset | Arrives | Approval |
 | --- | --- | --- | --- |
@@ -80,14 +80,14 @@ These are BLUEFOR's **visible** counters, already on the central map. Their limi
 | B-03 | **F-15C Eagle** squadron (~12, older) · NDF · Z12 Interior | Air-superiority interceptor | Aging airframes. Spare parts came from Cosmopolis and are now cut off. |
 | B-04 | **Patriot battalion PAT-1** (PAC-2) · NDF · Z10 Coast | Denies the air over the Strait to non-stealthy aircraft. Can engage missiles. | Mobile but slow to relocate. Its radar emits when active, which the RC-135 can find. |
 | B-05 | **Patriot battalion PAT-2** (PAC-2) · NDF · Z11 Omak City (Capital) | Protects Omak City and the main air base | Same as B-04 |
-| B-07 | **AN/FPS-117 early-warning radar** network · NDF · Z10–Z12 | Long-range detection and cueing for Patriot and fighters | Fixed sites. Can be jammed (EC-37B) and struck. |
+| B-07 | **AN/FPS-117 early-warning radar** network · NDF · B-07a Z10, B-07b Z11, B-07c Z12 | Long-range detection and cueing for Patriot and fighters | Fixed sites. Can be jammed (EC-37B) and struck. |
 | B-08 | **Harpoon Coastal Defense** battery CB-1 (~75 mi) · NDF · Z10 (west Narrows) | Holds shipping and warships in the Strait at risk | Needs targeting data from radar, drones, or the militia |
-| B-12 | **Mark VI patrol boat** flotilla (~8) · NDF · Z10 / Z8 | Strait patrol, escort, interception | Very vulnerable to A-10s, P-8s, and helicopters once found |
+| B-12 | **Mark VI patrol boat** flotilla (~8) · NDF · B-12a Z8, B-12b Z10 | Strait patrol, escort, interception | Very vulnerable to A-10s, P-8s, and helicopters once found |
 | B-13 | 1st Armored Brigade: **M1A1 Abrams, M2 Bradley** (Army) · NDF · Z11 | Defends Omak City (the capital) | Vulnerable to air attack in the open |
 | B-14 | 2nd Armored Brigade: **M1A1, M2** (Army) · NDF · Z10 | Defends the coast and Fortune Harbor | Same |
 | B-15 | Coastal Defense Brigade: **M777** howitzers, **Javelin** teams (Army) · NDF · Z10 | Anti-landing defense | Static |
 | B-16 | Drone squadron: **MQ-9A Reaper** (~6) + **Switchblade 600** loitering munitions · NDF + PFA · Z12 | ISR for targeting. Cheap precision strikes. | Easily shot down by fighters and Patriot |
 | B-17 | **C-130H Hercules** airlift detachment · NDF · Z11 | Moves troops and supplies inside Omak. Receives airlifted Asotin supplies. | Vulnerable once REDFOR has air superiority |
-| B-18 | **PFA maritime militia** (~40 armed civilian boats) · PFA · Z10 / Z8 | Harassment, swarming, scouting. Blends in with civilian traffic. | Light weapons. Low training. Political cost if civilians are hit. |
-| B-19 | **PFA militia brigades** (×3, ~15,000 fighters, with M4s, Javelins, and Stingers) · PFA · Z10–Z12 | Urban and rural defense. Makes ground incursions very costly. Internal security. | Poor discipline. Abuses create backlash. |
+| B-18 | **PFA maritime militia** (~40 armed civilian boats) · PFA · B-18a Z8, B-18b Z10 | Harassment, swarming, scouting. Blends in with civilian traffic. | Light weapons. Low training. Political cost if civilians are hit. |
+| B-19 | **PFA militia brigades** (×3, ~15,000 fighters, with M4s, Javelins, and Stingers) · PFA · B-19a Z10, B-19b Z11, B-19c Z12 | Urban and rural defense. Makes ground incursions very costly. Internal security. | Poor discipline. Abuses create backlash. |
 | B-20 | **PFA Information Directorate** (state media and social media) · PFA · Z11 | Propaganda. Exploits the meddling scandal. | Credibility drops if caught lying |

@@ -202,6 +202,7 @@ The white cell makes the final decision. It works through each COA like this:
 
 - **Counter states:** **Ready** · **Degraded** (−1 when used) · **Destroyed** (removed).
 - **Visible** counters start on the central map, where both teams can see them.
+- **Split counters.** An asset spread over several zones has one counter per part, lettered after its ID. For example, the PFA militia brigades are B-19a, B-19b, and B-19c, one each in Z10, Z11, and Z12. Each part moves, is found, and is Degraded or Destroyed on its own, and a strike on a zone touches only the parts in it. Name one part ("B-19b") or the whole asset ("B-19", meaning every part).
 - **Hidden** counters stay on your team sheet. The enemy doesn't know about them until they are found by a successful ISR COA, revealed by their own use, or disclosed by an inject. Mentioning a hidden asset in a COA or in a Pro or Con counts as using it, whether or not the COA succeeds. Once a hidden counter is used, it goes on the map.
 - **RFI answers** reflect what your intelligence would plausibly know. They may be incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. RFIs never reveal the enemy's secret objectives or secret COAs.
 - **Injects** are events the white cell introduces, such as weather, civilian events, leaks, and third-party moves. There is at most one per turn. Injects may also set new national directives.
@@ -217,6 +218,7 @@ The white cell makes the final decision. It works through each COA like this:
 | Answer | A short written answer at the start of the next Prepare | Approved, partly approved, or denied, with the **arrival turn** |
 
 - Forces that arrive by RFF **do nothing on the turn they arrive** unless the timing table says otherwise.
+- Forces that arrive by RFF go on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR) unless your RFF names another destination.
 - A big RFF (a [MAJOR FORMATION], or new authorities like permission to strike [ENEMY CAPITAL]) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ### 2.10 Roles
