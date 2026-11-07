@@ -34,7 +34,7 @@ Layout hooks in the markdown are HTML comments, so the files stay valid for
 markdownlint (no inline HTML):
 - `<!-- zz:NAME [NAME ...] -->` on the line before a table gives it those
   classes: `form` (labels left, room to write right; add `med` or `tall` for
-  bigger boxes), `log` (rows to fill in), `track` (the track board), `checkgrid` (a step-by-turn tick grid), `compact`
+  bigger boxes), `log` (rows to fill in), `checkgrid` (a step-by-turn tick grid), `compact`
   (a dense reference table).
 - `<!-- zz:begin cards -->` ... `<!-- zz:end -->` turns each `###` section in
   between into a cut-out card. `zz:begin slips` cuts the block into slips at
@@ -115,6 +115,7 @@ RELEASES = [
     (BLUE, "counters.pdf", None, [("copy", "handouts/bluefor/counters.pdf")]),
     (WC, "White Cell Handbook.pdf", WC_ONLY, ["whitecell/handbook.md"]),
     (WC, "White Cell Checklist.pdf", WC_ONLY, ["whitecell/checklist.md"]),
+    (WC, "White Cell Table Setup Guide.pdf", WC_ONLY, ["whitecell/table-setup.md"]),
     (WC, "White Cell Likely Plans.pdf", WC_ONLY, ["whitecell/likely-plans.md"]),
     (WC, "White Cell Intelligence and Injects.pdf", WC_ONLY, ["whitecell/intel-and-injects.md"]),
     (WC, "Master Asset List.pdf", WC_ONLY, ["whitecell/master-asset-list.md"]),
@@ -130,16 +131,17 @@ RELEASES = [
 # holds them all, in this order.
 PACKET = [
     ("White Cell Checklist", (WC, "White Cell Checklist.pdf"), None, 1, "Lead adjudicator. Tick it off through the afternoon."),
-    ("White Cell Forms", (WC, "White Cell Forms.pdf"), None, 1, "Score sheet, track board, objective status card, both placement forms. Track board goes beside the map; the rest stays face down with the loggers."),
+    ("Table Setup Guide", (WC, "White Cell Table Setup Guide.pdf"), None, 1, "Devices, table layout, and where every counter starts. Use it to set up before 1345."),
+    ("White Cell Forms", (WC, "White Cell Forms.pdf"), None, 1, "Score sheet, ongoing-effects sheet, objective status card, both placement forms. The ongoing-effects sheet goes beside the map; the rest stays face down with the loggers."),
     ("Starting conditions: reference and cue cards", (WEEK, "Starting Conditions.pdf"), None, 1, "Cut the cue cards apart and stand them face up beside the map."),
     ("Counters, both sides", (WC, "counters.pdf"), None, 1, "Print at 100% (not \"fit to page\"), in colour, on card stock if you can. Shows hidden assets: white cell only."),
     ("Map, letter tiles", (WEEK, "map-tiles.pdf"), None, 1, "Portrait, like the rest of the packet (the map is turned on the page). Trim and tape. For one large sheet, print map-full.pdf on a plotter instead."),
-    ("REDFOR: OPORD/FRAGO format", (ASAP, "Player Forms and Templates.pdf"), "1. Five-Paragraph", 1, ""),
+    ("REDFOR: OPORD/FRAGO format", (ASAP, "Player Forms and Templates.pdf"), "1. Five-Paragraph", 1, "For reference; the brief doesn't have to follow it"),
     ("REDFOR: COA worksheets", (ASAP, "Player Forms and Templates.pdf"), "2. COA Worksheet", 7, "One per turn"),
     ("REDFOR: Cons worksheets", (ASAP, "Player Forms and Templates.pdf"), "3. Cons Worksheet", 7, "One per turn"),
     ("REDFOR: request slips (3 per page)", (ASAP, "Player Forms and Templates.pdf"), "4. Request Slips", 9, "25 slips: 4 in Phase I, 3 a turn after"),
     ("REDFOR: secret COA slips", (ASAP, "Player Forms and Templates.pdf"), "5. Secret COA Slip", 2, "One per phase"),
-    ("BLUEFOR: OPORD/FRAGO format", (ASAP, "Player Forms and Templates.pdf"), "1. Five-Paragraph", 1, ""),
+    ("BLUEFOR: OPORD/FRAGO format", (ASAP, "Player Forms and Templates.pdf"), "1. Five-Paragraph", 1, "For reference; the brief doesn't have to follow it"),
     ("BLUEFOR: COA worksheets", (ASAP, "Player Forms and Templates.pdf"), "2. COA Worksheet", 7, "One per turn"),
     ("BLUEFOR: Cons worksheets", (ASAP, "Player Forms and Templates.pdf"), "3. Cons Worksheet", 7, "One per turn"),
     ("BLUEFOR: request slips (3 per page)", (ASAP, "Player Forms and Templates.pdf"), "4. Request Slips", 9, "25 slips: 4 in Phase I, 3 a turn after"),
@@ -244,60 +246,6 @@ def _wrap_blocks(out):
     return re.sub(r"<!-- zz:begin (\w[\w-]*) -->\s*(.*?)<!-- zz:end -->", block, out, flags=re.S)
 
 
-TRACK_RED, TRACK_BLUE, TRACK_AMBER = (207, 34, 46), (9, 105, 218), (212, 140, 0)
-
-
-def _tint(rgb, k):
-    """rgb mixed with white: k=0 is white, k=1 is the full colour."""
-    return "#%02x%02x%02x" % tuple(round(255 + (c - 255) * k) for c in rgb)
-
-
-TRACK_COLS = 42  # divisible by every track's length (3, 6, 7), so each row fills the width evenly
-
-
-def track_colours(out):
-    """Colour the track board's cells: deeper blue favours Omak, deeper red favours Cosmopolis.
-    Opinion runs blue to red through white; Will is a red ramp, Stability a blue one;
-    Strait Traffic goes amber as it closes. Each row's values share the full width equally."""
-    def cell(label, value):
-        v = value.replace("−", "-").strip(" •")
-        if "Opinion" in label and re.fullmatch(r"[+-]?\d", v):
-            n = int(v)
-            return (TRACK_BLUE if n < 0 else TRACK_RED), abs(n) / 3 * 0.85
-        if "Will" in label and v.isdigit():
-            return TRACK_RED, int(v) / 5 * 0.6
-        if "Stability" in label and v.isdigit():
-            return TRACK_BLUE, int(v) / 5 * 0.6
-        if "Strait" in label and v in ("Restricted", "Closed"):
-            return TRACK_AMBER, 0.25 if v == "Restricted" else 0.5
-        return None
-
-    def row(m):
-        tds = re.findall(r"<td>(.*?)</td>", m.group(0), re.S)
-        if not tds:
-            return m.group(0)
-        label = re.sub(r"<[^>]+>", "", tds[0])
-        values = [t for t in tds[1:] if t.strip()]
-        span = TRACK_COLS // len(values)
-        cells = ["<td>%s</td>" % tds[0]]
-        for t in values:
-            c = cell(label, re.sub(r"<[^>]+>", "", t))
-            style = ""
-            if c:
-                rgb, k = c
-                style = ' style="background:%s;color:%s"' % (_tint(rgb, k), "#fff" if k > 0.55 else "#1f2328")
-            cells.append('<td colspan="%d"%s>%s</td>' % (span, style, t))
-        return "<tr>%s</tr>" % "".join(cells)
-
-    def table(m):
-        t = re.sub(r"<tbody>.*?</tbody>", lambda b: re.sub(r"<tr>.*?</tr>", row, b.group(0), flags=re.S), m.group(0), flags=re.S)
-        heads = re.findall(r"<th>(.*?)</th>", t, re.S)
-        head = '<colgroup><col class="zz-track-label">%s</colgroup><thead><tr><th>%s</th><th colspan="%d">%s</th></tr></thead>' % (
-            "<col>" * TRACK_COLS, heads[0], TRACK_COLS, heads[1])
-        return re.sub(r"<thead>.*?</thead>", head, t, flags=re.S)
-    return re.sub(r'<table class="[^"]*zz-track[^"]*">.*?</table>', table, out, flags=re.S)
-
-
 def render_markdown(text, base_dir, image_url=None):
     """Markdown (as the handouts use it) -> HTML."""
     from markdown_it import MarkdownIt
@@ -313,7 +261,6 @@ def render_markdown(text, base_dir, image_url=None):
     out = re.sub(r"<!-- zz:((?!begin|end)[\w -]+?) -->\s*<table>",
                  lambda m: '<table class="%s">' % " ".join("zz-" + c for c in m.group(1).split()), out)
     out = _wrap_blocks(out)
-    out = track_colours(out)
     # a header row with no text (key-value tables in the intel products) is dropped
     out = re.sub(r"<table( class=\"[^\"]*\")?>\s*<thead>\s*<tr>\s*(?:<th[^>]*>\s*</th>\s*)+</tr>\s*</thead>",
                  lambda m: '<table class="zz-kv%s">' % (" " + m.group(1)[8:-1] if m.group(1) else ""), out)
@@ -414,11 +361,6 @@ td.zz-opts { white-space: nowrap; width: 1%; }
 table.zz-log td:empty, table.zz-log td { height: 0.3in; padding-top: 1pt; padding-bottom: 1pt; vertical-align: middle; box-sizing: border-box; }
 table.zz-kv td:first-child { width: 28%; font-weight: 600; }
 
-/* the track board: cells big enough for a marker, coloured by track_colours() */
-table.zz-track { font-size: 11pt; table-layout: fixed; }
-table.zz-track col.zz-track-label { width: 27%; }
-table.zz-track td { height: 0.75in; box-sizing: border-box; text-align: center; vertical-align: middle; font-weight: 600; font-size: 10pt; padding: 2pt; }
-table.zz-track td:first-child, table.zz-track th:first-child { text-align: left; font-size: 9.5pt; }
 table.zz-checkgrid { font-size: 8.5pt; }
 table.zz-checkgrid th:nth-child(n+3), table.zz-checkgrid td:nth-child(n+3) { text-align: center; width: 5.2%; padding: 3pt 2pt; }
 table.zz-checkgrid td { height: 0.27in; vertical-align: middle; }
@@ -636,16 +578,17 @@ def packet_markdown(rows=None, variant="full"):
         "## Printing",
         "",
         "- Print **single-sided at 100% scale** (\"actual size\", not \"fit to page\"). Every page keeps its content inside a 0.75 in margin.",
-        "- **Colour** for the game pieces: the counters, map tiles, cue cards, and track board use colour for sides. "
+        "- **Colour** for the game pieces: the counters, map tiles, and cue cards use colour for sides. "
         "Everything else (the forms, worksheets, and slips) is black and white, so print it in greyscale to save ink.",
         "- **Card stock** for the counters and cue cards, if you have it.",
         "- Cut the counters along the grey lines, and the cue cards and request slips along the dashed lines.",
         "",
         "## Also needed at each table",
         "",
-        "- [ ] The lead adjudicator's laptop with the timer and dice program (`whitecell-clock.html`), shown where both teams can see it",
+        "- [ ] The room's TV or projector, and the cable for the lead adjudicator's laptop",
+        "- [ ] The lead adjudicator's laptop with the timer and dice program (`whitecell-clock.html`) on that screen, where both teams can see it. Its tracker keeps the four tracks; there is no paper track board.",
+        "- [ ] Each logger's laptop with the white cell site and Slack, screen turned away from the players (Table Setup Guide §2)",
         "- [ ] An envelope for the hidden counters",
-        "- [ ] Coins or small objects for the four track markers",
         "- [ ] Pens for each team and each logger",
         "",
     ]

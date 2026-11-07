@@ -1,10 +1,10 @@
 ---
 title: "Operation Zugzwang — White Cell Forms"
-subtitle: "End-of-game scores, track board, objective status card, placement forms"
+subtitle: "End-of-game scores, ongoing effects and big projects, objective status card, placement forms"
 short: "White Cell Forms"
 ---
 
-**WHITE CELL ONLY.** **Printing:** each table needs 1 score sheet, 1 track board, 1 objective status card, and 1 placement form for each side (REDFOR and BLUEFOR).
+**WHITE CELL ONLY.** **Printing:** each table needs 1 score sheet, 1 ongoing-effects sheet, 1 objective status card, and 1 placement form for each side (REDFOR and BLUEFOR).
 
 ## 1. End-of-game scores
 
@@ -36,20 +36,9 @@ Fill this in after Turn 7 (Handbook §8). Score each objective **A** (Achieved),
 
 <!-- pagebreak -->
 
-## 2. Track board
+## 2. Ongoing effects and big projects
 
-This sheet sits beside the map where both teams can see it. Put a marker (a coin or any small object) on each track's current value. The tracks start at **Open**, **−1**, **3**, and **4**; Strait Traffic moves to **Restricted** at the kickoff inject.
-
-<!-- zz:track -->
-
-| Track | Values | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Strait Traffic | Open | Restricted | Closed • | | | | |
-| International Opinion (− pro-Omak, + pro-Cosmopolis) | −3 • | −2 | −1 | 0 | +1 | +2 | +3 • |
-| Cosmopolis Domestic Will | 0 • | 1 | 2 | 3 | 4 • | 5 • | |
-| Omak Regime Stability | 0 • | 1 • | 2 • | 3 | 4 | 5 • | |
-
-Deeper **blue** favours Omak (BLUEFOR), deeper **red** favours Cosmopolis (REDFOR); Strait Traffic turns amber as it closes. **•** marks a trigger (Scenario Brief §5): **Closed** −1 Will each turn it stays Closed · **Opinion +3** S-R3 removed, **−3** Asotin escalates · **Will ≥ 4** big REDFOR RFFs easier, **0** ceasefire and negotiations · **Stability 5** S-B1 removed, **≤ 2** S-B5's −1 ends, **0** the government collapses.
+This sheet sits beside the map where both teams can see it. The four tracks are not on paper: the lead adjudicator moves them in the tracker on the timer and dice program, which is on the room's TV or projector.
 
 <!-- zz:log -->
 
@@ -72,7 +61,7 @@ Deeper **blue** favours Omak (BLUEFOR), deeper **red** favours Cosmopolis (REDFO
 
 ## 3. Objective status card
 
-**Keep face down, with the logger.** This card shows what the secret objectives look for. Update it in step 8 with the tracks (Handbook §4.1). Record a player agreement only after both teams confirm it.
+**Keep face down, with the logger.** This card shows what the secret objectives look for. Update it in step 8, after the tracks move (Handbook §4.1). Record a player agreement only after both teams confirm it.
 
 <!-- zz:log -->
 

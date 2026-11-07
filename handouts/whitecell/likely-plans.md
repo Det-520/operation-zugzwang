@@ -8,7 +8,7 @@ short: "Likely Plans"
 
 **BLUF.** Expect REDFOR to open with air strikes to break Omak's coastal defenses and then push shipping through the Narrows. Expect BLUEFOR to close the Narrows, hide, and, at some point, hit Camas with PrSM. Both sides also have strong non-kinetic plays, and the best endings come from talks. This guide gives you the likely COAs before the game so you can rule on them fast. It is a forecast, not a script: reward whatever the teams actually argue well.
 
-**How to use it.** Read it with the Handbook (§5 adjudication, §6 conditions) and the intelligence product key (Intelligence and Injects §3). During play, the tables in §4 are the quick reference. Watch §5 all afternoon.
+**How to use it.** You don't need to study it. Skim it before the game so you know what is here, then look things up during play: the tables in §4 are the quick reference, and §5 is worth watching all afternoon. It works alongside the Handbook (§5 adjudication, §6 conditions) and the intelligence product key (Intelligence and Injects §3).
 
 <!-- pagebreak -->
 

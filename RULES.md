@@ -102,7 +102,7 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 
 - Teams arrive having read the rules, scenario brief, and their team's intelligence products (distributed ≥ 24 hours prior). During Phase I (18 minutes), they organize their team, build a plan, and file RFIs and RFFs to posture forces before the war starts.
 - **[CANON] Phase I request limit:** up to **4 requests in total** (RFIs and RFFs combined), **posted in the team channel by minute 12** (6 minutes before Phase I ends) so the white cell can adjudicate them while loggers hear the OPORD briefs. The white cell posts answers and rulings in each team's channel after the kickoff inject, before Turn 1 begins. Phase I RFFs follow normal arrival timing (`scenario/00-overview.md` §6), counted from Turn 1.
-- In the last 3 minutes (minutes 15–18) each team gives an **oral brief** of its plan to its own logger, **organized like a five-paragraph OPORD**: Situation, Mission, Execution, Sustainment, Command & Signal (AFDP 5-0 App. E; see App. A). No written OPORD is expected.
+- In the last 3 minutes (minutes 15–18) each team gives an **oral brief** of its plan to its own logger. The five-paragraph OPORD format (Situation, Mission, Execution, Sustainment, Command & Signal; AFDP 5-0 App. E; see App. A) is offered for reference, not required. No written OPORD is expected.
 - **Planned COAs.** The brief may name **up to 3 planned COAs** in intended sequence for Phase II, e.g. "Turn 1: X; Turn 2: Y; Turn 3: Z". The logger writes them down. When a team later executes a planned COA *substantially as briefed, and the situation still supports it*, the white cell adds **+1 (Planned)**. If events make a planned COA invalid (the target is gone, the resources were lost, or the enemy forced a reaction), the bonus is lost. Recognizing that and adapting is the point.
 - Phase I has **no COAs**. The first COAs come in Turn 1, after the kickoff inject. A team may post its Phase II secret COA during Phase I (§3.4).
 
@@ -350,7 +350,7 @@ If the game runs at several tables simultaneously, every white cell uses this do
 
 - **[CANON]** Each team has an assigned **flight commander**. Who is assigned and when command changes hands is set in `LLAB-SETUP.md`.
 - **[CANON]** **The team builds the rest of its own structure** during Phase I: who handles operations, intel, logistics, briefing, and so on. The rules don't prescribe staff roles.
-- **[CANON]** Players **may use computers and AI** during play. The decisions and the briefs must still be the team's own.
+- **[CANON]** Players **may use computers, online searches, and AI** during play, and every player may bring a laptop. The decisions and the briefs must still be the team's own.
 
 ### 9.2 White cell [CANON]
 
@@ -398,7 +398,7 @@ After the final turn's resolution, the white cell states the end state (map and 
 
 ## 11. Open decisions for the designer
 
-Settled (now CANON): owner, written traffic over Slack instead of paper, with briefs still given aloud: COAs and Cons in each group's public channel, requests, answers, and secret COAs in private team channels (§2.5), the estimative vote for contentious calls (§4.3), 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral five-paragraph Phase I brief, 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5).
+Settled (now CANON): owner, written traffic over Slack instead of paper, with briefs still given aloud: COAs and Cons in each group's public channel, requests, answers, and secret COAs in private team channels (§2.5), the estimative vote for contentious calls (§4.3), 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral Phase I brief (the five-paragraph format is a reference, not a requirement), 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5).
 
 Still open:
 
@@ -411,7 +411,7 @@ Still open:
 
 ## Appendix A — Phase I brief and Phase III FRAGO formats (AFDP 5-0 App. E) [CANON: format; outline PROPOSED]
 
-**Phase I brief:** an **oral** brief to the team's logger, ≤ 3 minutes (minutes 15–18 of Phase I). Nothing written is required. The logger notes the planned COAs.
+**Phase I brief:** an **oral** brief to the team's logger, ≤ 3 minutes (minutes 15–18 of Phase I). Nothing written is required, and teams don't have to follow this outline; it is here for reference. The logger notes the planned COAs.
 
 ```text
 1. SITUATION   Enemy: what we think they will do (most likely / most dangerous).
@@ -442,7 +442,7 @@ Each logger keeps one placement form for its side (`handouts/whitecell/forms.md`
 - approved RFFs, with the turn each arrives and where it is placed;
 - visible counters that have moved, been Degraded, or been Destroyed since the starting setup.
 
-When something changes, cross out the old entry and write the new one. Ongoing effects and big-project progress go on the public track board (`handouts/whitecell/forms.md` §2).
+When something changes, cross out the old entry and write the new one. Ongoing effects and big-project progress go on the public ongoing-effects sheet (`handouts/whitecell/forms.md` §2). The tracks are kept in the timer and dice program's tracker, on the room's screen.
 
 ## Appendix C — Probability cheat sheet (2d6, need modified total ≥ 7)
 
@@ -481,7 +481,7 @@ When something changes, cross out the old entry and write the new one. Ongoing e
 | **White cell** | The neutral control group: adjudicator and loggers |
 | **REDFOR / BLUEFOR** | The two opposing player sides |
 | **Counter** | A printed piece on the central map representing an asset or effect |
-| **Track** | A numeric marker beside the map for something abstract (opinion, stability) |
+| **Track** | A numeric value, shown on the white cell's screen, for something abstract (opinion, stability) |
 | **Degraded / Destroyed** | Asset states. A Degraded asset gives −1 when used. A Destroyed one is removed. |
 | **DIME / PMESII** | Instruments of power / dimensions of effect. A checklist for non-kinetic ideas. |
 

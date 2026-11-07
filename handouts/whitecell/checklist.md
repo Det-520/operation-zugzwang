@@ -20,24 +20,26 @@ short: "White Cell Checklist"
 - [ ] Teams and both flight commanders for each team (Phases I–II and III–IV) are assigned.
 - [ ] Email each team **only its own** release: REDFOR gets the REDFOR folder, BLUEFOR the BLUEFOR folder. **Nobody gets the other team's documents.**
 - [ ] Each white cell member is in their group's channel and both of its team channels (Handbook §2.4). C/Nacanaynay sends the invitations with the team assignments.
-- [ ] Every white cell member has read the Likely Plans guide.
-- [ ] Every white cell member has read **both** sides' intelligence products and the key (Intelligence and Injects §3).
-- [ ] Every white cell member has read the ground truth (Intelligence and Injects §1), the RFF pools (Handbook §7), and the scoring tables (Handbook §8).
-- [ ] The timer and dice program (`whitecell-clock.html`) opens on each lead adjudicator's laptop, works offline, and can be shown on a screen.
+- [ ] Every white cell member has at least skimmed the Likely Plans guide, **both** sides' intelligence products and the key (Intelligence and Injects §3), and the ground truth (Intelligence and Injects §1), and knows where to look things up in them during play. Nobody needs to know them by heart.
+- [ ] Every white cell member has read the RFF pools (Handbook §7) and the scoring tables (Handbook §8).
+- [ ] The timer and dice program (`whitecell-clock.html`) opens on each lead adjudicator's laptop, works offline, and shows on the room's TV or projector.
+- [ ] Each logger's laptop opens the white cell site and Slack.
 - [ ] One Print Packet printed for each table (4) (the full packet, or the Reference Forms version plus photocopies), game pieces in colour, forms in greyscale. Spares kept with the white cell. Counters and cue cards cut. Hidden counters in an envelope.
 - [ ] Each table agrees with the others on what counts as an auto-success, so the four games are scored alike (Handbook §5.1).
 
 ## 2. Table setup (before 1345)
 
+The Table Setup Guide has the devices, the table layout, every counter by name and zone, and a longer version of this list.
+
 - [ ] Table arranged so both teams and the white cell sit in a circle (LLAB-SETUP §5).
-- [ ] Map down, with the track board beside it where both teams can see it.
-- [ ] Track markers at the start: Strait **Open**, Opinion **−1**, Will **3**, Stability **4** (Handbook §2.3).
+- [ ] Map down, with the ongoing-effects sheet (White Cell Forms §2) beside it where both teams can see it.
+- [ ] Tracker on the timer and dice program at the start: Strait **Open**, Opinion **−1**, Will **3**, Stability **4** (Handbook §2.3).
 - [ ] Starting-condition cue cards face up beside the map: S-R1 to S-R4, S-B1 to S-B5.
-- [ ] **Visible** counters placed by zone (Handbook §2.3). **Hidden** counters stay in the envelope.
+- [ ] **Visible** counters placed by zone: 19 REDFOR, 22 BLUEFOR (Table Setup Guide §5). The **10 hidden** counters stay in the envelope.
 - [ ] Each logger has its side's placement form face down (White Cell Forms §4). The objective status card is face down with a logger (White Cell Forms §3).
-- [ ] Each team has Slack open on a device at the table and can post in its group and team channels. Each logger has its side's team channel open.
+- [ ] Each team has Slack open on at least one laptop and can post in its group and team channels. Every player may have a laptop, for Slack or to search online. Each logger has the white cell site and Slack (the group channel and its side's team channel) open on a laptop turned away from the teams.
 - [ ] Each team has its stack of player forms: OPORD format, COA and Cons worksheets, and the request and secret COA slips (backup if Slack fails).
-- [ ] Timer program open, on screen, on the Phase I block. Phase I opening script ready (Handbook §3.1).
+- [ ] Timer and dice program up on the TV or projector, on the Phase I block. Phase I opening script ready (Handbook §3.1).
 
 ## 3. Phase I: Planning (1345–1403)
 
@@ -50,7 +52,7 @@ short: "White Cell Checklist"
 ## 4. Kickoff inject (1403–1405)
 
 - [ ] Read the kickoff inject (Intelligence and Injects §4.1).
-- [ ] Move Strait Traffic to **Restricted**.
+- [ ] Move Strait Traffic to **Restricted** in the tracker.
 - [ ] Loggers post the Phase I RFI answers and RFF rulings, with arrival turns, in threads in each team channel.
 
 ## 5. Every turn (Turns 1–7)
@@ -73,7 +75,7 @@ Tick each box as you go. Turns 1–4 are Phase II (1405–1505); Turns 5–7 are
 | 13:00 | Count modifiers (cap ±4), roll 2d6, read the band, narrate. Interacting or opposed? (§5.3) Too contentious? Estimative vote (§5.5). | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 13:00 | Hidden asset used or found? Reveal it and place the counter. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 13:00 | Rule on RFFs; give each one its arrival turn (§7). | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 13:00 | State ongoing effects; write them on the track board (§6.3). | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 13:00 | State ongoing effects; write them on the ongoing-effects sheet (§6.3). | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 13:00 | Inject? At most one (Intelligence and Injects §4.2). | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 15:00 | Strait **Closed** → Will −1. Any track at a trigger value? (§6.2) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 15:00 | Camas not resupplied → S-R1's −1 applies from Turn 4. | — | — | — | ☐ | ☐ | ☐ | ☐ |
@@ -109,6 +111,5 @@ Tick each box as you go. Turns 1–4 are Phase II (1405–1505); Turns 5–7 are
 ## 10. Cleanup
 
 - [ ] Collect the hidden counters, the placement forms, the objective status card, and any backup paper slips that were used.
-- [ ] Collect the intelligence products and team documents left on the table. Don't leave either side's secrets in the room.
-- [ ] Give the score sheet to C/Nacanaynay.
+- [ ] Collect the intelligence products and team documents left on the table if you like. Once the game is over, it doesn't matter if the other team sees them.
 - [ ] Put the room back the way you found it.
