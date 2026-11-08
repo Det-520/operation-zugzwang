@@ -57,7 +57,7 @@ A rule with no tag inherits the tag of its section heading.
 8. **RFIs and RFFs.** Each turn you may post **up to 3 requests in total** in your team's private Slack channel (§2.5), any mix of:
    - **RFI (Request for Information):** a question about the situation.
    - **RFF (Request for Forces):** a request for more assets or authorities from your national command. Reinforcements take time to arrive.
-   Requests don't count as your COA, and there is no debate on them.
+   Requests don't count as your COA, and there is no debate on them. **Diplomacy needs no RFF:** your team speaks for its government, so you can negotiate or make a diplomatic COA without anyone's permission (§6.2).
 9. **Turn clock (15 min, run by a timer program):** prepare 5 → BLUEFOR COA 2 → REDFOR COA 2 → prepare Cons 2 → REDFOR Cons 1 → BLUEFOR Cons 1 → white cell resolves 2. BLUEFOR always goes first.
 10. **No interrupting.** It's a courtroom, not a debate. You speak in your slot and are silent in theirs. Raise only points of fact or procedure. **If you miss your slot, the point is lost.** There are no do-overs.
 11. **Arguing about the other side is allowed.** You can argue *their* troops are tired or *their* radar has a gap. You cannot argue that a player-controlled actor *agrees* to something. Ask them in person instead.
@@ -101,8 +101,8 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 ### 2.3 Phase I – Planning [CANON]
 
 - Teams arrive having read the rules, scenario brief, and their team's intelligence products (distributed ≥ 24 hours prior). During Phase I (18 minutes), they organize their team, build a plan, and file RFIs and RFFs to posture forces before the war starts.
-- **[CANON] Phase I request limit:** up to **4 requests in total** (RFIs and RFFs combined), **posted in the team channel by minute 12** (6 minutes before Phase I ends) so the white cell can adjudicate them while loggers hear the OPORD briefs. The white cell posts answers and rulings in each team's channel after the kickoff inject, before Turn 1 begins. Phase I RFFs follow normal arrival timing (`scenario/00-overview.md` §6), counted from Turn 1.
-- In the last 3 minutes (minutes 15–18) each team gives an **oral brief** of its plan to its own logger. The five-paragraph OPORD format (Situation, Mission, Execution, Sustainment, Command & Signal; AFDP 5-0 App. E; see App. A) is offered for reference, not required. No written OPORD is expected.
+- **[CANON] Phase I request limit:** up to **4 requests in total** (RFIs and RFFs combined), **posted in the team channel by minute 12** (6 minutes before Phase I ends) so the white cell can adjudicate them while loggers hear the OPORD briefs. The white cell posts answers and rulings in each team's channel after the kickoff inject, before Turn 1 begins. Phase I RFFs follow normal arrival timing (`scenario/00-overview.md` §6), with N = Turn 1 (§5).
+- In the last 3 minutes (minutes 15–18) each team gives an **oral brief** of its plan to its own logger, **organized like a five-paragraph OPORD**: Situation, Mission, Execution, Sustainment, Command & Signal (AFDP 5-0 App. E; see App. A). No written OPORD is expected.
 - **Planned COAs.** The brief may name **up to 3 planned COAs** in intended sequence for Phase II, e.g. "Turn 1: X; Turn 2: Y; Turn 3: Z". The logger writes them down. When a team later executes a planned COA *substantially as briefed, and the situation still supports it*, the white cell adds **+1 (Planned)**. If events make a planned COA invalid (the target is gone, the resources were lost, or the enemy forced a reaction), the bonus is lost. Recognizing that and adapting is the point.
 - Phase I has **no COAs**. The first COAs come in Turn 1, after the kickoff inject. A team may post its Phase II secret COA during Phase I (§3.4).
 
@@ -124,7 +124,7 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 | 3 | `opz-group3-hangar` | `opz-echo-redfor` | `opz-foxtrot-bluefor` |
 | 4 | `opz-group4-conference` | `opz-golf-redfor` | `opz-hotel-bluefor` |
 
-- **One request per message.** The white cell counts the first 3 request messages after the previous turn's resolve step (4 in Phase I). **[PROPOSED]** A request posted after the deadline isn't answered; post it again next turn.
+- **One request per message.** The white cell counts the first 3 request messages after the previous turn's resolve step (4 in Phase I). The deadline is the **end of Prepare** (Phase I: minute 12). A request posted after the deadline, or beyond the limit, isn't answered; post it again next turn.
 - **[PROPOSED]** The logger answers in a **thread under each request** (RFI answers and RFF rulings) and posts nothing else in a team channel except procedure. Templates for each post are in the Player Forms.
 - **[PROPOSED]** **Backup:** if Slack or the network fails, teams write the same thing on paper (backup slips in the Print Packet) and hand it to the white cell.
 - Time cost: none. Posting happens inside steps that already exist, and the white cell no longer collects or returns slips.
@@ -172,14 +172,14 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 - **During a planning phase**, post it before the phase ends: Phase I for Phase II's secret COA, Phase III for Phase IV's. Tell your logger in the brief or FRAGO. It doesn't use up a turn's COA, and no announcement is made. Time cost: none.
 - The white cell resolves it **when the trigger occurs** and applies its own judgment in place of Cons. A trigger written too loosely doesn't fire. Precision is the player's job.
 
-### 3.5 Arguing about actors [PROPOSED]
+### 3.5 Arguing about actors [CANON]
 
 | Actor type | Can you argue about it? |
 | --- | --- |
 | Your own forces | Yes. That's normal. |
 | The opposing team's forces | **Yes.** Argue about their morale, readiness, maintenance, gaps. You can't give them orders. |
-| A **player-controlled** actor's *decisions* (the other team) | **No.** You can't argue "Omak agrees to a ceasefire." Ask them in person during Prepare. If they agree, it happens. |
-| **White-cell-controlled** actors (non-player nations, populations, pirates, the press, weather) | Yes, through COAs ("A diplomatic delegation persuades Latah to grant basing because…"). The white cell adjudicates. |
+| A **player-controlled** actor's *decisions* (the other team) | **No.** You can't argue "Omak agrees to a ceasefire." Ask them in person in a parley during Prepare (§6.1). If they agree, it happens. |
+| **White-cell-controlled** actors (non-player nations, populations, pirates, the press, weather) | Yes, through COAs ("A diplomatic delegation persuades Latah to grant basing because…"). The white cell adjudicates. Diplomatic COAs need no RFF (§6.2). |
 
 ---
 
@@ -215,7 +215,7 @@ One turn is "a turn in the chess sense": each side acts once, and **both COAs ta
 5. **Narrate in one or two sentences**, giving the reason for the result (the winning Pro or Con). Pros and Cons are valuable here because they explain *why* something failed.
 6. Successful results become **established facts**. Loggers don't log every COA. They keep only the placement form (App. B).
 
-### 4.2 Interacting COAs [CANON: simultaneous COAs; resolution PROPOSED]
+### 4.2 Interacting COAs [CANON]
 
 Both COAs are briefed before either is resolved, so **they happen simultaneously across the 3-day turn window**. Because REDFOR briefs second, REDFOR's COA cannot prevent BLUEFOR's COA from being rolled; instead, a reactive move is resolved as an interacting or directly opposed COA.
 
@@ -265,7 +265,7 @@ An asset spread over several zones is printed as **one counter per part**, lette
 
 | | RFI – Request for Information | RFF – Request for Forces |
 | --- | --- | --- |
-| Purpose | Ask what your side knows: enemy disposition, weather, a third party's stance, civilian situation | Ask your national command for more assets or authorities |
+| Purpose | Ask what your side knows: enemy disposition, weather, a third party's stance, civilian situation | Ask your national command for more assets, or for authorities beyond the rules of engagement. Diplomacy needs no RFF (§6.2). |
 | Limit | **Up to 3 requests per turn in total, RFIs and RFFs combined** (Phase I: 4 due at minute 12, see §2.3) | (shared with RFIs) |
 | Format | One question per Slack message, ≤ 1 sentence | Asset (from the scenario's RFF pool or a free-text request), destination, and purpose |
 | Counts as COA? | No | No |
@@ -273,26 +273,40 @@ An asset spread over several zones is printed as **one counter per part**, lette
 | White cell response | Short written answer in a thread under the request, posted by the start of the next Prepare step | Approve, approve partially, or deny, with the **arrival turn** (`scenario/00-overview.md` §6). National politics shape approval (scenario tracks, e.g. Domestic Will). |
 
 - **[PROPOSED]** A force that arrives by RFF, or that an inject creates, and has no printed counter goes on a **blank counter** (R-, B-, or grey X- for third parties) from the white cell counter sheet. The white cell writes a new ID on it (free-text RFFs from R-50 and B-50, inject forces from X-01) and the zone.
-- **[PROPOSED]** Forces that arrive by RFF **do nothing on the turn they arrive** unless the scenario timing table says otherwise. Their arrival is announced and their counters placed during white cell resolution.
+- **[CANON] Arrival turns.** **N** is the turn the RFF is submitted (Phase I RFFs count as Turn 1). The white cell rules on it in that turn's resolve step. An arrival of N+1 means the next turn, N+2 the turn after that, and so on.
+- **[CANON] Usable on arrival.** A force can be used in the COA of the turn it arrives. The white cell announces it and places its counter in the resolve step just before the arrival turn, so the team can plan with it during Prepare. Example: a team submits an RFF on Turn 3 for an N+1 asset and it is approved. It arrives on Turn 4 and can be part of the Turn 4 COA. An N+0 grant (authorities, R-39) takes effect when approved, so it applies from the next COA. Time cost: none.
 - **[CANON]** Forces that arrive by RFF are placed in their side's main base zone unless the RFF names another destination: **Z6 Camas** for REDFOR and **Z11 Omak City** for BLUEFOR, Asotin support included. Authorities and intelligence sharing (R-39, B-41) get no counter on the map.
 - **[CANON] Approvals stand.** Once the white cell approves an RFF or grants something through a COA (basing, recognition, authorities), it is not rescinded when the track or condition that allowed it later changes. Approved forces still arrive, and grants stay. Only the other side can undo them, with a successful COA (a strike, or interdiction in transit). Time cost: none.
 - **[PROPOSED]** A big RFF (a carrier strike group, a ground brigade, new authorities like permission to strike Omak City, the enemy capital) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 
 ---
 
-## 6. Negotiation and diplomacy between teams [PROPOSED]
+## 6. Negotiation and diplomacy [CANON]
 
-- During **Prepare**, a team's flight commander (or a delegate) may request a **parley** with the opposing team. The lead adjudicator authorizes it, and it lasts **≤ 2 min**, taken out of Prepare.
-- Whatever the players agree in person **happens** (no roll). Examples: prisoner exchanges, a local ceasefire, an agreement to open talks, a deal to let shipping through.
+### 6.1 Parleys between teams
+
+- **What it is.** A parley is a short face-to-face talk between the two teams, held during **Prepare**. In the game world it stands for talks between the two governments during the turn's 3 days, whether direct, through a back channel, or through a mediator. It is the **only** way to get a decision from the other team, because no COA can argue that a player-controlled actor agrees (§3.5).
+- **What it is not.** It is not a COA and not a request. It has no roll and no Pros or Cons, doesn't count against the 3 requests, and needs no RFF (§6.2). It is not a way to talk to white-cell actors (Latah, Tekoa, Asotin, the press). Those are persuaded with COAs.
+- **Asking for one.** Either team's flight commander (or a delegate) asks the lead adjudicator. The lead adjudicator authorizes it and runs the parley timer in the timer program. The other team may decline.
+- **Who and how long.** The flight commander (or a delegate) from each team meets at the white cell end of the table, and the lead adjudicator listens. The rest of each team keeps working on its COA. A parley lasts **≤ 2 min**, taken out of Prepare. Time cost: none, since Prepare doesn't get longer.
+- **Closing it.** At the end, each side states aloud what it agreed to, and the lead adjudicator repeats the deal back. The logger notes it, including what each side says it agreed, on the objective status card (White Cell Forms). Players don't write agreements down.
+- Whatever the players agree in person **happens** (no roll). The white cell applies its effects (counters, tracks, objective status card) in this turn's resolve step. Examples: prisoner exchanges, a local ceasefire, an agreement to open talks, a deal to let shipping through.
 - Agreements are not self-enforcing. Breaking one is allowed, but it is an **established fact** that others can use in Pros and Cons (credibility and legitimacy), and the white cell may move tracks.
-- Agreements aren't written down. If the sides later dispute what was agreed, the lead adjudicator decides.
+- If the sides later dispute what was agreed, the lead adjudicator decides, using the logger's note.
+
+### 6.2 Diplomacy needs no RFF
+
+- **Each team speaks for its whole government.** For diplomacy, the team is the national leadership: the President, the foreign ministry, and the commanders at once. It needs no RFF and no approval from the President or national command to negotiate or to make a diplomatic COA.
+- This covers parleys and any agreement made in one, and diplomatic COAs aimed at white-cell actors: basing or overflight talks, recognition campaigns, mediation, pressure on Asotin, an offer of talks.
+- **RFFs for authorities cover military limits only:** the directives in `scenario/00-overview.md` §7 that require national authority or approval, such as striking leadership targets in Omak City, putting ground forces on Omak soil, or engaging Asotin forces or shipping (R-39). An agreement that commits a team to one of those acts (e.g. REDFOR ground forces in Omak as peacekeepers) still needs that authority before the forces act. Tekoa's consent to operate in its territory comes from a diplomatic COA, not an RFF.
+- **White cell:** don't deny or scope down a diplomatic COA because no RFF was filed. Its odds come from Pros, Cons, and the tracks as usual. If a team posts an RFF asking permission to negotiate, the logger answers "No RFF needed: diplomacy is within your authority (Rules §6.2)," and it doesn't count against the request limit. Time cost: none.
 
 ---
 
 ## 7. Injects [CANON: white cell may deliver injects; content in scenario]
 
 - The **kickoff inject** starts the war at the end of Phase I. It is **[CANON]** in function, and its wording is in `scenario/whitecell-injects.md` §1.
-- **[PROPOSED]** The lead adjudicator may deliver **at most one inject per turn**, during the resolve step. Injects should (a) add fog and friction, (b) force teams to adapt their plan, or (c) **bound behavior** that is going off the rails. Example: "Cosmopolis's legislature passes a resolution forbidding strikes on Omak City (Omak's capital)" **[CANON tool]**.
+- **[CANON]** The lead adjudicator may deliver **at most one inject per turn**, during the resolve step. **[PROPOSED]** Injects should (a) add fog and friction, (b) force teams to adapt their plan, or (c) **bound behavior** that is going off the rails. Example: "Cosmopolis's legislature passes a resolution forbidding strikes on Omak City (Omak's capital)" **[CANON tool]**.
 - **[CANON]** No event cards. Random events come only through white cell injects.
 - **[PROPOSED] Consequence management:** at the end of each resolve step, the white cell states ongoing effects (refugees, burning port, market panic). Ongoing effects persist and can give ±1 to related COAs **until a successful COA removes them**.
 
@@ -398,14 +412,13 @@ After the final turn's resolution, the white cell states the end state (map and 
 
 ## 11. Open decisions for the designer
 
-Settled (now CANON): owner, written traffic over Slack instead of paper, with briefs still given aloud: COAs and Cons in each group's public channel, requests, answers, and secret COAs in private team channels (§2.5), the estimative vote for contentious calls (§4.3), 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral Phase I brief (the five-paragraph format is a reference, not a requirement), 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5).
+Settled (now CANON): owner, written traffic over Slack instead of paper, with briefs still given aloud: COAs and Cons in each group's public channel, requests, answers, and secret COAs in private team channels (§2.5), the estimative vote for contentious calls (§4.3), 3-day turns, fixed BLUEFOR-first order, simultaneous COAs within a turn, computer dice, timer program, oral five-paragraph Phase I brief, 4 combined Phase I requests due at minute 12, Phase III 1-minute FRAGO with up to 2 planned COAs, 3 combined requests per turn, no COAs in Phase I, secret COAs, cut Prepare not Cons, no late recalculation, flight-commander-only role assignment, POC jobs, no debrief content in the rules, no event cards, no GRAYFOR actor, the term FRAGO (not FRAGORD), loggers keep a placement form instead of logging every move, the v10 map with Camas inside PrSM range, one counter per part for assets spread over several zones (§4.5), and RFF arrivals placed on Z6 Camas (REDFOR) or Z11 Omak City (BLUEFOR) unless the RFF names another destination (§5), and negotiation and diplomacy as written in §6: parleys of ≤ 2 min during Prepare, and no RFF needed for diplomacy, RFF arrival turns counted from the turn submitted, with forces usable on arrival (§5), requests after the deadline (end of Prepare; Phase I: minute 12) not answered (§2.5), arguing about actors (§3.5), interacting and opposed COAs (§4.2), and at most one inject per turn (§7).
 
 Still open:
 
 | ID | Decision | Draft assumes |
 | --- | --- | --- |
 | O1 | Adjudication details: the five result bands and the ±4 modifier cap (§4.1) | As written |
-| O4 | Team-to-team parleys during Prepare (§6) | Allowed, ≤ 2 min |
 
 ---
 

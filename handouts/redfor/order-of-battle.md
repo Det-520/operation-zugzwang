@@ -50,7 +50,7 @@ All on **Camas (Z6)** unless noted. All **visible**.
 
 ## 3. RFF pool
 
-Request these with an RFF posted in your team's secret Slack channel. Arrival is counted from the turn the request is approved (Scenario Brief §7). Arriving forces go on **Z6 Camas** unless your RFF names another destination, and they do nothing on the turn they arrive.
+Request these with an RFF posted in your team's secret Slack channel. **N** is the turn you submit the RFF (Scenario Brief §7). Arriving forces go on **Z6 Camas** unless your RFF names another destination, and they can be used in the COA of the turn they arrive: an N+1 RFF submitted on Turn 3 arrives on Turn 4 and can be part of the Turn 4 COA. An N+0 grant (R-39) applies from your next COA.
 
 | ID | Asset | Arrives | Approval |
 | --- | --- | --- | --- |

@@ -164,7 +164,7 @@ The map labels all thirteen zones, including the four sea zones: Z7 West Approac
 
 ## 6. Timing and movement [CANON: ~3 days per turn; table PROPOSED]
 
-"N" is the turn an RFF is approved.
+"N" is the turn an RFF is submitted (Phase I RFFs count as Turn 1). A force can be used in the COA of the turn it arrives: an N+1 RFF submitted on Turn 3 arrives on Turn 4 and can be part of the Turn 4 COA.
 
 | Movement | Takes |
 | --- | --- |

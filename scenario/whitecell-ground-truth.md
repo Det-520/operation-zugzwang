@@ -50,4 +50,4 @@ The four tracks (`scenario/00-overview.md` §5.1) and the map don't record every
 
 Read the rest from the map at game end: who holds Omak City, who controls Omak's Strait coast, any Cosmopolis ground forces on Omak soil, and whether B-42 or B-43 has arrived.
 
-A player agreement (`RULES.md` §6) changes the card only once both teams have confirmed it to the white cell. If they disagree about what they agreed, the negotiation log's "what each side thinks was agreed" column settles it.
+A player agreement (`RULES.md` §6) changes the card only once both teams have confirmed it to the white cell. If they disagree about what they agreed, the logger's note from the parley (`RULES.md` §6.1), which records what each side said it agreed, settles it.
