@@ -5,7 +5,9 @@
   "config": {
     "default": true,
     // One paragraph per line is the house style, so line length isn't checked.
-    "MD013": false
+    "MD013": false,
+    // Headings stop at h3. A fourth-level label is a bold line instead, which MD036 would flag.
+    "MD036": false
   },
   "globs": ["**/*.md"],
   "ignores": [

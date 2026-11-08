@@ -103,7 +103,7 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 
 **Think beyond kinetic.** Diplomatic, information, cyber, space, economic, logistics, and deception COAs are all valid and are often stronger. Use **DIME** (Diplomatic, Informational, Military, Economic) and **PMESII** (Political, Military, Economic, Social, Information, Infrastructure) as checklists.
 
-#### Special cases
+**Special cases**
 
 | Case | Rule |
 | --- | --- |
@@ -171,7 +171,7 @@ Four yeses make a strong reason (±1). One that is decisive on its own can be ±
 
 ### 2.6 Negotiation
 
-#### Parleys
+**Parleys**
 
 A **parley** is a short face-to-face talk with the other team during **Prepare**. In the game world it stands for talks between the two governments over the turn's 3 days, whether direct, through a back channel, or through a mediator. It is the **only** way to get a decision out of the other team (§2.5).
 
@@ -183,7 +183,7 @@ A **parley** is a short face-to-face talk with the other team during **Prepare**
 - Whatever the players agree in person **happens**, with no roll. Examples: prisoner exchanges, a local ceasefire, an agreement to open talks, a deal to let shipping through.
 - Agreements are not self-enforcing. You may break one, but the broken deal becomes an **established fact** that others can use in Pros and Cons, and the white cell may move tracks. If the sides later dispute a deal, the lead adjudicator decides.
 
-#### Diplomacy needs no RFF
+**Diplomacy needs no RFF**
 
 - **Your team speaks for its whole government:** the head of state, the foreign ministry, and the commanders at once. You don't need an RFF, or permission from your head of state or national command, to negotiate or to make a diplomatic COA.
 - That covers parleys and the deals made in them, and diplomatic COAs aimed at white-cell actors: basing or overflight talks, recognition, mediation, pressure on a third country, an offer of talks.
@@ -219,14 +219,14 @@ The white cell makes the final decision. It works through each COA like this:
 
 5. **Narrate.** The white cell gives the result and the reason in a sentence or two. Successful results become **established facts**.
 
-#### Your odds at a glance
+**Your odds at a glance**
 
 | Net modifier | −4 | −3 | −2 | −1 | 0 | +1 | +2 | +3 | +4 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Natural roll needed | 11+ | 10+ | 9+ | 8+ | 7+ | 6+ | 5+ | 4+ | 3+ |
 | Chance of at least Partial | 8% | 17% | 28% | 42% | 58% | 72% | 83% | 92% | 97% |
 
-#### When COAs interact or collide
+**When COAs interact or collide**
 
 Both COAs happen simultaneously across the 3-day turn window, so the white cell first decides how they relate:
 
@@ -236,7 +236,7 @@ Both COAs happen simultaneously across the 3-day turn window, so the white cell 
 | **Interacting** (one affects the other's odds, e.g. BLUEFOR disperses its SAMs while REDFOR strikes them) | The white cell folds the interaction into the modifiers. A well-timed counter-move counts as a strong Pro or Con **even if nobody said it aloud**. |
 | **Directly opposed** (both can't succeed, e.g. both try to seize the same port) | **Opposed roll.** The program rolls 2d6 for each side, each adds its own modifiers, and the higher total wins. A tie is a stalemate: both are **Partial** and the situation stays contested. |
 
-#### Estimative vote
+**Estimative vote**
 
 When a call is contentious (both teams keep arguing, or the call is too close to count), the lead adjudicator may announce an **estimative vote** instead of counting modifiers. Each white cell member shows 1–5 fingers for how likely your COA is to work, the white cell takes the median, and the dice program rolls against it. If it happens, it's a **Success**; if not, a **Failure**. It takes about 10 seconds, and the result is final like any other.
 
@@ -247,7 +247,7 @@ When a call is contentious (both teams keep arguing, or the call is too close to
 
 The arguments still matter: the white cell members vote on how strong your Pros and the other team's Cons were.
 
-#### No recalculation
+**No recalculation**
 
 An objection raised late (after its slot, or after the roll) **is not considered**, and a result is not re-run once announced.
 

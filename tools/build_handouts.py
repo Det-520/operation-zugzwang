@@ -324,6 +324,8 @@ def render_markdown(text, base_dir, image_url=None):
     out = re.sub(r"<th(?: [^>]*)?(>(?:(?!</th>).)*\S(?:(?!</th>).)*)</th>((?:\s*<th[^>]*>\s*</th>)+)\s*</tr>", span, out)
     # an all-capitals heading is an issuing office's masthead (intel products), not a headline
     out = re.sub(r"<h2>([^<a-z]+)</h2>", r'<h2 class="zz-masthead">\1</h2>', out)
+    # a paragraph that is only bold text is a label (headings stop at h3): keep it with what follows
+    out = re.sub(r"<p><strong>((?:(?!</?p>).)*?)</strong></p>", r'<p class="zz-label"><strong>\1</strong></p>', out)
     # ☐ prints as a drawn box, the same size everywhere; a box and its label don't split
     out = re.sub(r"☐ ?([^☐<|/]*?[^☐<|/\s])(?=\s*(?:☐|/|<|$))",
                  lambda m: '<span class="zz-opt"><span class="zz-box" aria-hidden="true">☐</span>%s</span>' % m.group(1)
@@ -365,6 +367,8 @@ h3 { font-size: 11.5pt; }
 h4 { font-size: 10pt; }
 h5, h6 { font-size: 9.5pt; color: var(--muted); }
 h2 + *, h3 + *, h4 + * { break-before: avoid; }
+p.zz-label { margin: 1.1em 0 0.4em; break-after: avoid; }
+p.zz-label + * { break-before: avoid; }
 p { margin: 0 0 0.65em; orphans: 3; widows: 3; }
 strong { font-weight: 600; }
 ul, ol { margin: 0 0 0.65em; padding-left: 1.7em; } li { margin: 0.2em 0; } li > p { margin: 0.2em 0; }
