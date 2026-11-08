@@ -38,6 +38,8 @@ d. Operate in Tekoan territory or airspace without the consent of Tekoan authori
 
 If the situation requires any of these, send the request to me with your rationale. I will present it to the President.
 
+These limits apply to military operations only. The President has authorized you to negotiate in the Government's name, with the Government of Omak directly or through intermediaries, and with Latah, Tekoa, Asotin, and other governments. You do not need further approval to open talks or to conclude an agreement. An agreement that commits forces to any act in subparagraphs 4a through 4d still requires that approval.
+
 5\. Political considerations. The legislature is divided on this operation, and public support is narrow. It will not survive heavy casualties or a long campaign. The disclosure of our support to the Sapphire campaign has cost us credibility abroad, and our adversaries will publicize every civilian casualty. Avoid civilian harm, and consider how each action will be reported before you take it.
 
 6\. Partners. Latah has granted logistics access only. Basing negotiations continue, but do not plan combat operations from Latah until they conclude. Tekoa has declared neutrality.

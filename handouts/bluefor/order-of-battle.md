@@ -44,7 +44,7 @@ Your force is smaller and lower-end than REDFOR's. The NDF bought its U.S.-type 
 
 ## 2. RFF pool: national mobilization
 
-Arriving forces, including Asotin support (§3), go on **Z11 Omak City** unless the RFF names another destination, and they do nothing on the turn they arrive.
+Arriving forces, including Asotin support (§3), go on **Z11 Omak City** unless the RFF names another destination. **N** is the turn you submit the RFF. A force can be used in the COA of the turn it arrives: an N+1 RFF submitted on Turn 3 arrives on Turn 4 and can be part of the Turn 4 COA.
 
 | ID | Asset | Arrives | Approval |
 | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ Arriving forces, including Asotin support (§3), go on **Z11 Omak City** unless 
 | B-42 | **Patriot PAC-3 battery with Asotin "volunteer" crews** | N+3 | Only if International Opinion ≤ −1 **or** REDFOR has struck an Asotin shipment. An escalation: Cosmopolis Domestic Will reacts. |
 | B-43 | **Asotin "volunteer" F-16 Block 70 squadron** | N+3 | Only if International Opinion ≤ −2. A major escalation that may trigger a Cosmopolis–Asotin crisis. |
 
-Arriving forces do nothing on the turn they arrive. You can also make free-text RFFs for something not on these lists. The white cell decides.
+Arriving forces can be used in the COA of the turn they arrive. You can also make free-text RFFs for something not on these lists. The white cell decides.
 
 <!-- pagebreak -->
 

@@ -33,6 +33,8 @@ My security services advise that Cosmopolis may land troops on our coast within 
 
 The Strait is our income, our leverage, and a matter of national sovereignty, and we will not give it up. How we hold it also matters. Other governments are deciding whether to recognize us, and they must see Omak defending itself, not threatening its neighbors or neutral shipping. Finally, some officers in the NDF may still be loyal to the former government. Commanders at every level should know their people.
 
+You may speak for this government. I authorize you to negotiate in my name with Cosmopolis, directly or through intermediaries, and with Latah, Tekoa, Asotin, and any other government, and to conclude agreements without referring them to me first.
+
 Sincerely
 
 &nbsp;

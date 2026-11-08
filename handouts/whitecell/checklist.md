@@ -43,13 +43,16 @@ short: "White Cell Checklist"
 
 - [ ] **1345** Read the Phase I opening script. Start the 18-minute timer.
 - [ ] **1357** Read the minute-12 call. Close requests: count up to **4** request posts in each team channel. Don't answer extras.
-- [ ] **1357–1403** Lead adjudicator writes the RFI answers and RFF rulings. Phase I RFFs count from Turn 1 (Handbook §7).
+- [ ] **1357–1403** Lead adjudicator writes the RFI answers and RFF rulings. Phase I RFFs count as Turn 1 (Handbook §7): an N+1 approval arrives, and can be used, on Turn 2.
 - [ ] **1400–1403** Each logger hears its team's oral OPORD brief and writes its **planned COAs** (up to 3, Turns 1–3) on the placement form.
 - [ ] BLUEFOR logger writes the zone BLUEFOR chooses for each NASAMS battery (**B-06a, B-06b, B-06c**).
 
 ## 4. Kickoff inject (1403–1405)
 
-- [ ] Read the kickoff inject (Intelligence and Injects §4.1).
+- [ ] Read the kickoff inject aloud (Intelligence and Injects §4.1):
+
+> "FLASH. Talks have collapsed. This morning the PFA government declared the Strait of Great Fortune **closed to Cosmopolis-flagged and allied military shipping**, and PFA maritime militia boarded and seized the Cosmopolis-flagged container ship **MV *Fortune's Promise*** and its crew of 22. Asotin has called the seizure 'a lawful act of a sovereign nation.' The President of Cosmopolis, invoking the defense treaty with Omak's 'legitimate' Sapphire government, has ordered military operations. Omak's government has declared that any attack will be met with full force. **A state of war exists.** Strait Traffic is now **Restricted**."
+
 - [ ] Move Strait Traffic to **Restricted**.
 - [ ] Loggers post the Phase I RFI answers and RFF rulings, with arrival turns, in threads in each team channel.
 
@@ -62,7 +65,7 @@ Tick each box as you go. Turns 1–4 are Phase II (1405–1505); Turns 5–7 are
 | Turn clock | Step | T1 | T2 | T3 | T4 | T5 | T6 | T7 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0:00 | Read the turn-start script. Start the timer. Last turn's RFI answers posted in the team channels? | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 0:00–5:00 | **Prepare.** Authorize parleys (≤ 2 min) on request. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 0:00–5:00 | **Prepare.** Authorize parleys (≤ 2 min) on request; listen, repeat the deal back, logger notes it. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 5:00 | Close requests: count up to **3** request posts per team. Don't answer extras. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 5:00–7:00 | **BLUEFOR COA.** No interruptions. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 7:00–9:00 | **REDFOR COA.** It may react to BLUEFOR but not negate it. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
@@ -77,7 +80,7 @@ Tick each box as you go. Turns 1–4 are Phase II (1405–1505); Turns 5–7 are
 | 13:00 | Inject? At most one (Intelligence and Injects §4.2). | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 15:00 | Strait **Closed** → Will −1. Any track at a trigger value? (§6.2) | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 15:00 | Camas not resupplied → S-R1's −1 applies from Turn 4. | — | — | — | ☐ | ☐ | ☐ | ☐ |
-| 15:00 | RFF arriving? Place its counter (a blank counter if it has none); it acts next turn. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 15:00 | RFF arriving next turn (including N+1 approvals just made)? Announce it and place its counter (a blank counter if it has none); it can be used in next turn's COA. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 15:00 | Secret COA trigger met? Resolve it now. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 | 15:00 | Loggers: counters, tracks, placement forms, objective status card updated. | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 

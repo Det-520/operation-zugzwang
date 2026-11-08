@@ -39,7 +39,7 @@ short: "Player Rules Handbook"
    a. **RFI (Request for Information):** a question about the situation.
    b. **RFF (Request for Forces):** a request for more assets or authorities from your national command. Reinforcements take time to arrive.
 
-   Requests don't count as your COA, and there is no debate on them.
+   Requests don't count as your COA, and there is no debate on them. **Diplomacy needs no RFF:** your team speaks for its government, so you can negotiate or make a diplomatic COA without anyone's permission (§2.6).
 9. **Turn clock (15 minutes, run by a timer program).** See §1.2. **BLUEFOR always goes first.**
 10. **Slack, not paper.** Slack is the written record, and you still brief out loud. Post your COA and Cons in your group's public channel, and your requests and any secret COA in your team's secret channel, where the white cell answers (§2.11).
 11. **No interrupting.** It's a courtroom, not a debate. You speak in your slot and are silent in theirs. Raise only points of fact or procedure. **If you miss your slot, the point is lost.** There are no do-overs.
@@ -53,7 +53,7 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 | Step | Clock | Time | Who | What happens |
 | --- | --- | --- | --- | --- |
 | **Prepare** | 0:00–5:00 | 5:00 | Both teams | Pick this turn's COA. Post up to 3 RFIs/RFFs in your team channel. Negotiate if you want (§2.6, ≤ 2:00). Last turn's RFI answers are in your team channel at the start. |
-| Requests close | 5:00 | — | Both teams | The white cell counts your first 3 request posts. No debate. |
+| Requests close | 5:00 | — | Both teams | The white cell counts your first 3 request posts. Later or extra posts aren't answered (§2.9). No debate. |
 | **BLUEFOR COA + Pros** | 5:00–7:00 | 2:00 | BLUEFOR briefer | Brief aloud: action, measurable effect, up to 3 reasons. Post the same COA in the group channel by 7:00. |
 | **REDFOR COA + Pros** | 7:00–9:00 | 2:00 | REDFOR briefer | Brief aloud: action, measurable effect, up to 3 reasons. Post the same COA in the group channel by 9:00. |
 | Prepare Cons | 9:00–11:00 | 2:00 | Both teams | Huddle to pick up to 3 Cons against the enemy's COA |
@@ -90,6 +90,7 @@ Each turn is **15 minutes** of real time and about **3 days** of game time. **Bo
 - The steps and times are in §1.2. One turn is "a turn in the chess sense": each side acts once.
 - **Fixed order.** BLUEFOR always briefs first and REDFOR second, every turn. The order never switches.
 - **Simultaneous execution.** Both COAs happen at the same time across the 3-day turn window, because both are briefed before either is resolved. REDFOR, briefing second, **may react** to BLUEFOR's COA, which is realistic. It **may not** simply negate it ("their strike doesn't happen") or prevent BLUEFOR's COA from being rolled. Negating is what Cons are for; a counter-move is resolved as an interacting or opposed COA (§2.7).
+- **Running behind.** If the game falls behind schedule, the white cell shortens **Prepare** (to 4:00, then 3:00). It never cuts the Cons.
 
 ### 2.2 Courses of action
 
@@ -135,6 +136,19 @@ Weak, vague, or duplicate reasons are worth 0. Three weak reasons are worse than
 
 Four yeses make a strong reason (±1). One that is decisive on its own can be ±2.
 
+**How common reasons are counted.** The white cell uses these calls, so plan for them:
+
+| Reason | How it counts |
+| --- | --- |
+| More than 3 reasons | Only the first 3 count. |
+| A COA that tries to do two unrelated things | The white cell makes you pick one, or takes the first. |
+| A Pro about why the effect *matters* ("closing [CHOKEPOINT] hurts their economy") | 0. It says why the COA matters, not why it works. |
+| A Con about *consequences* ("civilian casualties will cause outrage") | 0 to the odds, but it shapes the outcome: side effects and track moves. |
+| A Con that a Pro already answered, or a Pro that a Con answers | They cancel. Neither counts. |
+| Doctrine named without saying how it applies | 0 |
+| A reason built on something that happened earlier in the game | Usually strong. |
+| A Con built on information your team shouldn't have | 0. Argue from your own intel. |
+
 **Intelligence reports are not established facts.** Your intel products may be wrong. A Pro built on a report counts only as far as the report is believable, so confirm important reports with an RFI or an ISR COA first.
 
 ### 2.4 Secret COAs
@@ -152,14 +166,29 @@ Four yeses make a strong reason (±1). One that is decisive on its own can be ±
 | --- | --- |
 | Your own forces | Yes. That's normal. |
 | The opposing team's forces | **Yes.** Argue about their morale, readiness, maintenance, gaps. You can't give them orders. |
-| A **player-controlled** actor's *decisions* (the other team) | **No.** You can't argue "BLUEFOR agrees to a ceasefire." Ask them in person during Prepare. If they agree, it happens. |
-| **White-cell-controlled** actors (other nations, populations, pirates, the press, weather) | Yes, through COAs. The white cell adjudicates. |
+| A **player-controlled** actor's *decisions* (the other team) | **No.** You can't argue "BLUEFOR agrees to a ceasefire." Ask them in person in a parley during Prepare (§2.6). If they agree, it happens. |
+| **White-cell-controlled** actors (other nations, populations, pirates, the press, weather) | Yes, through COAs. The white cell adjudicates. Diplomatic COAs need no RFF (§2.6). |
 
 ### 2.6 Negotiation
 
-- During **Prepare**, your flight commander (or a delegate) may ask the lead adjudicator for a **parley** with the other team. It lasts **up to 2 minutes**, taken out of Prepare.
+#### Parleys
+
+A **parley** is a short face-to-face talk with the other team during **Prepare**. In the game world it stands for talks between the two governments over the turn's 3 days, whether direct, through a back channel, or through a mediator. It is the **only** way to get a decision out of the other team (§2.5).
+
+- **Asking.** Your flight commander (or a delegate) asks the lead adjudicator. The other team may decline.
+- **Who and how long.** One person from each team, the flight commander or a delegate, meets at the white cell end of the table while the lead adjudicator listens. The rest of your team keeps working on the COA. It lasts **up to 2 minutes**, taken out of Prepare.
+- **Not a COA or a request.** A parley has no roll and no Pros or Cons, and it doesn't count against your 3 requests.
+- **Only with the other team.** To win over a white-cell actor (another nation, the press, a population), make a COA instead.
+- **Closing.** At the end, each side says aloud what it agreed to, and the lead adjudicator repeats the deal back. You don't need to write it down; the white cell notes it.
 - Whatever the players agree in person **happens**, with no roll. Examples: prisoner exchanges, a local ceasefire, an agreement to open talks, a deal to let shipping through.
-- Agreements are not self-enforcing. You may break one, but the broken deal becomes an **established fact** that others can use in Pros and Cons, and the white cell may move tracks.
+- Agreements are not self-enforcing. You may break one, but the broken deal becomes an **established fact** that others can use in Pros and Cons, and the white cell may move tracks. If the sides later dispute a deal, the lead adjudicator decides.
+
+#### Diplomacy needs no RFF
+
+- **Your team speaks for its whole government:** the head of state, the foreign ministry, and the commanders at once. You don't need an RFF, or permission from your head of state or national command, to negotiate or to make a diplomatic COA.
+- That covers parleys and the deals made in them, and diplomatic COAs aimed at white-cell actors: basing or overflight talks, recognition, mediation, pressure on a third country, an offer of talks.
+- **RFFs for authorities are for military limits only:** the rules of engagement that say "without national authority" or "without approval." A deal that commits your forces to one of those acts still needs the authority before they act.
+- If you post an RFF asking permission to negotiate, the white cell answers "No RFF needed," and it doesn't count against your 3 requests.
 
 ### 2.7 How the white cell decides
 
@@ -197,9 +226,19 @@ The white cell makes the final decision. It works through each COA like this:
 | Natural roll needed | 11+ | 10+ | 9+ | 8+ | 7+ | 6+ | 5+ | 4+ | 3+ |
 | Chance of at least Partial | 8% | 17% | 28% | 42% | 58% | 72% | 83% | 92% | 97% |
 
-**When COAs interact or collide.** Both COAs happen simultaneously across the 3-day turn window. If one affects the other's odds (e.g. BLUEFOR disperses SAMs while REDFOR strikes them), the white cell folds that into the modifiers. If both teams' COAs can't both succeed (e.g. both try to seize the same port), the program rolls for each side, each adds its own modifiers, and the higher total wins. A tie is a stalemate: both are Partial.
+#### When COAs interact or collide
 
-**Estimative vote.** When a call is contentious (both teams keep arguing, or the call is too close to count), the lead adjudicator may announce an **estimative vote** instead of counting modifiers. Each white cell member shows 1–5 fingers for how likely your COA is to work, the white cell takes the median, and the dice program rolls against it. If it happens, it's a **Success**; if not, a **Failure**. It takes about 10 seconds, and the result is final like any other.
+Both COAs happen simultaneously across the 3-day turn window, so the white cell first decides how they relate:
+
+| The two COAs are… | How they are resolved |
+| --- | --- |
+| **Independent** (different places or effects) | Each is resolved normally, BLUEFOR's first. |
+| **Interacting** (one affects the other's odds, e.g. BLUEFOR disperses its SAMs while REDFOR strikes them) | The white cell folds the interaction into the modifiers. A well-timed counter-move counts as a strong Pro or Con **even if nobody said it aloud**. |
+| **Directly opposed** (both can't succeed, e.g. both try to seize the same port) | **Opposed roll.** The program rolls 2d6 for each side, each adds its own modifiers, and the higher total wins. A tie is a stalemate: both are **Partial** and the situation stays contested. |
+
+#### Estimative vote
+
+When a call is contentious (both teams keep arguing, or the call is too close to count), the lead adjudicator may announce an **estimative vote** instead of counting modifiers. Each white cell member shows 1–5 fingers for how likely your COA is to work, the white cell takes the median, and the dice program rolls against it. If it happens, it's a **Success**; if not, a **Failure**. It takes about 10 seconds, and the result is final like any other.
 
 | Vote (median) | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -208,7 +247,9 @@ The white cell makes the final decision. It works through each COA like this:
 
 The arguments still matter: the white cell members vote on how strong your Pros and the other team's Cons were.
 
-**No recalculation.** An objection raised late (after its slot, or after the roll) **is not considered**, and a result is not re-run once announced.
+#### No recalculation
+
+An objection raised late (after its slot, or after the roll) **is not considered**, and a result is not re-run once announced.
 
 ### 2.8 Counters and fog of war
 
@@ -217,20 +258,22 @@ The arguments still matter: the white cell members vote on how strong your Pros 
 - **Split counters.** An asset spread over several zones has one counter per part, lettered after its ID. For example, the PFA militia brigades are B-19a, B-19b, and B-19c, one each in Z10, Z11, and Z12. Each part moves, is found, and is Degraded or Destroyed on its own, and a strike on a zone touches only the parts in it. Name one part ("B-19b") or the whole asset ("B-19", meaning every part).
 - **Hidden** counters stay on your team sheet. The enemy doesn't know about them until they are found by a successful ISR COA, revealed by their own use, or disclosed by an inject. Mentioning a hidden asset in a COA or in a Pro or Con counts as using it, whether or not the COA succeeds. Once a hidden counter is used, it goes on the map.
 - **RFI answers** reflect what your intelligence would plausibly know. They may be incomplete, uncertain ("unknown"), or wrong if the enemy has succeeded at deception. RFIs never reveal the enemy's secret objectives or secret COAs.
-- **Injects** are events the white cell introduces, such as weather, civilian events, leaks, and third-party moves. There is at most one per turn. Injects may also set new national directives.
+- **Injects** are events the white cell introduces, such as weather, civilian events, leaks, and third-party moves. There is **at most one per turn**, given during the white cell's resolve step (the kickoff inject that starts the war comes at the end of Phase I). Injects add friction, force you to adapt, or rein in play that goes out of bounds. They may set new national directives, and a COA that is out of bounds may be ruled impossible outright. There are no event cards: random events come only through injects.
 - **Ongoing effects** announced by the white cell ("burning port," "exclusion zone in [CHOKEPOINT]") persist and can give ±1 to related COAs until a successful COA removes them.
 
 ### 2.9 Requests: RFIs and RFFs
 
 | | RFI – Request for Information | RFF – Request for Forces |
 | --- | --- | --- |
-| Purpose | Ask what your side knows: enemy disposition, weather, a third party's stance, the civilian situation | Ask your national command for more assets or authorities |
+| Purpose | Ask what your side knows: enemy disposition, weather, a third party's stance, the civilian situation | Ask your national command for more assets, or for authorities beyond your rules of engagement. Diplomacy needs no RFF (§2.6). |
 | Limit | **Up to 3 per turn, RFIs and RFFs combined** | Shared with RFIs |
 | Format | One Slack message per request: one question, one sentence | Asset (from your RFF pool, or a free-text request), destination, and purpose |
 | Answer | A short written answer in a thread under your post, by the start of the next Prepare | Approved, partly approved, or denied, with the **arrival turn** |
 
-- Requests posted after Prepare ends aren't answered. Post them again next turn.
-- Forces that arrive by RFF **do nothing on the turn they arrive** unless the timing table says otherwise.
+- **Deadline:** the end of **Prepare** (Phase I: minute 12). The white cell counts your first 3 posts (Phase I: 4). A request posted after the deadline, or beyond the limit, **isn't answered**. Post it again next turn.
+- **Arrival turns.** **N** is the turn you submit the RFF (Phase I RFFs count as Turn 1). The white cell rules on it in that turn's resolve step. N+1 means the next turn, N+2 the turn after that.
+- **Usable on arrival.** An arriving force goes on the map at the end of the turn before it arrives, and you can use it in the arrival turn's COA. Example: you submit an RFF on Turn 3 for an N+1 asset and it is approved. It arrives on Turn 4 and can be part of your Turn 4 COA.
+- An N+0 grant (such as new authorities) takes effect when approved, so it applies from your next COA.
 - Forces that arrive by RFF go on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR) unless your RFF names another destination.
 - A big RFF (a [MAJOR FORMATION], or new authorities like permission to strike [ENEMY CAPITAL]) is a **political** decision. The white cell may deny it, or demand a successful COA first to build the case.
 

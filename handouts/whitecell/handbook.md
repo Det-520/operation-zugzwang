@@ -184,7 +184,7 @@ Read these aloud, word for word or close to it.
 
 | Step | Turn Clock | Duration | Lead adjudicator says or does |
 | --- | --- | --- | --- |
-| **Prepare** | 0:00–5:00 | 5:00 | Start the timer. Check that last turn's RFI answers are posted in the team channels. Authorize parleys (≤ 2 min) on request. |
+| **Prepare** | 0:00–5:00 | 5:00 | Start the timer. Check that last turn's RFI answers are posted in the team channels. Authorize parleys (≤ 2 min) on request and listen in (§7.1). |
 | Requests close | 5:00 | — | Count the first **3** request posts per team. Don't answer extras or late posts. |
 | **BLUEFOR COA** | 5:00–7:00 | 2:00 | "BLUEFOR, your COA." No interruptions. |
 | **REDFOR COA** | 7:00–9:00 | 2:00 | "REDFOR, your COA." |
@@ -198,7 +198,7 @@ Read these aloud, word for word or close to it.
 - [ ] Strait Traffic **Closed** → Domestic Will **−1**.
 - [ ] Any track at a trigger value? Apply it (§6.2).
 - [ ] Turn 4 or later and Camas not resupplied → S-R1's −1 applies to Camas-based strikes.
-- [ ] Any RFF arriving this turn → place its counter (REDFOR: Z6 Camas, BLUEFOR: Z11 Omak City, unless the RFF named another destination). It acts next turn.
+- [ ] Any RFF arriving **next** turn (including N+1 RFFs approved just now) → announce it and place its counter (REDFOR: Z6 Camas, BLUEFOR: Z11 Omak City, unless the RFF named another destination). It can be used in next turn's COA.
 - [ ] Any secret COA trigger met → resolve it now.
 
 ### 4.2 Keeping order
@@ -291,8 +291,8 @@ Both COAs happen simultaneously across the 3-day turn window. Because REDFOR bri
 | **Long-term COA** | Success means the effect **has started and continues** until someone stops it. Record it as an ongoing effect. |
 | **Announcement** | Free, unless it claims a measurable effect. Then it is the team's COA. |
 | **Secret COA** | One per team per phase (II and IV). It may be posted in the planning phase before (I or III); then it costs no turn's COA. The logger pins the Slack post (or keeps the backup slip). Resolve when the trigger occurs, using your own judgment in place of Cons. **A loose trigger doesn't fire.** |
-| **Arguing a player-controlled actor agrees** | Not allowed. Tell the team to ask in person (a parley). |
-| **Persuading a white-cell actor** (Latah, Tekoa, Asotin, the press) | A normal COA. Use the ground truth (Intelligence and Injects §1) for how those actors really feel. |
+| **Arguing a player-controlled actor agrees** | Not allowed. Tell the team to ask in person (a parley, §7.1). |
+| **Persuading a white-cell actor** (Latah, Tekoa, Asotin, the press) | A normal COA. Use the ground truth (Intelligence and Injects §1) for how those actors really feel. **No RFF needed** (§7.1). Don't deny or scope it down for lack of one. |
 
 ### 5.5 Contentious calls
 
@@ -353,9 +353,26 @@ At the end of each resolve step, state any **ongoing effects** in one line ("ref
 
 ## 7. Ruling on RFFs
 
-Rule on RFFs during step 8 and tell the team the **arrival turn**. **Approvals stand** (Rules §5): once approved, a force arrives and a grant stays even if the track that allowed it moves later. "N" is the turn of approval. Phase I RFFs count from Turn 1. Arriving forces **act the turn after** they arrive. Forces arrive on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination; rule on whether that destination is realistic.
+### 7.1 Parleys and diplomacy (no RFF)
 
-### REDFOR
+**A parley** (Rules §6.1) is a talk of up to 2:00 between the two teams during Prepare. It stands for talks between the governments during the turn, and it is the only way one team gets a decision from the other. It is not a COA or a request: no roll, no Pros or Cons, and it doesn't count against the 3 requests.
+
+1. A flight commander (or delegate) asks you. Authorize it unless Prepare is nearly over. The other team may decline.
+2. One person from each team comes to the white cell end of the table. Start the **Parley** timer in the timer program (≤ 2:00). Listen; don't mediate or advise.
+3. At the end, each side says aloud what it agreed to. Repeat the deal back. The logger notes it on the objective status card (White Cell Forms), including what each side says it agreed, if they differ.
+4. The deal **happens**. Apply its effects in step 8 of this turn. If the teams later dispute it, you decide from the logger's note. A broken deal is an established fact; you may move tracks.
+
+Parleys are only between the teams. A team that wants to talk to Latah, Tekoa, Asotin, or the press makes a COA.
+
+**Diplomacy needs no RFF** (Rules §6.2). Each team speaks for its whole government, President included. Parleys, the deals made in them, and diplomatic COAs (basing, overflight, recognition, mediation, pressure on Asotin, an offer of talks) need no RFF and no one's permission. RFFs for authorities cover only the military limits in the ROE (Scenario Brief §8): leadership strikes in Omak City, ground forces on Omak soil, engaging Asotin forces or shipping (R-39). A deal that commits forces to one of those still needs the authority before they act, such as REDFOR ground forces in Omak as peacekeepers. Tekoa's consent comes from a diplomatic COA, not an RFF.
+
+If a team posts an RFF asking permission to negotiate, the logger answers in the thread: "No RFF needed: diplomacy is within your authority (Rules §6.2)." It doesn't count against the team's 3 requests.
+
+### 7.2 Rulings and arrival turns
+
+Rule on RFFs during step 8 and tell the team the **arrival turn**. **Approvals stand** (Rules §5): once approved, a force arrives and a grant stays even if the track that allowed it moves later. "N" is the turn the RFF is submitted, which is also the turn you rule on it. Phase I RFFs count as Turn 1. Arriving forces **can be used in the COA of the turn they arrive**: an N+1 RFF submitted and approved on Turn 3 arrives on Turn 4 and can be part of the Turn 4 COA, so place its counter now. An N+0 grant (R-39) takes effect when approved and applies from the next COA. Forces arrive on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination; rule on whether that destination is realistic.
+
+#### REDFOR
 
 | ID | Asset | Arrives | Approve when |
 | --- | --- | --- | --- |
@@ -370,7 +387,7 @@ Rule on RFFs during step 8 and tell the team the **arrival turn**. **Approvals s
 | R-38 | ARG/MEU (Marines) | N+3 | Same as R-37 |
 | R-39 | Authorities (leadership strikes, engaging Asotin shipments) | N+0 | Political. Weigh Domestic Will and Opinion. Engaging Asotin risks unlocking B-42. |
 
-### BLUEFOR
+#### BLUEFOR
 
 | ID | Asset | Arrives | Approve when |
 | --- | --- | --- | --- |
