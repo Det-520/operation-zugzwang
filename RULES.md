@@ -364,7 +364,7 @@ If the game runs at several tables simultaneously, every white cell uses this do
 
 - **[CANON]** Each team has an assigned **flight commander**. Who is assigned and when command changes hands is set in `LLAB-SETUP.md`.
 - **[CANON]** **The team builds the rest of its own structure** during Phase I: who handles operations, intel, logistics, briefing, and so on. The rules don't prescribe staff roles.
-- **[CANON]** Players **may use computers and AI** during play. The decisions and the briefs must still be the team's own.
+- **[CANON]** Players **may use computers, online searches, and AI** during play, and every player may bring a laptop. The decisions and the briefs must still be the team's own.
 
 ### 9.2 White cell [CANON]
 
@@ -424,7 +424,7 @@ Still open:
 
 ## Appendix A — Phase I brief and Phase III FRAGO formats (AFDP 5-0 App. E) [CANON: format; outline PROPOSED]
 
-**Phase I brief:** an **oral** brief to the team's logger, ≤ 3 minutes (minutes 15–18 of Phase I). Nothing written is required. The logger notes the planned COAs.
+**Phase I brief:** an **oral** brief to the team's logger, ≤ 3 minutes (minutes 15–18 of Phase I). Nothing written is required, and teams don't have to follow this outline; it is here for reference. The logger notes the planned COAs.
 
 ```text
 1. SITUATION   Enemy: what we think they will do (most likely / most dangerous).
@@ -455,7 +455,7 @@ Each logger keeps one placement form for its side (`handouts/whitecell/forms.md`
 - approved RFFs, with the turn each arrives and where it is placed;
 - visible counters that have moved, been Degraded, or been Destroyed since the starting setup.
 
-When something changes, cross out the old entry and write the new one. Ongoing effects and big-project progress go on the public track board (`handouts/whitecell/forms.md` §2).
+When something changes, cross out the old entry and write the new one. Ongoing effects and big-project progress go on the public ongoing-effects sheet (`handouts/whitecell/forms.md` §2). The tracks are kept in the timer and dice program's tracker, on the room's screen.
 
 ## Appendix C — Probability cheat sheet (2d6, need modified total ≥ 7)
 
@@ -494,7 +494,7 @@ When something changes, cross out the old entry and write the new one. Ongoing e
 | **White cell** | The neutral control group: adjudicator and loggers |
 | **REDFOR / BLUEFOR** | The two opposing player sides |
 | **Counter** | A printed piece on the central map representing an asset or effect |
-| **Track** | A numeric marker beside the map for something abstract (opinion, stability) |
+| **Track** | A numeric value, shown on the white cell's screen, for something abstract (opinion, stability) |
 | **Degraded / Destroyed** | Asset states. A Degraded asset gives −1 when used. A Destroyed one is removed. |
 | **DIME / PMESII** | Instruments of power / dimensions of effect. A checklist for non-kinetic ideas. |
 

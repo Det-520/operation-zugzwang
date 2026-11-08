@@ -22,8 +22,8 @@ The white cell is the neutral referee. It runs the clock, judges the arguments, 
 
 | Role | Job |
 | --- | --- |
-| **Lead adjudicator** | Runs the **timer program** and the **dice program**. Calls each step. Gives injects. Rules on every COA and RFF. **Final authority.** |
-| **BLUEFOR logger** | Hears BLUEFOR's Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (White Cell Forms §4.2): planned COAs, hidden-counter locations, arrivals, and counters that changed. Moves BLUEFOR counters. Watches BLUEFOR's team channel, counts its requests, and posts the lead adjudicator's answers (§2.4). Doesn't log every move. |
+| **Lead adjudicator** | Runs the **timer program** and the **dice program**, shown on the room's TV or projector. Calls each step. Gives injects. Rules on every COA and RFF. **Final authority.** |
+| **BLUEFOR logger** | Hears BLUEFOR's Phase I brief and Phase III FRAGO. Keeps the BLUEFOR placement form (White Cell Forms §4.2): planned COAs, hidden-counter locations, arrivals, and counters that changed. Moves BLUEFOR counters. Watches BLUEFOR's team channel, counts its requests, and posts the lead adjudicator's answers (§2.4). Doesn't log every move. Keeps the white cell site and Slack open on a laptop the teams can't see. |
 | **REDFOR logger** | Same for REDFOR (White Cell Forms §4.1), in REDFOR's team channel |
 
 The white cell should work to be efficient and generally help teams stay within the bounds of the rules. As white cell, you are given lots of freedom:
@@ -59,16 +59,18 @@ Generally, you should be helpful in ensuring that teams understand the rules and
 
 The White Cell Checklist has the full list, from a week out to cleanup, in order.
 
-- [ ] Everyone in the white cell has read the Likely Plans guide, so you know the COAs to expect and how to rule on them.
+- [ ] Everyone in the white cell has at least skimmed the Likely Plans guide, so you know the COAs to expect and where to look up how to rule on them.
 - [ ] You're in your group's Slack channel and both of its team channels (§2.4).
-- [ ] Everyone in the white cell has read **both** sides' intelligence products and the key (Intelligence and Injects §3), so you recognize a Pro built on a false report.
-- [ ] The timer program and dice program work on the lead adjudicator's device. It should be shown on screen for all players to see.
-- [ ] Printed: one **Print Packet** per table (`White Cell/Print Packet - One Table.pdf`). `Print Packet - One Table, Reference Forms.pdf` is the same packet with one copy of each player form and slip for each side and no spares, for tables that will photocopy their own. Its cover lists what is in it: the White Cell Checklist, White Cell Forms (score sheet, track board, objective status card, both placement forms), starting-condition cue cards, counters, the map in letter tiles, both teams' player forms and request slips, and spare forms and slips at the back. Print the game pieces (counters, map, cue cards, track board) in colour and the rest in greyscale. For one large map, print `map-full.pdf` on a plotter (v10 or later, with Camas inside PrSM range).
+- [ ] Everyone in the white cell has at least skimmed **both** sides' intelligence products and the key (Intelligence and Injects §3), and knows how to look one up, so you can check a Pro that may be built on a false report.
+- [ ] The timer and dice program works on the lead adjudicator's laptop and shows on the room's TV or projector, where every player can see it. Each logger's laptop opens the white cell site and Slack.
+- [ ] Printed: one **Print Packet** per table (`White Cell/Print Packet - One Table.pdf`). `Print Packet - One Table, Reference Forms.pdf` is the same packet with one copy of each player form and slip for each side and no spares, for tables that will photocopy their own. Its cover lists what is in it: the White Cell Checklist, White Cell Forms (score sheet, ongoing-effects sheet, objective status card, both placement forms), starting-condition cue cards, counters, the map in letter tiles, both teams' player forms and request slips, and spare forms and slips at the back. Print the game pieces (counters, map, cue cards) in colour and the rest in greyscale. For one large map, print `map-full.pdf` on a plotter (v10 or later, with Camas inside PrSM range).
 - [ ] Counters printed and cut out: one set per table. It shows **both** sides' hidden assets, so keep it with the white cell. The HIDDEN counters stay in an envelope until they go on the map (§2.3).
 
 ### 2.3 Table setup
 
-**Tracks** (beside the map)
+The **Table Setup Guide** is the at-the-table version of this section: the devices, the table layout, every counter by name and zone, and a setup checklist. In short: the lead adjudicator puts the timer and dice program up on the room's TV or projector, and each logger keeps the white cell site and Slack open on a laptop the teams can't see.
+
+**Tracks** (in the tracker on the timer and dice program, shown on the TV or projector; there is no paper track board)
 
 | Track | Start position |
 | --- | --- |
@@ -77,7 +79,7 @@ The White Cell Checklist has the full list, from a week out to cleanup, in order
 | Cosmopolis Domestic Will | **3** |
 | Omak Regime Stability | **4** |
 
-**Objective status card** (White Cell Forms §3): blank, **face down with the logger**. Each logger also keeps its side's **placement form** (§4) face down. Never put it beside the tracks, because it shows what the secret objectives look for.
+**Objective status card** (White Cell Forms §3): blank, **face down with the logger**. Each logger also keeps its side's **placement form** (§4) face down. Never put it beside the ongoing-effects sheet, because it shows what the secret objectives look for.
 
 **Starting-condition cue cards** (face up, visible to both teams): S-R1 to S-R4, S-B1 to S-B5.
 
@@ -145,8 +147,8 @@ Nothing is handed over on paper (Rules §2.5). Slack is the **record**: teams st
 | **1345–1403** | **18** | **Phase I – Planning** | |
 | 1345–1357 | 12 | • Team planning & requests | Read the Phase I opening script. Start the 18-minute timer. Teams organize and plan using their pre-read intelligence products. |
 | **1357** | — | • **Phase I request cutoff (min 12)** | **Close requests: count up to 4 request posts (RFIs/RFFs combined) in each team channel.** Lead adjudicator writes answers and rulings during the next 6 minutes while teams rehearse and brief. |
-| 1357–1400 | 3 | • Brief rehearsal | Teams finalize their five-paragraph OPORD brief. Lead adjudicator finishes answering Phase I requests. |
-| 1400–1403 | 3 | • Phase I OPORD briefs (last 3 min) | Each logger hears its own team's oral five-paragraph OPORD brief and writes its **planned COAs** (up to 3, Turns 1–3) and, for BLUEFOR, the zones of **B-06a, B-06b, and B-06c** (NASAMS) on the placement form (White Cell Forms §4). |
+| 1357–1400 | 3 | • Brief rehearsal | Teams finalize their brief. Lead adjudicator finishes answering Phase I requests. |
+| 1400–1403 | 3 | • Phase I OPORD briefs (last 3 min) | Each logger hears its own team's oral brief and writes its **planned COAs** (up to 3, Turns 1–3) and, for BLUEFOR, the zones of **B-06a, B-06b, and B-06c** (NASAMS) on the placement form (White Cell Forms §4). |
 | **1403–1405** | **2** | **Kickoff inject** | Read the kickoff inject (Intelligence and Injects §4.1). Move Strait Traffic to **Restricted**. Loggers post Phase I RFI answers and RFF rulings in each team channel. |
 | **1405–1505** | **60** | **Phase II: Turns 1–4** | Run four 15-minute turns (§4): · **Turn 1:** 1405–1420 · **Turn 2:** 1420–1435 · **Turn 3:** 1435–1450 · **Turn 4:** 1450–1505 *(S-R1 bites on Camas strikes unless resupplied)* |
 | **1505–1512** | **7** | **Debrief 1** | Phase I–II flight commanders lead it. Hand command to the **Phase III–IV flight commanders** afterward. |
@@ -160,7 +162,7 @@ Read these aloud, word for word or close to it.
 
 #### Phase I opening (1345)
 
-> "Welcome to Operation Zugzwang. Your intelligence suggests that an attack is imminent. You have 18 minutes to organize your team, synthesize your intelligence, and build a plan. You may submit up to four requests, RFIs or RFFs, due at minute 12—six minutes before the end of the phase. In the last three minutes you will brief your plan to your logger as a five-paragraph order, including up to three planned COAs. There are no COAs in Phase I. Your time starts now."
+> "Your intelligence suggests that an attack is imminent. You have 18 minutes to organize your team, synthesize your intelligence, and build a plan. You may submit up to four requests, RFIs or RFFs, due at minute 12—six minutes before the end of the phase. In the last three minutes you will brief your plan to your logger, including up to three planned COAs. There are no COAs in Phase I. Your time starts now."
 
 #### Phase I minute 12 call (1357)
 
@@ -286,7 +288,7 @@ Both COAs happen simultaneously across the 3-day turn window. Because REDFOR bri
 
 | Type | Handling |
 | --- | --- |
-| **Big project** (coalition, ACE network) | State up front how many successful COAs it needs, **at most 3**. ACE dispersal off Camas (S-R2) is 2. Track progress on the track board (White Cell Forms §2). |
+| **Big project** (coalition, ACE network) | State up front how many successful COAs it needs, **at most 3**. ACE dispersal off Camas (S-R2) is 2. Track progress on the ongoing-effects sheet (White Cell Forms §2). |
 | **Protected or hidden target** | At most 3 layers, e.g. *find* (ISR COA), then *strike*. A strike on a hidden counter nobody has found is impossible, or becomes an ISR COA. An intel product that points at a hidden asset is a good Pro for the *find* COA, not a substitute for it. |
 | **Long-term COA** | Success means the effect **has started and continues** until someone stops it. Record it as an ongoing effect. |
 | **Announcement** | Free, unless it claims a measurable effect. Then it is the team's COA. |
@@ -347,7 +349,7 @@ If both teams keep arguing, or the call is too close to count in time, don't deb
 
 ### 6.3 Ongoing effects
 
-At the end of each resolve step, state any **ongoing effects** in one line ("refugees on the coast road," "Fortune Harbor burning," "mines in the Narrows"). Each gives ±1 to related COAs **until a successful COA removes it**. Write them on the track board (White Cell Forms §2) so all players can see them.
+At the end of each resolve step, state any **ongoing effects** in one line ("refugees on the coast road," "Fortune Harbor burning," "mines in the Narrows"). Each gives ±1 to related COAs **until a successful COA removes it**. Write them on the ongoing-effects sheet (White Cell Forms §2) so all players can see them.
 
 <!-- pagebreak -->
 

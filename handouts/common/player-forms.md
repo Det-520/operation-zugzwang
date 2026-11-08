@@ -8,6 +8,8 @@ short: "Player Forms"
 
 ## 1. Five-Paragraph OPORD and FRAGO Format
 
+For reference. Your Phase I brief and Phase III FRAGO don't have to follow this format, but it is a good structure if you want one.
+
 <!-- zz:form med -->
 
 | Five-Paragraph OPORD/FRAGO Format | |

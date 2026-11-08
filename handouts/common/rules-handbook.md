@@ -286,14 +286,14 @@ An objection raised late (after its slot, or after the roll) **is not considered
 | **Lead adjudicator** | White cell | Runs the clock, the dice, and injects. Final authority. |
 | **Loggers** | White cell (one per side) | Hear briefs and move counters |
 
-You **may use computers** during play. The decisions and briefs must be your team's own.
+You **may use computers** during play: every player may bring a laptop, for Slack and to search online. The decisions and briefs must be your team's own.
 
 ### 2.11 Slack channels
 
 - **Before the LLAB:** accept the Slack invitation that comes with your team assignment and join both of your channels:
   - your **group channel** (public), shared by both teams in your group and the white cell, for example `opz-group1-army`;
   - your **team channel** (secret), shared only by your team and your group's white cell, for example `opz-alpha-redfor`. The other team is never in it.
-- **Bring a device.** At least one teammate keeps Slack open at the table. Pick a team member to post.
+- **Bring a laptop.** Everyone may bring one. At least one teammate keeps Slack open at the table. Pick a team member to post.
 - **Group channel:** your COA and Pros (by the end of your COA slot) and your Cons (by the end of your Cons slot).
 - **Team channel:** each RFI or RFF as its own message (during Prepare), and any secret COA. Never post secrets in the group channel.
 - Copy-and-paste templates are in the Player Forms.
@@ -358,7 +358,7 @@ Cite these by name in your Pros and Cons, and say *how* they apply.
 | **White cell** | The neutral control group: the lead adjudicator and loggers |
 | **REDFOR / BLUEFOR** | The two opposing player sides |
 | **Counter** | A printed piece on the map representing an asset or effect |
-| **Track** | A marker beside the map for something abstract (opinion, stability) |
+| **Track** | A value shown on the white cell's screen for something abstract (opinion, stability) |
 | **Ready / Degraded / Destroyed** | Asset states. A Degraded asset gives −1 when used. A Destroyed one is removed. |
 | **Visible / Hidden** | Whether a counter is on the map for the enemy to see, or only on your team sheet |
 | **DIME / PMESII** | Instruments of power / dimensions of effect. A checklist for non-kinetic ideas. |

@@ -130,7 +130,7 @@ The map labels all thirteen zones, including the four sea zones: Z7 West Approac
 
 ## 5. Tracks and starting conditions [PROPOSED detail on CANON balance]
 
-### 5.1 Tracks (kept beside the map, moved by COA results and consequence management)
+### 5.1 Tracks (shown on the white cell's screen, moved by COA results and consequence management)
 
 | Track | Range | Start | Moves when… | Trigger effects |
 | --- | --- | --- | --- | --- |

@@ -126,7 +126,7 @@ Counters go in **zones**. There is no hex grid. The Strait of Great Fortune is *
 
 ## 5. Tracks
 
-Tracks sit beside the map. COA results and their consequences move them.
+The white cell keeps the tracks on its screen, where both teams can see them. COA results and their consequences move them.
 
 | Track | Range | Starts at | Moves when… | Trigger effects |
 | --- | --- | --- | --- | --- |
