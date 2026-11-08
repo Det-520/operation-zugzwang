@@ -49,7 +49,7 @@ Generally, you should be helpful in ensuring that teams understand the rules and
 
 **Nobody on a team gets the other team's documents.** Teams and flight commanders should be assigned before distribution.
 
-#### Distribution schedule
+**Distribution schedule**
 
 - **ASAP:** general rules information (Player Rules Handbook, Player Forms)
 - **One week prior (over Canvas):** scenario information (Scenario Brief, Scenario Schedule, Starting Conditions, map)
@@ -83,7 +83,7 @@ The **Table Setup Guide** is the at-the-table version of this section: the devic
 
 **Starting-condition cue cards** (face up, visible to both teams): S-R1 to S-R4, S-B1 to S-B5.
 
-#### Counters on the central map (visible only)
+**Counters on the central map (visible only)**
 
 | Zone | REDFOR | BLUEFOR |
 | --- | --- | --- |
@@ -160,23 +160,23 @@ Nothing is handed over on paper (Rules §2.5). Slack is the **record**: teams st
 
 Read these aloud, word for word or close to it.
 
-#### Phase I opening (1345)
+**Phase I opening (1345)**
 
 > "Your intelligence suggests that an attack is imminent. You have 18 minutes to organize your team, synthesize your intelligence, and build a plan. You may submit up to four requests, RFIs or RFFs, due at minute 12—six minutes before the end of the phase. In the last three minutes you will brief your plan to your logger, including up to three planned COAs. There are no COAs in Phase I. Your time starts now."
 
-#### Phase I minute 12 call (1357)
+**Phase I minute 12 call (1357)**
 
 > "Six minutes left in Phase I. Requests close now—we'll answer the first four posted in your team channel. You have three minutes to rehearse before you brief your logger."
 
-#### Turn start
+**Turn start**
 
 > "Turn [N]. Prepare, five minutes. Your RFI answers are in your team channel. Requests are due there when the timer ends."
 
-#### Phase III Planning and FRAGO call (1519)
+**Phase III Planning and FRAGO call (1519)**
 
 > "One minute left in Phase III. Phase III–IV flight commanders, brief your one-minute FRAGO and up to two Phase IV planned COAs to your logger now."
 
-#### End of game (1605)
+**End of game (1605)**
 
 > "That was the final turn. Here is where things stand." Then read the tracks and key map facts, and score (§8).
 
@@ -225,7 +225,7 @@ Read these aloud, word for word or close to it.
 5. **Narrate** in one or two sentences. It may also be helpful to name the deciding Pro or Con.
 6. Successful results become **established facts**.
 
-#### Argument to Modifier Reference
+**Argument to Modifier Reference**
 
 | Modifier | Value |
 | --- | --- |
@@ -236,7 +236,7 @@ Read these aloud, word for word or close to it.
 | Each starting condition or ongoing effect that applies (§6) | ±1 |
 | Each asset in the COA that is **Degraded** (each counter in a package counts) | −1 each |
 
-#### Outcome Reference
+**Outcome Reference**
 
 | Total | Result | Typical outcome |
 | --- | --- | --- |
@@ -246,7 +246,7 @@ Read these aloud, word for word or close to it.
 | **9–11** | **Success** | Happens as argued |
 | **≥ 12** | **Exceptional success** | As argued, plus a bonus: an extra effect, a new established fact, or a track moves in the actor's favor |
 
-#### Probability Card
+**Probability Card**
 
 | Net modifier | −4 | −3 | −2 | −1 | 0 | +1 | +2 | +3 | +4 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -262,7 +262,7 @@ Ask four questions. **Four yeses = strong (±1).** Decisive on its own = ±2. An
 3. **Is it new,** not a restatement of a reason already counted?
 4. **Does it matter?** Would a real commander care?
 
-#### Common calls
+**Common calls**
 
 | Situation | Call |
 | --- | --- |
@@ -300,7 +300,7 @@ Both COAs happen simultaneously across the 3-day turn window. Because REDFOR bri
 
 If both teams keep arguing, or the call is too close to count in time, don't debate. Either **make the call**, or announce an **estimative vote** (Rules §4.3; players know this rule from Player Rules Handbook §2.7): each white cell member shows 1–5 fingers for how likely the COA is to work, you take the **median**, and roll against it with the dice program's **Estimative vote** button. **Happens = Success. Doesn't happen = Failure.** Narrate it like any other result.
 
-#### Estimative Vote Card
+**Estimative Vote Card**
 
 | Fingers | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -374,7 +374,7 @@ If a team posts an RFF asking permission to negotiate, the logger answers in the
 
 Rule on RFFs during step 8 and tell the team the **arrival turn**. **Approvals stand** (Rules §5): once approved, a force arrives and a grant stays even if the track that allowed it moves later. "N" is the turn the RFF is submitted, which is also the turn you rule on it. Phase I RFFs count as Turn 1. Arriving forces **can be used in the COA of the turn they arrive**: an N+1 RFF submitted and approved on Turn 3 arrives on Turn 4 and can be part of the Turn 4 COA, so place its counter now. An N+0 grant (R-39) takes effect when approved and applies from the next COA. Forces arrive on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination; rule on whether that destination is realistic.
 
-#### REDFOR
+**REDFOR**
 
 | ID | Asset | Arrives | Approve when |
 | --- | --- | --- | --- |
@@ -389,7 +389,7 @@ Rule on RFFs during step 8 and tell the team the **arrival turn**. **Approvals s
 | R-38 | ARG/MEU (Marines) | N+3 | Same as R-37 |
 | R-39 | Authorities (leadership strikes, engaging Asotin shipments) | N+0 | Political. Weigh Domestic Will and Opinion. Engaging Asotin risks unlocking B-42. |
 
-#### BLUEFOR
+**BLUEFOR**
 
 | ID | Asset | Arrives | Approve when |
 | --- | --- | --- | --- |

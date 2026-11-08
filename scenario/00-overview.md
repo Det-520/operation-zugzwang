@@ -141,7 +141,7 @@ The map labels all thirteen zones, including the four sea zones: Z7 West Approac
 
 ### 5.2 Starting conditions (shown openly to both teams on cue cards)
 
-#### REDFOR: more assets, longer reach, more constraints
+**REDFOR: more assets, longer reach, more constraints**
 
 | ID | Name | Effect | How to remove |
 | --- | --- | --- | --- |
@@ -150,7 +150,7 @@ The map labels all thirteen zones, including the four sea zones: Z7 West Approac
 | S-R3 | **Latah Hesitates** | Latah allows logistics only. No combat sorties from Latah. | A successful diplomatic COA, or International Opinion reaches +3 |
 | S-R4 | **Legitimacy Deficit** | International Opinion starts at −1. COAs that rely on third-party cooperation get −1 while Opinion ≤ −1. | Raise International Opinion to 0 or more |
 
-#### BLUEFOR: fewer assets, natural defender's advantages
+**BLUEFOR: fewer assets, natural defender's advantages**
 
 | ID | Name | Effect | How to remove |
 | --- | --- | --- | --- |
