@@ -62,13 +62,13 @@ The White Cell Checklist has the full list, from a week out to cleanup, in order
 - [ ] Everyone in the white cell has at least skimmed the Likely Plans guide, so you know the COAs to expect and where to look up how to rule on them.
 - [ ] You're in your group's Slack channel and both of its team channels (§2.4).
 - [ ] Everyone in the white cell has at least skimmed **both** sides' intelligence products and the key (Intelligence and Injects §3), and knows how to look one up, so you can check a Pro that may be built on a false report.
-- [ ] The timer and dice program works on the lead adjudicator's laptop and shows on the room's TV or projector, where every player can see it. Each logger's laptop opens the white cell site and Slack.
+- [ ] The timer and dice program works on the room computer connected to the TV or projector (or the lead adjudicator's laptop, if the room has none) and shows on the screen, where every player can see it. Each logger's laptop opens the white cell site and Slack.
 - [ ] Printed: one **Print Packet** per table (`White Cell/Print Packet - One Table.pdf`). `Print Packet - One Table, Reference Forms.pdf` is the same packet with one copy of each player form and slip for each side and no spares, for tables that will photocopy their own. Its cover lists what is in it: the White Cell Checklist, White Cell Forms (score sheet, ongoing-effects sheet, objective status card, both placement forms), starting-condition cue cards, counters, the map in letter tiles, both teams' player forms and request slips, and spare forms and slips at the back. Print the game pieces (counters, map, cue cards) in colour and the rest in greyscale. For one large map, print `map-full.pdf` on a plotter (v10 or later, with Camas inside PrSM range).
 - [ ] Counters printed and cut out: one set per table. It shows **both** sides' hidden assets, so keep it with the white cell. The HIDDEN counters stay in an envelope until they go on the map (§2.3).
 
 ### 2.3 Table setup
 
-The **Table Setup Guide** is the at-the-table version of this section: the devices, the table layout, every counter by name and zone, and a setup checklist. In short: the lead adjudicator puts the timer and dice program up on the room's TV or projector, and each logger keeps the white cell site and Slack open on a laptop the teams can't see.
+The **Table Setup Guide** is the at-the-table version of this section: the devices, the table layout, every counter by name and zone, and a setup checklist. In short: the lead adjudicator puts the timer and dice program up on the room's TV or projector, using the room computer where one is connected, and each logger keeps the white cell site and Slack open on a laptop the teams can't see.
 
 **Tracks** (in the tracker on the timer and dice program, shown on the TV or projector; there is no paper track board)
 

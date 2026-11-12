@@ -25,6 +25,9 @@ What it does:
   prints to run the game, with the right number of copies, behind a cover
   sheet that lists it. A second version (REF_PACKET_NAME) holds one copy of
   each player form per side, as a reference to copy from, and no spares.
+- Pads every built handout, and every item in the Print Packet, to an even
+  page count with blank pages, so each prints double-sided on its own sheets.
+  The game pieces in the packet (GAME_PIECES) get a blank back behind every page.
 
 The markdown is the source. Audience lines and FORMAT NOTE blocks stay out of
 the PDFs (the running header carries the audience). `render_markdown()` is
@@ -157,6 +160,16 @@ PACKET = [
 
 
 PLAYER_FORMS = (ASAP, "Player Forms and Templates.pdf")
+
+# The packet prints double-sided. Each document copy is padded to an even page
+# count so the next one starts on a new sheet. Pieces that are cut apart or
+# taped together get a blank back behind every page instead.
+GAME_PIECES = {(WEEK, "Starting Conditions.pdf"), (WC, "counters.pdf"), (WEEK, "map-tiles.pdf")}
+
+
+def sheets(pages, f):
+    """Sheets of paper one copy uses, printed double-sided."""
+    return pages if f in GAME_PIECES else (pages + 1) // 2
 
 
 def packet_items(variant="full"):
@@ -454,16 +467,32 @@ def print_pdf(browser, page_doc, out_path):
     page.close()
 
 
-def write_pdf(pdfs_or_pages, name, dst):
+def pad_even(w, start=0):
+    """Add a blank page if the pages written since `start` are odd, so the next item starts on a new sheet when printed double-sided."""
+    if (len(w.pages) - start) % 2:
+        box = w.pages[-1].mediabox
+        w.add_blank_page(width=box.width, height=box.height)
+
+
+def write_pdf(pdfs_or_pages, name, dst, even=False):
+    """Join PDFs, or (path, [page indexes], mode) pieces, into one. `even` pads the whole file to an even page count.
+    A piece's mode is "even" (pad the piece to an even count) or "backs" (a blank back behind every page)."""
     from pypdf import PdfReader, PdfWriter
     w = PdfWriter()
     for item in pdfs_or_pages:
         if isinstance(item, str):
             w.append(item)
-        else:  # (path, [page indexes])
-            r = PdfReader(item[0])
-            for i in item[1]:
-                w.add_page(r.pages[i])
+            continue
+        path, pages, mode = item
+        r = PdfReader(path)
+        start = len(w.pages)
+        for i in pages:
+            w.add_page(r.pages[i])
+            if mode == "backs":
+                pad_even(w, start)
+        pad_even(w, start)
+    if even:
+        pad_even(w)
     w.add_metadata({"/Title": os.path.splitext(name)[0], "/Author": "C/Nacanaynay", "/Creator": "tools/build_handouts.py"})
     with open(dst, "wb") as f:
         w.write(f)
@@ -501,7 +530,7 @@ def build_one(browser, folder, name, header, sources, work):
             if not os.path.exists(p):
                 sys.exit(f"missing {os.path.relpath(p, ROOT)}: run tools/tq/build_tq.py first")
             pdfs.append(p)
-    write_pdf(pdfs, name, dst)
+    write_pdf(pdfs, name, dst, even=True)
     return dst
 
 
@@ -533,7 +562,8 @@ def packet_rows(variant="full"):
         if not os.path.exists(pdf):
             sys.exit(f"missing {os.path.relpath(pdf, ROOT)}: build it before the print packet")
         pages = section_pages(pdf, heading) if heading else list(range(len(PdfReader(pdf).pages)))
-        rows.append((label, pdf, pages, copies, note))
+        pages = [i for i in pages if "/Contents" in PdfReader(pdf).pages[i]]  # drop the release file's blank pad pages
+        rows.append((label, pdf, pages, copies, note, (folder, fname)))
     return rows
 
 
@@ -562,13 +592,13 @@ def packet_markdown(rows=None, variant="full"):
     lines += [
         "## Contents (one table)",
         "",
-        "| Printed | Item | Copies | Pages | Notes |",
+        "| Printed | Item | Copies | Sheets | Notes |",
         "| --- | --- | --- | --- | --- |",
     ]
     total = 0
     spares = False
-    for i, (label, _pdf, pages, copies, note) in enumerate(rows or [(r[0], None, [], r[3], r[4]) for r in packet_items(variant)]):
-        n = len(pages) * copies
+    for label, _pdf, pages, copies, note, f in rows or [(r[0], None, [], r[3], r[4], r[1]) for r in packet_items(variant)]:
+        n = sheets(len(pages), f) * copies
         total += n
         if label.startswith("Spare: ") and not spares:
             spares = True
@@ -577,11 +607,13 @@ def packet_markdown(rows=None, variant="full"):
         lines.append("| ☐ | %s | %d | %s | %s |" % (label, copies, n or "", note))
     lines += [
         "",
-        f"Packet total: **{total} pages** after this cover, in the order listed." if rows else "",
+        f"Packet total: **{total} sheets** after this cover, in the order listed." if rows else "",
         "",
         "## Printing",
         "",
-        "- Print **single-sided at 100% scale** (\"actual size\", not \"fit to page\"). Every page keeps its content inside a 0.75 in margin.",
+        "- Print **double-sided** (flip on the long edge) **at 100% scale** (\"actual size\", not \"fit to page\"). Every page keeps its content inside a 0.75 in margin.",
+        "- Every item starts on a new sheet: blank pages fill out any item with an odd page count. "
+        "The counters, map tiles, and starting conditions have a blank back behind every page, so they can be cut apart and taped.",
         "- **Colour** for the game pieces: the counters, map tiles, and cue cards use colour for sides. "
         "Everything else (the forms, worksheets, and slips) is black and white, so print it in greyscale to save ink.",
         "- **Card stock** for the counters and cue cards, if you have it.",
@@ -589,9 +621,9 @@ def packet_markdown(rows=None, variant="full"):
         "",
         "## Also needed at each table",
         "",
-        "- [ ] The room's TV or projector, and the cable for the lead adjudicator's laptop",
-        "- [ ] The lead adjudicator's laptop with the timer and dice program (`whitecell-clock.html`) on that screen, where both teams can see it. Its tracker keeps the four tracks; there is no paper track board.",
-        "- [ ] Each logger's laptop with the white cell site and Slack, screen turned away from the players (Table Setup Guide §2)",
+        "- [ ] The room's TV or projector. Use the room computer connected to it if there is one; otherwise bring the lead adjudicator's laptop and its cable",
+        "- [ ] The timer and dice program (`whitecell-clock.html`) on that screen, where both teams can see it. Its tracker keeps the four tracks; there is no paper track board.",
+        "- [ ] Each logger's laptop with the white cell site and Slack, screen turned away from the players (Table Setup Guide §1)",
         "- [ ] An envelope for the hidden counters",
         "- [ ] Pens for each team and each logger",
         "",
@@ -606,9 +638,10 @@ def build_packet(browser, header, dst, work, variant="full"):
         f.write(packet_markdown(rows, variant))
     cover = os.path.join(work, f"packet-cover-{variant}.pdf")
     print_pdf(browser, page_html([cover_md], header, "Print Packet"), cover)
-    items = [cover]
-    for _label, pdf, pages, copies, _note in rows:
-        items += [(pdf, pages)] * copies
+    from pypdf import PdfReader
+    items = [(cover, range(len(PdfReader(cover).pages)), "even")]
+    for _label, pdf, pages, copies, _note, f in rows:
+        items += [(pdf, pages, "backs" if f in GAME_PIECES else "even")] * copies
     write_pdf(items, os.path.basename(dst), dst)
     return dst
 

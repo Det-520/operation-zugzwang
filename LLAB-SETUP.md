@@ -110,7 +110,7 @@ Most of this content comes from the designer's original *LLAB 12 General Plan* (
 | 3 | Hangar | Echo (REDFOR), Foxtrot (BLUEFOR) | `opz-group3-hangar` |
 | 4 | Conference room | Golf (REDFOR), Hotel (BLUEFOR) | `opz-group4-conference` |
 
-- **[CANON] Devices.** The lead adjudicator shows the timer and dice program on the room's TV or projector, where every player can see it. Each logger keeps the white cell site and Slack open on a laptop turned away from the players. `handouts/whitecell/table-setup.md` has the devices, table layout, and counter placement.
+- **[CANON] Devices.** The lead adjudicator shows the timer and dice program on the room's TV or projector, where every player can see it, running it on the room computer where one is connected to the screen and on a laptop otherwise. Each logger keeps the white cell site and Slack open on a laptop turned away from the players. `handouts/whitecell/table-setup.md` has the devices, table layout, and counter placement.
 - **[CANON] No room leads.** Each group's white cell sets up its own room before the LLAB and puts it back afterward. Group 3 plays in the Hangar, where closing remarks are held, so its table needs no transit at 1612 but must be cleared before 1617.
 
 ---

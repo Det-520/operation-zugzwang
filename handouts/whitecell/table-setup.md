@@ -6,37 +6,27 @@ short: "Table Setup Guide"
 
 **WHITE CELL ONLY.** This guide places the hidden counters, so keep it with the white cell. Set the room up before the LLAB: the white cell has no time between transit (1340) and the Phase I opening script (1345). Everything here comes from the White Cell Handbook §2.3 and the Master Asset List; if they ever disagree, the Master Asset List wins.
 
-## 1. Who sets up what
-
-| Who | Sets up |
-| --- | --- |
-| **Lead adjudicator** | The TV or projector with the timer and dice program on it, the tracker on the timer and dice program, the map, the ongoing-effects sheet, the starting-condition cue cards, and the hidden-counter envelope |
-| **REDFOR logger** | Every visible REDFOR counter (§5.1), the REDFOR placement form, the objective status card, and REDFOR's stack of player forms. Its own laptop with the white cell site and Slack. |
-| **BLUEFOR logger** | Every visible BLUEFOR counter (§5.2), the BLUEFOR placement form, and BLUEFOR's stack of player forms. Its own laptop with the white cell site and Slack. |
-
-## 2. Devices
+## 1. Devices
 
 Both teams need to see the map, the ongoing-effects sheet, the cue cards, and the screen, which shows the tracks. No player should be able to see a logger's laptop or forms.
 
 | Device | Who runs it | What is on it | Where |
 | --- | --- | --- | --- |
-| **TV or projector** | Lead adjudicator | The timer and dice program (`whitecell-clock.html`), on the Phase I block. Its tracker is the only track board: there is no paper one. It works offline. | Where every player can see it. Connect and test it before the LLAB. |
-| **Lead adjudicator's laptop** | Lead adjudicator | Drives the TV or projector. Keep nothing else open on the shared screen. | With the lead adjudicator |
+| **Room computer and TV or projector** | Lead adjudicator | The timer and dice program (`whitecell-clock.html`), on the Phase I block. Its tracker is the only track board: there is no paper one. Many rooms have a computer already connected to the TV or projector: use it. Copy the file onto it (USB drive or download) before the LLAB. The program needs no network. | Where every player can see it. Test it before the LLAB. |
+| **Lead adjudicator's laptop** | Lead adjudicator | Only if the room has no computer connected to the screen: connect it to the TV or projector and run the program on it. Keep nothing else open on the shared screen. | With the lead adjudicator |
 | **REDFOR logger's laptop** | REDFOR logger | The white cell reference site and Slack: the group channel and REDFOR's team channel | Screen turned away from both teams. The site shows both sides' secrets. |
 | **BLUEFOR logger's laptop** | BLUEFOR logger | The white cell reference site and Slack: the group channel and BLUEFOR's team channel | Same |
 | **Players' laptops** | Any player | Slack (the group channel and the player's own team channel), plus anything players want to search online. Every player may bring one. | With the team |
 
-The timer and dice program needs no network.
-
-## 3. Where everything goes on the table
+## 2. Where everything goes on the table
 
 | Item | Where | Face | Kept by |
 | --- | --- | --- | --- |
 | Map (letter tiles taped together, or the plotter sheet) | Middle of the table | Up | Table |
 | Ongoing effects and big projects sheet (White Cell Forms §2) | Beside the map, where both teams can see it | Up | Lead adjudicator |
 | Starting-condition cue cards: S-R1 to S-R4, S-B1 to S-B5 | Beside the map, standing or flat | Up | Table |
-| Visible counters | On the map by zone (§5) | Up | Each side's logger |
-| Hidden counters (§6) | In the envelope | Hidden | Lead adjudicator |
+| Visible counters | On the map by zone (§4) | Up | Each side's logger |
+| Hidden counters (§5) | In the envelope | Hidden | Lead adjudicator |
 | Blank counters (R-, B-, grey X-) | Beside the lead adjudicator | — | Lead adjudicator |
 | Objective status card (White Cell Forms §3) | With the REDFOR logger | **Down** | REDFOR logger |
 | REDFOR placement form (White Cell Forms §4.1) | With the REDFOR logger | **Down** | REDFOR logger |
@@ -48,7 +38,7 @@ The timer and dice program needs no network.
 
 Never put the objective status card or a placement form beside the ongoing-effects sheet: they show what the secret objectives look for.
 
-## 4. Track starting positions
+## 3. Track starting positions
 
 Set these in the tracker on the timer and dice program (**Reset to start** sets all four).
 
@@ -63,11 +53,11 @@ The ongoing-effects and big-projects sheet starts empty.
 
 <!-- pagebreak -->
 
-## 5. Visible counters on the map
+## 4. Visible counters on the map
 
 Z1 Cosmopolis is the off-map box in the map's top-right corner. Z2 Asotin, the off-map box on the left edge, starts empty. Zones not listed (Z3 Latah, Z4 Tekoa Highlands, Z5 Tekoa Coast, Z7 West Approach, Z13 Open Ocean) start empty too.
 
-### 5.1 REDFOR: 19 counters
+### 4.1 REDFOR: 19 counters
 
 | Zone | Counter | Asset |
 | --- | --- | --- |
@@ -93,7 +83,7 @@ Z1 Cosmopolis is the off-map box in the map's top-right corner. Z2 Asotin, the o
 
 Camas is crowded: stack the 14 counters by type (fighters, support aircraft, Patriot) so they fit in the zone.
 
-### 5.2 BLUEFOR: 22 counters
+### 4.2 BLUEFOR: 22 counters
 
 B-07 and B-19 have one counter in each of Z10, Z11, and Z12; B-12 and B-18 have one in Z8 and one in Z10. Each lettered part moves and takes damage on its own (Rules §4.5).
 
@@ -124,7 +114,7 @@ B-07 and B-19 have one counter in each of Z10, Z11, and Z12; B-12 and B-18 have 
 
 <!-- pagebreak -->
 
-## 6. Hidden counters: 10, in the envelope
+## 5. Hidden counters: 10, in the envelope
 
 Hidden counters stay in the envelope with the lead adjudicator. They are not on the map, and the teams do not see them. Each goes on the map only when it is **found** by a successful ISR COA, **used** by its owner (naming it in a COA or argument reveals it, whatever the roll), or **disclosed** by an inject (Handbook §2.3).
 
@@ -143,34 +133,34 @@ Hidden counters stay in the envelope with the lead adjudicator. They are not on 
 
 The BLUEFOR logger writes the zone of each NASAMS battery (B-06a, B-06b, B-06c) on the BLUEFOR placement form during BLUEFOR's Phase I brief (1400–1403). Each battery is revealed on its own.
 
-## 7. Counters that come later
+## 6. Counters that come later
 
 - **RFF arrivals** go on **Z6 Camas** (REDFOR) or **Z11 Omak City** (BLUEFOR, Asotin support included) unless the RFF names another destination (Handbook §7). Keep the RFF counters (R-30 to R-39, B-30 to B-32, B-40 to B-43) off the map, beside the lead adjudicator, until one arrives.
 - **Blank counters** are for a force with no printed counter: R- and B- for free-text RFFs (number them from R-50 and B-50) and grey X- for forces an inject creates (from X-01). Write the ID and zone on it (Rules §5).
 
 <!-- pagebreak -->
 
-## 8. Setup checklist
+## 7. Setup checklist
 
 ### Room and devices
 
-- [ ] TV or projector on and showing the timer and dice program, on the **Phase I** block, visible to every player.
+- [ ] TV or projector on and showing the timer and dice program, on the **Phase I** block, visible to every player. Use the room computer if one is connected to the screen; otherwise the lead adjudicator's laptop.
 - [ ] Each logger's laptop open to the white cell site and Slack (the group channel and its side's team channel), screen turned away from the teams.
 - [ ] Each team has at least one laptop that can post in its group and team channels. Players may use their laptops to search online too.
 
 ### Map, tracks, and cue cards
 
 - [ ] Map in the middle of the table.
-- [ ] Tracker on the timer and dice program at **Open**, **−1**, **3**, **4** (§4).
+- [ ] Tracker on the timer and dice program at **Open**, **−1**, **3**, **4** (§3).
 - [ ] Ongoing effects and big projects sheet beside the map, blank.
 - [ ] Cue cards face up beside the map: S-R1, S-R2, S-R3, S-R4, S-B1, S-B2, S-B3, S-B4, S-B5.
 
 ### Counters
 
-- [ ] REDFOR logger placed **19** REDFOR counters: 4 in Z1, 14 in Z6, 1 in Z9 (§5.1).
-- [ ] BLUEFOR logger placed **22** BLUEFOR counters: 2 in Z8, 8 in Z10, 8 in Z11, 4 in Z12 (§5.2).
-- [ ] **10** hidden counters in the envelope with the lead adjudicator: R-18, R-21, R-22, B-06a, B-06b, B-06c, B-09, B-10, B-11, B-21 (§6). None on the map.
-- [ ] RFF counters and blank counters set aside with the lead adjudicator (§7).
+- [ ] REDFOR logger placed **19** REDFOR counters: 4 in Z1, 14 in Z6, 1 in Z9 (§4.1).
+- [ ] BLUEFOR logger placed **22** BLUEFOR counters: 2 in Z8, 8 in Z10, 8 in Z11, 4 in Z12 (§4.2).
+- [ ] **10** hidden counters in the envelope with the lead adjudicator: R-18, R-21, R-22, B-06a, B-06b, B-06c, B-09, B-10, B-11, B-21 (§5). None on the map.
+- [ ] RFF counters and blank counters set aside with the lead adjudicator (§6).
 
 ### Paper
 

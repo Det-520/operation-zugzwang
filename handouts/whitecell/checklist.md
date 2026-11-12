@@ -22,7 +22,7 @@ short: "White Cell Checklist"
 - [ ] Each white cell member is in their group's channel and both of its team channels (Handbook §2.4). C/Nacanaynay sends the invitations with the team assignments.
 - [ ] Every white cell member has at least skimmed the Likely Plans guide, **both** sides' intelligence products and the key (Intelligence and Injects §3), and the ground truth (Intelligence and Injects §1), and knows where to look things up in them during play. Nobody needs to know them by heart.
 - [ ] Every white cell member has read the RFF pools (Handbook §7) and the scoring tables (Handbook §8).
-- [ ] The timer and dice program (`whitecell-clock.html`) opens on each lead adjudicator's laptop, works offline, and shows on the room's TV or projector.
+- [ ] The timer and dice program (`whitecell-clock.html`) opens on the room computer connected to the TV or projector (or, if the room has none, the lead adjudicator's laptop), works offline, and shows on the screen.
 - [ ] Each logger's laptop opens the white cell site and Slack.
 - [ ] One Print Packet printed for each table (4) (the full packet, or the Reference Forms version plus photocopies), game pieces in colour, forms in greyscale. Spares kept with the white cell. Counters and cue cards cut. Hidden counters in an envelope.
 - [ ] Each table agrees with the others on what counts as an auto-success, so the four games are scored alike (Handbook §5.1).
@@ -35,7 +35,7 @@ The Table Setup Guide has the devices, the table layout, every counter by name a
 - [ ] Map down, with the ongoing-effects sheet (White Cell Forms §2) beside it where both teams can see it.
 - [ ] Tracker on the timer and dice program at the start: Strait **Open**, Opinion **−1**, Will **3**, Stability **4** (Handbook §2.3).
 - [ ] Starting-condition cue cards face up beside the map: S-R1 to S-R4, S-B1 to S-B5.
-- [ ] **Visible** counters placed by zone: 19 REDFOR, 22 BLUEFOR (Table Setup Guide §5). The **10 hidden** counters stay in the envelope.
+- [ ] **Visible** counters placed by zone: 19 REDFOR, 22 BLUEFOR (Table Setup Guide §4). The **10 hidden** counters stay in the envelope.
 - [ ] Each logger has its side's placement form face down (White Cell Forms §4). The objective status card is face down with a logger (White Cell Forms §3).
 - [ ] Each team has Slack open on at least one laptop and can post in its group and team channels. Every player may have a laptop, for Slack or to search online. Each logger has the white cell site and Slack (the group channel and its side's team channel) open on a laptop turned away from the teams.
 - [ ] Each team has its stack of player forms: OPORD format, COA and Cons worksheets, and the request and secret COA slips (backup if Slack fails).
